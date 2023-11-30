@@ -29,11 +29,8 @@ export default function Layout({ children, home }) {
         <Nav />
       </header>
       <main>
-        <h1>Test Headline for Portfolio</h1>
-        <h2>This is the subheader</h2>
-        {children}
+        {children} {/* Content specific to each page */}
       </main>
-      <div className={styles.arrowDown}>↓</div> 
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">← Back to home</Link>

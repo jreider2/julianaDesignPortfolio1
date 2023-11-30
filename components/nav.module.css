@@ -1,0 +1,8 @@
+.navLink {
+    margin-right: 20px; /* Adjust the value as needed */
+  }
+  
+  /* If the last link shouldn't have margin on the right */
+  .navLink:last-child {
+    margin-right: 0;
+  }
