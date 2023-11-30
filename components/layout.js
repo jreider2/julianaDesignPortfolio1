@@ -3,9 +3,10 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Nav from './nav';
 
 const name = 'Juliana Alexis-Reider Bhattacharya';
-export const siteTitle = 'testing';
+export const siteTitle = 'Juliana Alexis-Reider Bhattacharya\'s Portfolio';
 
 export default function Layout({ children, home }) {
   return (
@@ -14,7 +15,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Juliana Reider's Portfolio"
         />
         <meta
           property="og:image"
@@ -26,39 +27,14 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt=""
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt=""
-              />
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2>
-          </>
-        )}
+        <Nav />
       </header>
-      <main>{children}</main>
+      <main>
+        <h1>Test Headline for Portfolio</h1>
+        <h2>This is the subheader</h2>
+        {children}
+      </main>
+      <div className={styles.arrowDown}>↓</div> 
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">← Back to home</Link>
