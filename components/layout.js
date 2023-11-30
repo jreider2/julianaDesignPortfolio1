@@ -5,7 +5,6 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Nav from './nav';
 
-const name = 'Juliana Alexis-Reider Bhattacharya';
 export const siteTitle = 'Juliana Alexis-Reider Bhattacharya\'s Portfolio';
 
 export default function Layout({ children, home }) {
