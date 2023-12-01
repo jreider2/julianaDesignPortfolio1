@@ -19,8 +19,14 @@ export default function Home({ allPostsData }) {
           <title>{siteTitle}</title>
         </Head>
         <div className={styles.heroSection}>
-          <h1>Engineer's Lens<br/>Designer's Vision</h1>
-          <h2>hi! i’m juliana, an engineer turned product designer.</h2>
+          <h1>
+            <span>Engineer's Lens</span>
+            <br/>
+            <span>Designer's Vision</span>
+          </h1>
+          <h2>
+            hi! i’m juliana, an engineer turned product designer.
+          </h2>
           <h2>my methodical nature merges aesthetics with functionality.</h2>
           <div className={arrowStyles.arrowDown}>↓</div> 
         </div>
