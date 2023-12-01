@@ -1,12 +1,7 @@
-/* .heroSection {
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: 1;
-} */
-
 .heroSection {
+  /* max-width: 100%;
+  margin: 0; 
+  padding: 0; */
   background-image: url('/images/background.jpg');
   background-size: cover;
   background-position: center;

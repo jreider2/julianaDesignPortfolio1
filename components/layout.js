@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
+
 import Nav from './nav';
 
 export const siteTitle = 'Juliana Alexis-Reider Bhattacharya\'s Portfolio';
@@ -26,9 +28,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-      {!home && (
         <Nav />
-      )}
       </header>
       <main>
         {children} {/* Content specific to each page */}

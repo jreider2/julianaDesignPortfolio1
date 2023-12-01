@@ -14,17 +14,16 @@ import styles from '../styles/Home.module.css';
 export default function Home({ allPostsData }) {
   return (
     <>
-      <div className={styles.heroSection}>
-        <Nav />
-        <h1>Engineer's Lens<br/>Designer's Vision</h1>
-        <h2>hi! i’m juliana, an engineer turned product designer.</h2>
-        <h2>my methodical nature merges aesthetics with functionality.</h2>
-        <div className={arrowStyles.arrowDown}>↓</div> 
-      </div>
       <Layout home>
         <Head>
           <title>{siteTitle}</title>
         </Head>
+        <div className={styles.heroSection}>
+          <h1>Engineer's Lens<br/>Designer's Vision</h1>
+          <h2>hi! i’m juliana, an engineer turned product designer.</h2>
+          <h2>my methodical nature merges aesthetics with functionality.</h2>
+          <div className={arrowStyles.arrowDown}>↓</div> 
+        </div>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (
