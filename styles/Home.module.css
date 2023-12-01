@@ -1,28 +1,40 @@
+/* body {
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+} */
+
 .heroSection {
   /* max-width: 100%;
   margin: 0; 
   padding: 0; */
+  /* background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center; */
   background-image: url('/images/background.jpg');
   background-size: cover;
-  background-position: center;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
   position: relative;
   color: white; /* Set font color to white */
   text-align: center; /* Center the text */
 }
 
- /* Gradient overlay */
- .heroSection::after {
+/* Gradient overlay */
+.heroSection::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.7));
+  background: linear-gradient(to top, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.7));
   z-index: 1;
 }
 
-/* New style for the h1 element */
 .heroSection h1 {
   font-family: 'MuseoModerno', sans-serif;
   font-size: 6.25rem;
@@ -34,6 +46,14 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative; /* investigate */
+  position: relative; /* !!! investigate !!! !!! investigate !!! !!! investigate !!! */
   z-index: 2;
+}
+
+.heroSection h1 span {
+  background: var(--Title-Light-Text-Gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
 }

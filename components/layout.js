@@ -1,9 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
 
 import Nav from './nav';
 
@@ -11,7 +9,7 @@ export const siteTitle = 'Juliana Alexis-Reider Bhattacharya\'s Portfolio';
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -27,7 +25,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header>
         <Nav />
       </header>
       <main>

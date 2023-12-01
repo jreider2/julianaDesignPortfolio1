@@ -19,11 +19,8 @@ export default function Home({ allPostsData }) {
           <title>{siteTitle}</title>
         </Head>
         <div className={styles.heroSection}>
-          <h1>
-            <span>Engineer's Lens</span>
-            <br/>
-            <span>Designer's Vision</span>
-          </h1>
+          <h1><span>Engineer's Lens</span></h1>
+          <h1><span>Designer's Vision</span></h1>
           <h2>
             hi! i’m juliana, an engineer turned product designer.
           </h2>
