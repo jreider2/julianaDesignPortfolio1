@@ -26,7 +26,9 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+      {!home && (
         <Nav />
+      )}
       </header>
       <main>
         {children} {/* Content specific to each page */}
