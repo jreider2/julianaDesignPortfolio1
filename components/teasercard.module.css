@@ -14,9 +14,10 @@
 
 .card .top_container .text_content {
   display: flex;
+  flex-direction: column; /* Add this line to make children of .text_content in a column */
   flex-grow: 1;
-  /* Add your styles for text_content here */
 }
+
 
 .card .image {
   max-width: 39.41325rem;
