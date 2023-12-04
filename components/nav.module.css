@@ -1,8 +1,38 @@
 .navLink {
-    margin-right: 20px; /* Adjust the value as needed */
+    margin-right: 0px; /* Adjust the value as needed */
+    color:#D5DCF4;
+  }
+
+  .centerLinks {
+    display: flex;
+    flex-direction: row;
+    column-gap:24px;
   }
   
   /* If the last link shouldn't have margin on the right */
-  .navLink:last-child {
-    margin-right: 0;
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:60%;
+    position: fixed;
+    top:32px;
+    z-index: 100;
+    border-radius: 300px;
+    background: var(--menu-bg-2, rgba(23, 44, 95, 0.40));
+    backdrop-filter: blur(20px);
+    padding:24px 12px;
+    
   }
+
+  .primaryCTA {
+    background-color: #B892FF;
+    color:#172C5F;
+    padding: 12px 14px;
+    border-radius: 33px;
+  }
+
+
+

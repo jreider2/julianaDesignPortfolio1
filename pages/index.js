@@ -5,6 +5,7 @@ import Date from '../components/date';
 import Head from 'next/head';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
+import TeaserCard from '../components/teasercard';
 
 import utilStyles from '../styles/utils.module.css';
 import arrowStyles from '../components/arrowDown.module.css';
@@ -27,8 +28,9 @@ export default function Home({ allPostsData }) {
           <h2>my methodical nature merges aesthetics with functionality.</h2>
           <div className={arrowStyles.arrowDown}>↓</div> 
         </div>
+        <TeaserCard title="Your Title" description="Your Description" image="images/mac.jpg"></TeaserCard>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <ul className={utilStyles.list}>
+          {/*<ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
                 <Link href={`/posts/${id}`}>{title}</Link>
@@ -38,7 +40,7 @@ export default function Home({ allPostsData }) {
                 </small>
               </li>
             ))}
-          </ul>
+            </ul>*/}
         </section>
       </Layout>
     </>

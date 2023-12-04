@@ -3,15 +3,22 @@ import styles from './nav.module.css'; // Import the CSS module
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <Link href="/">
-        <span className={styles.navLink}>Work</span>
+        <span className={styles.navLink}>juliana reider</span>
       </Link>
-      <Link href="/about">
-        <span className={styles.navLink}>About</span>
-      </Link>
+
+      <div className={styles.centerLinks}>
+        <Link href="/">
+          <span className={styles.navLink}>work</span>
+        </Link>
+        <Link href="/about">
+          <span className={styles.navLink}>about</span>
+        </Link>
+      </div>
+
       <Link href="/contact">
-        <span className={styles.navLink}>Contact</span>
+        <span className={styles.navLink + " " + styles.primaryCTA}>contact</span>
       </Link>
     </nav>
   );

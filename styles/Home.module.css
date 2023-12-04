@@ -9,17 +9,15 @@
 .heroSection {
   /* max-width: 100%;
   margin: 0; 
-  padding: 0; */
-  /* background-image: url('/images/background.jpg');
+  padding: 0;*/
+  background-image: url('/images/lightCirlce_mainPage.jpg');
   background-size: cover;
-  background-position: center; */
-  background-image: url('/images/background.jpg');
-  background-size: cover;
+  background-position: center;
   padding: 0;
   margin: 0;
   background-repeat: no-repeat;
   position: relative;
-  color: white; /* Set font color to white */
+  color: red; /* Set font color to white */
   text-align: center; /* Center the text */
 }
 
@@ -31,7 +29,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.7));
+  background: linear-gradient(180deg, #172C5F 4.17%, rgba(23, 44, 95, 0.69) 53.65%, rgba(23, 44, 95, 0.00) 100%);
   z-index: 1;
 }
 
