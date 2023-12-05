@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
           <h2>my methodical nature merges aesthetics with functionality.</h2>
           <div className={arrowStyles.arrowDown}>↓</div> 
         </div>
-        <TeaserCard title="Your Title" description="Your Description" image="images/mac.jpg"></TeaserCard>
+        <TeaserCard title="Your Title" description="Your Description" image="/images/mac.jpg"></TeaserCard>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           {/*<ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (

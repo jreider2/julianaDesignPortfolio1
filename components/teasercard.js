@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import RightArrow from './RightArrow';
 import styles from "./teasercard.module.css";
 
 export default function TeaserCard({ title, description, image }) {
@@ -9,7 +11,7 @@ export default function TeaserCard({ title, description, image }) {
           <h3>{title}</h3>
           <p>{description}</p>
         </div>
-        <img src="/images/arrow.svg" alt="arrow" />
+        <RightArrow />
       </div>
       <img src={image} alt={title} className={styles.image} />
     </div>

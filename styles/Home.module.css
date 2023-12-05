@@ -1,24 +1,15 @@
-/* body {
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  padding: 0;
-  margin: 0;
-  background-repeat: no-repeat;
-} */
-
 .heroSection {
-  /* max-width: 100%;
-  margin: 0; 
-  padding: 0;*/
-  background-image: url('/images/lightCirlce_mainPage.jpg');
+  /* max-width: 100%;*/
+  background-color: var(--main-bg);
+  background-image: url('/images/lightCirlce_mainPage.png');
   background-size: cover;
   background-position: center;
   padding: 0;
   margin: 0;
   background-repeat: no-repeat;
   position: relative;
-  color: red; /* Set font color to white */
-  text-align: center; /* Center the text */
+  color: red;
+  text-align: center;
 }
 
 /* Gradient overlay */
@@ -54,4 +45,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
+  position: relative;
+  z-index: 2;
 }
