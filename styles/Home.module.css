@@ -3,11 +3,11 @@
   background-image: url('/images/lightCirlce_mainPage.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
   left: 0;
   right: 0;
-  background-repeat: no-repeat;
   position: relative;
   color: red;
   text-align: center;
@@ -53,14 +53,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: 6.875rem;
-  letter-spacing: -0.125rem;
   display: inline;
 }
 
 .heroSection h2 {
   color: var(--light-text, #D5DCF4);
-  leading-trim: both;
-  text-edge: cap;
   font-family: SF Pro Text;
   font-size: 1.25rem;
   font-style: normal;
@@ -68,6 +65,22 @@
   line-height: normal;
   letter-spacing: 0.0375rem;
   text-transform: lowercase;
-  position: relative;
+  position: relative; 
   z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .EngineersLens {
+    font-size: 3rem;
+    line-height: 100%;
+  }
+  .designerVision {
+    font-size: 3rem;
+    line-height: 100%;
+  }
+  .heroSection h2 {
+    font-size: 1rem;
+  }
+
+  /* todo style a hamburger menu for nav */
 }
