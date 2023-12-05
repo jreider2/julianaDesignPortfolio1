@@ -28,10 +28,10 @@ export default function Home({ allPostsData }) {
           <div className={arrowStyles.arrowDown}>↓</div>
 
         </div>
-        <TeaserCard title="Your Title" description="Your Description" image="/images/mac.jpg"></TeaserCard>
-        <TeaserCard title="Your Title" description="Your Description" image="/images/mac.jpg"></TeaserCard>
-        <TeaserCard title="Your Title" description="Your Description" image="/images/mac.jpg"></TeaserCard>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png"></TeaserCard>
+        <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png"></TeaserCard>
+        <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png"></TeaserCard>
+       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           {/*<ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>

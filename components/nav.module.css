@@ -8,8 +8,6 @@
     flex-direction: row;
     column-gap:24px;
   }
-  
-  /* If the last link shouldn't have margin on the right */
 
   .nav {
     display: flex;
@@ -35,4 +33,12 @@
   }
 
 
+  @media (max-width: 600px) {
+    /* BEGIN: abpxx6d04wxr */
+    .nav {
+      width: 90vw;
+      padding: 12px;
+    }
+
+  }
 
