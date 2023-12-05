@@ -1,16 +1,17 @@
 .heroSection {
-  /* max-width: 100%;*/
   background-color: var(--main-bg);
   background-image: url('/images/lightCirlce_mainPage.png');
   background-size: cover;
   background-position: center;
   padding: 0;
   margin: 0;
+  left: 0;
+  right: 0;
   background-repeat: no-repeat;
   position: relative;
   color: red;
   text-align: center;
-  min-height: 110vh;
+  min-height: 80vh;
   margin-top: 20vh;
 }
 
@@ -19,49 +20,39 @@
   content: '';
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   background: linear-gradient(180deg, #172C5F 4.17%, rgba(23, 44, 95, 0.69) 53.65%, rgba(23, 44, 95, 0.00) 100%);
   z-index: 1;
 }
 
-.heroSection h1 {
+.heroSection h1 span  {
+  background: var(--Title-Light-Text-Gradient);
   font-family: 'MuseoModerno', sans-serif;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.EngineersLens {
+  background: var(--Title-Light-Text-Gradient);
   font-size: 6.25rem;
   font-style: normal;
   font-weight: 300;
   line-height: 6.875rem; /* 110% */
   letter-spacing: -0.125rem;
-  background: var(--Title-Light-Text-Gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  /* !!! investigate !!! !!! investigate !!! !!! investigate !!! */
-  z-index: 2;
-}
-
-.heroSection h1 span {
-  background: var(--Title-Light-Text-Gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: inline;
-  position: relative;
-  z-index: 2;
 }
 
-.heroSection h1 span.designerVision {
-  /* Add your new styles here */
-  leading-trim: both;
-  text-edge: cap;  
-  font-family: MuseoModerno;
+.designerVision {
+  background: var(--Title-Light-Text-Gradient);
   font-size: 6.25rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 6.875rem;
-  /* 110% */
   letter-spacing: -0.125rem;
-
+  display: inline;
 }

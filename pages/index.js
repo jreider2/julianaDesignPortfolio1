@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
           <title>{siteTitle}</title>
         </Head>
         <div className={styles.heroSection}>
-          <h1><span>Engineer's Lens</span></h1>
+          <h1><span span className={styles.EngineersLens}>Engineer's Lens</span></h1>
           <h1><span className={styles.designerVision}>Designer's Vision</span></h1>
           <h2>
             hi! i’m juliana, an engineer turned product designer.
@@ -28,6 +28,8 @@ export default function Home({ allPostsData }) {
           <h2>my methodical nature merges aesthetics with functionality.</h2>
           <div className={arrowStyles.arrowDown}>↓</div>
         </div>
+        <TeaserCard title="Your Title" description="Your Description" image="/images/mac.jpg"></TeaserCard>
+        <TeaserCard title="Your Title" description="Your Description" image="/images/mac.jpg"></TeaserCard>
         <TeaserCard title="Your Title" description="Your Description" image="/images/mac.jpg"></TeaserCard>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           {/*<ul className={utilStyles.list}>
@@ -42,7 +44,7 @@ export default function Home({ allPostsData }) {
             ))}
             </ul>*/}
         </section>
-      </Layout>
+      </Layout >
     </>
 
   );
