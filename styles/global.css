@@ -13,6 +13,7 @@ body {
 :root {
   --Title-Light-Text-Gradient: linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%);
   --main-bg: #172C5F;
+  --light-text: #D5DCF4;
   background-color: var(--main-bg); 
 }
 

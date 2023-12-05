@@ -1,6 +1,15 @@
 .arrowDown {
-    /* Styles for your arrow icon */
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 20px;
-  }
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--light-text, #D5DCF4);
+  /* leading-trim: both;
+  text-edge: cap; */
+  font-family: SF Pro Text;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 150;
+  line-height: normal;
+  position: relative;
+  z-index: 2;
+}

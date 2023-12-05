@@ -27,7 +27,7 @@
   z-index: 1;
 }
 
-.heroSection h1 span  {
+.heroSection h1 span {
   background: var(--Title-Light-Text-Gradient);
   font-family: 'MuseoModerno', sans-serif;
   background-clip: text;
@@ -55,4 +55,19 @@
   line-height: 6.875rem;
   letter-spacing: -0.125rem;
   display: inline;
+}
+
+.heroSection h2 {
+  color: var(--light-text, #D5DCF4);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: SF Pro Text;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0375rem;
+  text-transform: lowercase;
+  position: relative;
+  z-index: 2;
 }
