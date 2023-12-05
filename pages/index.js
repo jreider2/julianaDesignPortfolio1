@@ -21,12 +21,12 @@ export default function Home({ allPostsData }) {
         </Head>
         <div className={styles.heroSection}>
           <h1><span>Engineer's Lens</span></h1>
-          <h1><span>Designer's Vision</span></h1>
+          <h1><span className={styles.designerVision}>Designer's Vision</span></h1>
           <h2>
             hi! i’m juliana, an engineer turned product designer.
           </h2>
           <h2>my methodical nature merges aesthetics with functionality.</h2>
-          <div className={arrowStyles.arrowDown}>↓</div> 
+          <div className={arrowStyles.arrowDown}>↓</div>
         </div>
         <TeaserCard title="Your Title" description="Your Description" image="/images/mac.jpg"></TeaserCard>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -44,7 +44,7 @@ export default function Home({ allPostsData }) {
         </section>
       </Layout>
     </>
-    
+
   );
 }
 

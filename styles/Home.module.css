@@ -10,6 +10,8 @@
   position: relative;
   color: red;
   text-align: center;
+  min-height: 110vh;
+  margin-top: 20vh;
 }
 
 /* Gradient overlay */
@@ -35,7 +37,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative; /* !!! investigate !!! !!! investigate !!! !!! investigate !!! */
+  position: relative;
+  /* !!! investigate !!! !!! investigate !!! !!! investigate !!! */
   z-index: 2;
 }
 
@@ -47,4 +50,18 @@
   display: inline;
   position: relative;
   z-index: 2;
+}
+
+.heroSection h1 span.designerVision {
+  /* Add your new styles here */
+  leading-trim: both;
+  text-edge: cap;  
+  font-family: MuseoModerno;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 6.875rem;
+  /* 110% */
+  letter-spacing: -0.125rem;
+
 }
