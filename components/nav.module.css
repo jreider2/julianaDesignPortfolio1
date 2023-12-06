@@ -1,6 +1,15 @@
 .navLink {
     margin-right: 0px; /* Adjust the value as needed */
     color:#D5DCF4;
+    
+  }
+
+  .nav a {
+    text-decoration: none;
+  }
+
+  .navLink:hover {
+    color:#B892FF;
   }
 
   .centerLinks {
@@ -16,22 +25,62 @@
     align-items: center;
     width:60%;
     position: fixed;
-    top:32px;
+    top:24px;
     z-index: 100;
     border-radius: 300px;
     background: var(--menu-bg-2, rgba(23, 44, 95, 0.40));
     backdrop-filter: blur(20px);
     padding:24px 12px;
-    
   }
 
   .primaryCTA {
     background-color: #B892FF;
-    color:#172C5F;
+    color:var(--main-bg);
     padding: 12px 14px;
     border-radius: 33px;
+    
   }
 
+  .primaryCTA:hover {
+    background-color: var(--light-text);
+    color:var(--main-bg);
+  }
+
+  .circleSmall {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #B892FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    column-gap: 8px;
+  }
+
+  .logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    column-gap: 8px;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #B892FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   @media (max-width: 600px) {
     /* BEGIN: abpxx6d04wxr */

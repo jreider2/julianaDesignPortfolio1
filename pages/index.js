@@ -17,16 +17,20 @@ export default function Home({ allPostsData }) {
         <Head>
           <title>{siteTitle}</title>
         </Head>
+        <div className={styles.heroContainer}>
         <div className={styles.heroSection}>
 
           <h1><span span className={styles.EngineersLens}>Engineer's Lens</span></h1>
           <h1><span className={styles.designerVision}>Designer's Vision</span></h1>
           
-          <h2>hi! i’m juliana, an engineer turned product designer.</h2>
+          <div className={styles.subheadContainer}>
+          <h2 >hi! i’m juliana, an engineer turned product designer.</h2>
           <h2>my methodical nature merges aesthetics with functionality.</h2>
+          </div>
           
           <div className={arrowStyles.arrowDown}>↓</div>
 
+        </div>
         </div>
         <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png"></TeaserCard>
         <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png"></TeaserCard>
@@ -44,6 +48,7 @@ export default function Home({ allPostsData }) {
             ))}
             </ul>*/}
         </section>
+        
       </Layout >
     </>
 

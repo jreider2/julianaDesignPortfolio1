@@ -2,7 +2,7 @@
   background-color: var(--main-bg);
   background-image: url('/images/lightCirlce_mainPage.png');
   background-size: cover;
-  background-position: center;
+  background-position: 0vh -80vh;
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
@@ -11,7 +11,7 @@
   position: relative;
   color: red;
   text-align: center;
-  min-height: 80vh;
+  min-height: 115vh;
   margin-top: 20vh;
 }
 
@@ -54,6 +54,14 @@
   font-weight: 600;
   line-height: 6.875rem;
   display: inline;
+}
+
+.subheadContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.25rem;
 }
 
 .heroSection h2 {
