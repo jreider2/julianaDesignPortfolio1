@@ -2,8 +2,9 @@
   background-color: var(--main-bg);
   background-image: url('/images/lightCirlce_mainPage.png');
   background-size: cover;
-  background-position: 0vh -80vh;
+  background-position: center -60vh;
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
   padding: 0;
   margin: 0;
   left: 0;
@@ -43,7 +44,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 6.875rem; /* 110% */
-  letter-spacing: -0.125rem;
+  letter-spacing: -0.1rem;
   display: inline;
 }
 
@@ -53,6 +54,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 6.875rem;
+  letter-spacing: -0.1rem;
   display: inline;
 }
 
