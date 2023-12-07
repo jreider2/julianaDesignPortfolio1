@@ -5,7 +5,6 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import TeaserCard from '../components/teasercard';
 
-import utilStyles from '../styles/utils.module.css';
 import arrowStyles from '../components/arrowDown.module.css';
 import styles from '../styles/Home.module.css';
 
@@ -35,20 +34,6 @@ export default function Home({ allPostsData }) {
         <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png"></TeaserCard>
         <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png"></TeaserCard>
         <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png"></TeaserCard>
-       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          {/*<ul className={utilStyles.list}>
-            {allPostsData.map(({ id, date, title }) => (
-              <li className={utilStyles.listItem} key={id}>
-                <Link href={`/posts/${id}`}>{title}</Link>
-                <br />
-                <small className={utilStyles.lightText}>
-                  <Date dateString={date} />
-                </small>
-              </li>
-            ))}
-            </ul>*/}
-        </section>
-        
       </Layout >
     </>
 

@@ -1,7 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 import RightArrow from './rightArrow';
 import styles from "./teasercard.module.css";
+import Image from 'next/image';
+
 
 export default function TeaserCard({ title, description, image }) {
   return (
@@ -15,7 +16,9 @@ export default function TeaserCard({ title, description, image }) {
           <RightArrow />
         </div>
       </div>
-      <img src={image} alt={title} className={styles.image} />
+      <div className={styles.imageContainer}>
+        <img src={image} alt={title} className={styles.image} />
+      </div>
     </div>
   );
 }
