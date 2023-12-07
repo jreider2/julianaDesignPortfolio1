@@ -11,7 +11,9 @@ export default function TeaserCard({ title, description, image }) {
           <h3>{title}</h3>
           <p>{description}</p>
         </div>
-        <RightArrow />
+        <div className={styles.arrowDiv}>
+          <RightArrow />
+        </div>
       </div>
       <img src={image} alt={title} className={styles.image} />
     </div>

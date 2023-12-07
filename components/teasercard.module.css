@@ -1,52 +1,108 @@
 .card {
   display: flex;
-  color: red;
   flex-direction: column;
-  margin: 0 auto; /* Add this line to center the card */
-  background: linear-gradient(180deg, #2A4075 0%, #1D3369 100%); /* Use background instead of fill */
+  margin: 0 auto;
+  /* Add this line to center the card */
+  margin-bottom: 3.25rem;
+  background: linear-gradient(180deg, #2A4075 0%, #1D3369 100%);
+  /* Use background instead of fill */
   box-shadow: 0px 3px 0px 0px rgba(184, 146, 255, 0.30) inset;
   width: 60%;
   border-radius: 15px;
-  margin-bottom: 3.25rem;
-  padding:32px;
+  padding: .7rem;
 }
 
-.card .top_container {   
+.card .top_container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .card .top_container .text_content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding-left: 3rem;
+  padding-top: 1.5rem;
+}
+
+.card .top_container .text_content h3 {
+  font-family: MuseoModerno;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  background: var(--Title-Light-Text-Gradient, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0 ;
+}
+
+.card .top_container .text_content p {
+  color: var(--subheading-light-text, #A7B1CF);
+  font-family: SF Pro Rounded;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.0225rem;
+  color: var(--subheading-light-text, #A7B1CF);
+  font-family: SF Pro Rounded;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.0225rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .card .image {
-  max-width: 39.41325rem;
+  max-width: 33rem;
   max-height: 27.23075rem;
-  margin: 0 auto; /* center the image horizontally */
-  width: 100%; 
+  margin: 0 auto;
+  /* center the image horizontally */
+  width: 90%;
   height: auto;
+  margin-bottom: 2rem;
 }
 
+.card .top_container .arrowDiv {
+  margin-right: 3rem;
+  padding-top: 1.5rem;
+}
 
-@media (max-width: 600px) {
-  .card {
-    width: 90vw; /* Adjust the width to fit the screen */
-    margin-bottom: 2rem; /* Adjust the margin-bottom */
+@media (max-width: 1030px) {
+  /* .card {
+    width: 90vw;
+    margin-bottom: 2rem;
   }
 
   .card .image {
-    max-width: 60vw; /* Adjust the max-width to fit the screen */
-    max-height: auto; /* Remove the max-height */
-  }
-  /* END: abpxx6d04wxr */
+    max-width: 60vw;
+    max-height: auto;
+  } */
+}
 
+@media (max-width: 600px) {
+  .card {
+    width: 90vw;
+    margin-bottom: 2rem;
+  }
+
+  .card .image {
+    max-width: 60vw;
+    /* Adjust the max-width to fit the screen */
+    max-height: auto;
+    /* Remove the max-height */
+  }
+
+  /* END: abpxx6d04wxr */
+  /* 
   .card {
     width: 90vw;
     padding: 8px;
-  }
+  } */
 }
-
