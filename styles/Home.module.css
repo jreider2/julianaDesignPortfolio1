@@ -2,10 +2,10 @@
   background-color: var(--main-bg);
   background-image: url('/images/lightCirlce_mainPage.png');
   background-size: cover;
-  background-position: center -60vh;
+  background-position: center -45vh;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  padding-top: 5rem;
+  padding-top: 4rem;
   margin: 0;
   left: 0;
   right: 0;
@@ -23,7 +23,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(180deg, #172C5F 4.17%, rgba(23, 44, 95, 0.69) 53.65%, rgba(23, 44, 95, 0.00) 100%);
+  background: linear-gradient(180deg, #172C5F 4.17%, rgba(23, 44, 95, 0.69) 41.65%, rgba(23, 44, 95, 0.00) 100%);
   z-index: 1;
 }
 
@@ -33,6 +33,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 0px;
   position: relative;
   z-index: 2;
 }
@@ -53,8 +54,9 @@
   font-size: 6.25rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 6.875rem;
+  line-height: 5.5rem;
   letter-spacing: -0.1rem;
+  /* margin-bottom: 2rem; */
   display: inline;
 }
 
@@ -63,7 +65,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3.25rem;
+  margin-top: 3rem;
 }
 
 .heroSection h2 {
@@ -75,26 +77,29 @@
   line-height: normal;
   letter-spacing: 0.0375rem;
   text-transform: lowercase;
+  margin-bottom: 0rem;
+  margin-top: .5rem;
   position: relative;
   z-index: 2;
 }
 
 @media (max-width: 1030px) {
-  .EngineersLens {
-    font-size: 5rem;
-    line-height: 100%;
-  }
-
-  .designerVision {
-    font-size: 5rem;
-    line-height: 100%;
-  }
-
   .heroSection {
     background-position: center -10vh;
     min-height: 70vh;
     margin-top: 0vh;
     padding-top: 10rem;
+  }
+
+  .EngineersLens {
+    font-size: 5rem;
+    line-height: 100%;
+    margin-top: 5vh;
+  }
+
+  .designerVision {
+    font-size: 5rem;
+    line-height: 100%;
   }
 
   .heroSection h2 {
@@ -106,12 +111,12 @@
 
 @media (max-width: 714px) {
   .EngineersLens {
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 100%;
   }
 
   .designerVision {
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 100%;
   }
 
@@ -121,9 +126,14 @@
     margin-top: 5vh;
   }
 
+  .subheadContainer {
+    margin-top: 3rem;
+  }  
+
   .heroSection h2 {
-    font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: .8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
   }
 }
