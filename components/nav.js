@@ -6,26 +6,26 @@ export default function Nav() {
     <nav className={styles.nav}>
 
       <div className={styles.logoContainer}>
-      <div className={styles.circle}></div>
-      <Link href="/">
-        <span className={styles.navLink}>juliana reider</span>
-      </Link>
+        <div className={styles.circle}></div>
+        <Link href="/">
+          <span className={styles.navLink}>juliana reider</span>
+        </Link>
       </div>
 
       <div className={styles.centerLinks}>
-        <div className={styles.linkContainer}> 
-        <div className={styles.circleSmall}></div>
+        <div className={styles.linkContainer}>
+          <div className={styles.circleSmall}></div>
           <Link href="/">
-         <span className={styles.navLink}>work</span>
-        </Link>
+            <span className={styles.navLink}>work</span>
+          </Link>
         </div>
-       
-       <div className={styles.linkContainer}>
-       <div className={styles.circleSmall}></div>
-       <Link href="/about">
-        <span className={styles.navLink}>about</span>
-        </Link>
-       </div>
+
+        <div className={styles.linkContainer}>
+          <div className={styles.circleSmall}></div>
+          <Link href="/about">
+            <span className={styles.navLink}>about</span>
+          </Link>
+        </div>
 
       </div>
 
