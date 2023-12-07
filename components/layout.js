@@ -4,8 +4,9 @@ import Link from 'next/link';
 import styles from './layout.module.css';
 
 import Nav from './nav';
+import Footer from './Footer';
 
-export const siteTitle = 'Juliana Alexis-Reider Bhattacharya\'s Portfolio';
+export const siteTitle = "Juliana Alexis-Reider Bhattacharya's Portfolio";
 
 export default function Layout({ children, home }) {
   return (
@@ -36,6 +37,7 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      <Footer />
     </div>
   );
 }
