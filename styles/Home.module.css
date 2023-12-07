@@ -78,6 +78,31 @@
   z-index: 2;
 }
 
+@media (max-width: 1030px) {
+  .EngineersLens {
+    font-size: 5rem;
+    line-height: 100%;
+  }
+  .designerVision {
+    font-size: 5rem;
+    line-height: 100%;
+  }
+
+  .heroSection 
+  {
+    background-position: center -10vh;
+    min-height: 70vh;
+    margin-top: 0vh;
+    padding-top: 10rem;
+  }
+
+  .heroSection h2 {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+  }
+
 @media (max-width: 714px) {
   .EngineersLens {
     font-size: 3rem;
@@ -100,6 +125,4 @@
     padding-left: 1rem;
     padding-right: 1rem;
     }
-
-    /* todo style a hamburger menu for nav */
   }
