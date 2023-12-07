@@ -42,14 +42,14 @@
 
 .card .top_container .text_content p {
   color: var(--subheading-light-text, #A7B1CF);
-  font-family: SF Pro Rounded;
+  font-family: SF Pro Rounded, sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.0225rem;
   color: var(--subheading-light-text, #A7B1CF);
-  font-family: SF Pro Rounded;
+  font-family: SF Pro Rounded, sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;

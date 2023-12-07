@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
         <div className={styles.heroContainer}>
         <div className={styles.heroSection}>
 
-          <h1><span span className={styles.EngineersLens}>Engineer's Lens</span></h1>
+          <h1><span className={styles.EngineersLens}>Engineer's Lens</span></h1>
           <h1><span className={styles.designerVision}>Designer's Vision</span></h1>
           
           <div className={styles.subheadContainer}>

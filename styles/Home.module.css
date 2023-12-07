@@ -70,7 +70,7 @@
 
 .heroSection h2 {
   color: var(--light-text, #D5DCF4);
-  font-family: SF Pro Text;
+  font-family: SF Pro Rounded, sans-serif; 
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
