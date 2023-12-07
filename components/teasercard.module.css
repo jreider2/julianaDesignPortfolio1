@@ -43,5 +43,10 @@
     max-height: auto; /* Remove the max-height */
   }
   /* END: abpxx6d04wxr */
+
+  .card {
+    width: 90vw;
+    padding: 8px;
+  }
 }
 

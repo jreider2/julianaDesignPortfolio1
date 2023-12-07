@@ -5,12 +5,11 @@
   background-position: center -60vh;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  padding: 0;
+  padding-top:6rem;
   margin: 0;
   left: 0;
   right: 0;
   position: relative;
-  color: red;
   text-align: center;
   min-height: 115vh;
   margin-top: 20vh;
@@ -79,7 +78,7 @@
   z-index: 2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 714px) {
   .EngineersLens {
     font-size: 3rem;
     line-height: 100%;
@@ -88,9 +87,19 @@
     font-size: 3rem;
     line-height: 100%;
   }
-  .heroSection h2 {
-    font-size: 1rem;
+
+  .heroSection 
+  {
+    background-position: center -10vh;
+    min-height: 75vh;
+    margin-top: 5vh;
   }
 
-  /* todo style a hamburger menu for nav */
-}
+  .heroSection h2 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+
+    /* todo style a hamburger menu for nav */
+  }
