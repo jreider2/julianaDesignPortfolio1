@@ -1,9 +1,10 @@
-import { Flex, IconButton, Text } from "theme-ui";
-import Link from 'next/link';
-import Linkedin from "../../assets/linkedin.svg";
-import Github from "../../assets/github.svg";
-import Resume from "../../assets/resume.svg";
-import { LINKS } from "../../utils/constants";
+
+import { Flex, IconButton, Link, Text } from "theme-ui";
+import { Link as RRDLink } from "react-router-dom";
+import { ReactComponent as Linkedin } from "../../assets/linkedin.svg";
+import { ReactComponent as Github } from "../../assets/github.svg";
+import { ReactComponent as Resume } from "../../assets/resume.svg";
+import { LINKS, ROUTES } from "../../utils/constants";
 
 export default function Footer() {
   return (
@@ -24,48 +25,50 @@ export default function Footer() {
       <Text as="strong">I'm always up for a chat ☕</Text>
       <Text as="strong">
         Get in touch below or directly at{" "}
-        <a href={LINKS.EMAIL} style={{ variant: "email" }}>
+        <Link href={LINKS.EMAIL} variant="email">
           abdurrehmansultan4@gmail.com
-        </a>
+        </Link>
       </Text>
       <Flex sx={{ gap: "16px" }}>
-        <Link href="/" passHref>
-          <a>Home</a>
+        <Link as={RRDLink} to={ROUTES.HOME.path}>
+          Home
         </Link>
-        <a
+        <Link
           href={LINKS.RESUME}
           target="_blank"
-          style={{ svg: { mr: "2px", width: "10px", height: "auto" } }}
+          sx={{ svg: { mr: "2px", width: "10px", height: "auto" } }}
         >
           <Resume /> Resume
-        </a>
+        </Link>
         <Flex sx={{ gap: "9px" }}>
-          <a
+          <IconButton
+            as={Link}
             href={LINKS.LINKEDIN}
             target="__blank"
-            style={{
-              background: "transparent",
-              width: "20px",
-              height: "auto",
+            sx={{
+              bg: "transparent",
+              width: "20px !important",
+              height: "auto !important",
               padding: 0,
               "svg path": { fill: "strong" },
             }}
           >
             <Linkedin />
-          </a>
-          <a
+          </IconButton>
+          <IconButton
+            as={Link}
             href={LINKS.GITHUB}
             target="__blank"
-            style={{
-              background: "transparent",
-              width: "20px",
-              height: "auto",
+            sx={{
+              bg: "transparent",
+              width: "20px !important",
+              height: "auto !important",
               padding: 0,
               "svg path": { fill: "strong" },
             }}
           >
             <Github />
-          </a>
+          </IconButton>
         </Flex>
       </Flex>
     </Flex>
