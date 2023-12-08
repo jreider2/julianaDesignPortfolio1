@@ -24,7 +24,7 @@ export default function Footer() {
           <a href="YOUR_RESUME_LINK" target="_blank" className={styles.resumeLink}>
             Resume
           </a>
-          <a href="https://www.linkedin.com/in/juliana-reider-91425884/" target="_blank">
+          <a href="https://www.linkedin.com/in/juliana-reider/" target="_blank">
             <Image src={LinkedInIcon} alt="linkedIn" className={styles.LinkedInIcon} width={20} height={20} />
           </a>
           <a href="https://github.com/jreider2/nextjs-blog" target="_blank">
