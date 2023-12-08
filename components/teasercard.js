@@ -6,8 +6,9 @@ import Link from 'next/link';
 
 export default function TeaserCard({ title, description, image, link }) {
   return (
-    <Link href={link}>
+    
     <div className={styles.card}>
+      <Link href={link} className={styles.link}>
       <div className={styles.top_container}>
         <div className={styles.text_content}>
           <h3>{title}</h3>
@@ -20,7 +21,8 @@ export default function TeaserCard({ title, description, image, link }) {
       <div className={styles.imageContainer}>
         <img src={image} alt={title} className={styles.image} />
       </div>
+      </Link>
     </div>
-    </Link>
+    
   );
 }
