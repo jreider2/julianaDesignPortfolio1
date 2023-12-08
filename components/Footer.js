@@ -18,7 +18,7 @@ export default function Footer() {
           </a>
         </p>
         <div className={styles.linksContainer}>
-          <Link href="/">
+          <Link href="/" className={styles.homeLink}>
             Home
           </Link>
           <a href="YOUR_RESUME_LINK" target="_blank" className={styles.resumeLink}>
@@ -27,7 +27,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/juliana-reider-91425884/" target="_blank">
             <Image src={LinkedInIcon} alt="linkedIn" className={styles.LinkedInIcon} width={20} height={20} />
           </a>
-          <a href="GITHUB_PROFILE_LINK" target="_blank">
+          <a href="https://github.com/jreider2/nextjs-blog" target="_blank">
             <Image src={GitHubIcon} alt="github" className={styles.GitHubIcon} width={20} height={20} />
           </a>
         </div>
