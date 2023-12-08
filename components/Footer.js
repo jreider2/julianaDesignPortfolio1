@@ -1,76 +1,37 @@
-
-import { Flex, IconButton, Link, Text } from "theme-ui";
-import { Link as RRDLink } from "react-router-dom";
-import { ReactComponent as Linkedin } from "../../assets/linkedin.svg";
-import { ReactComponent as Github } from "../../assets/github.svg";
-import { ReactComponent as Resume } from "../../assets/resume.svg";
-import { LINKS, ROUTES } from "../../utils/constants";
+import Link from 'next/link';
+import styles from './footer.module.css';
+import LinkedInIcon from '/public/images/linkedin.png';
+import Image from 'next/image';
+import GitHubIcon from '/public/images/github.png';
 
 export default function Footer() {
   return (
-    <Flex
-      sx={{
-        flexDirection: "column",
-        gap: "16px",
-        pt: "16px",
-        fontSize: 3,
-        lineHeight: "normal",
-        "& > span, & > strong": { fontSize: "inherit", lineHeight: "inherit" },
-      }}
-    >
-      <Text as="strong">
-        derman sultan <span sx={{ fontFamily: "Arial", mx: "5px" }}>•</span>{" "}
-        {new Date().getFullYear()}
-      </Text>
-      <Text as="strong">I'm always up for a chat ☕</Text>
-      <Text as="strong">
-        Get in touch below or directly at{" "}
-        <Link href={LINKS.EMAIL} variant="email">
-          abdurrehmansultan4@gmail.com
-        </Link>
-      </Text>
-      <Flex sx={{ gap: "16px" }}>
-        <Link as={RRDLink} to={ROUTES.HOME.path}>
-          Home
-        </Link>
-        <Link
-          href={LINKS.RESUME}
-          target="_blank"
-          sx={{ svg: { mr: "2px", width: "10px", height: "auto" } }}
-        >
-          <Resume /> Resume
-        </Link>
-        <Flex sx={{ gap: "9px" }}>
-          <IconButton
-            as={Link}
-            href={LINKS.LINKEDIN}
-            target="__blank"
-            sx={{
-              bg: "transparent",
-              width: "20px !important",
-              height: "auto !important",
-              padding: 0,
-              "svg path": { fill: "strong" },
-            }}
-          >
-            <Linkedin />
-          </IconButton>
-          <IconButton
-            as={Link}
-            href={LINKS.GITHUB}
-            target="__blank"
-            sx={{
-              bg: "transparent",
-              width: "20px !important",
-              height: "auto !important",
-              padding: 0,
-              "svg path": { fill: "strong" },
-            }}
-          >
-            <Github />
-          </IconButton>
-        </Flex>
-      </Flex>
-    </Flex>
+    <div className={styles.footer}>
+      <div className={styles.innerContainer}>
+        <p>
+          Juliana Reider <span className={styles.separator}>•</span> {new Date().getFullYear()}
+        </p>
+        <p>
+          Get in touch below or directly at{' '}
+          <a href="mailto:jreider@luc.edu" className={styles.email}>
+            jreider@luc.edu
+          </a>
+        </p>
+        <div className={styles.linksContainer}>
+          <Link href="/">
+            Home
+          </Link>
+          <a href="YOUR_RESUME_LINK" target="_blank" className={styles.resumeLink}>
+            Resume
+          </a>
+          <a href="https://www.linkedin.com/in/juliana-reider-91425884/" target="_blank">
+            <Image src={LinkedInIcon} alt="linkedIn" className={styles.LinkedInIcon} width={20} height={20} />
+          </a>
+          <a href="GITHUB_PROFILE_LINK" target="_blank">
+            <Image src={GitHubIcon} alt="github" className={styles.GitHubIcon} width={20} height={20} />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
