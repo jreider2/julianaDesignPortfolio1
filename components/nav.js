@@ -7,7 +7,7 @@ export default function Nav() {
 
       <div className={styles.logoContainer}>
         <div className={styles.circle}></div>
-        <Link href="/">
+        <Link href="/about">
           <span className={styles.navLink}>juliana reider</span>
         </Link>
       </div>

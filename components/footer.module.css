@@ -35,24 +35,28 @@
     padding-left: .3%;
 }
 
+.email:hover {
+    color: #B892FF;
+    text-decoration: none;
+}
+
 .linksContainer {
     display: flex;
     gap: 1rem;
-    width: 100%;/* Make it fill the .innerContainer */
+    /* Make it fill the .innerContainer */
+    width: 100%;
 }
 
-.resumeLink {
-    color: var(--subheading-light-text, #A7B1CF);
-    /* text-decoration: none; */
-}
-
+.resumeLink,
 .homeLink {
     color: var(--subheading-light-text, #A7B1CF);
 }
 
-/* .footer .linksContainer .GitHubIcon {}
-
-.footer .linksContainer .LinkedInIcon {} */
+.resumeLink:hover,
+.homeLink:hover {
+    color: #B892FF;
+    text-decoration: none;
+}
 
 @media (max-width: 600px) {
     .footer {
