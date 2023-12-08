@@ -1,7 +1,6 @@
 import React from 'react';
 import RightArrow from './rightArrow';
 import styles from "./teasercard.module.css";
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function TeaserCard({ title, description, image, link }) {
