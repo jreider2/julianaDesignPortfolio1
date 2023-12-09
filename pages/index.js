@@ -23,8 +23,8 @@ export default function Home({ allPostsData }) {
           <h1><span className={styles.designerVision}>Designer's Vision</span></h1>
           
           <div className={styles.subheadContainer}>
-          <h2 >hi! i’m juliana, an engineer turned product designer.</h2>
-          <h2>my methodical nature merges aesthetics with functionality.</h2>
+          <h2>hi! i’m juliana, an engineer turned product designer.</h2>
+          <h2 className={styles.subhead2}>my methodical nature merges aesthetics with functionality.</h2>
           </div>
           
           <div className={arrowStyles.arrowDown}>↓</div>
