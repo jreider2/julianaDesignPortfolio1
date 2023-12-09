@@ -31,8 +31,8 @@ export default function Home({ allPostsData }) {
 
         </div>
         </div>
-        <TeaserCard title="Thought Filter" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png" link={"/thoughtFilter"}></TeaserCard>
-        <TeaserCard title="Convo Scope" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png" link={"/convoScope"}></TeaserCard>
+        <TeaserCard title="Thought Filter" description="Designing an AI generator tool for content marketers." image="/images/macx2.png" link={"/thoughtFilter"}></TeaserCard>
+        <TeaserCard title="Convoscope" description="Designing a context AI for MIT Media Lab" image="/images/macx2.png" link={"/convoScope"}></TeaserCard>
         <TeaserCard title="Case 3" description="Impress  –  loreum Iptsom something or another thing to say." image="/images/macx2.png" link={"/case3"}></TeaserCard>
       </Layout >
     </>

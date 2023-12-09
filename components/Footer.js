@@ -9,15 +9,20 @@ export default function Footer() {
     <div className={styles.footer}>
       <div className={styles.innerContainer}>
         <p>
-          Juliana Reider <span className={styles.separator}>•</span> {new Date().getFullYear()}
+          {/* Juliana Reider 
+          <span className={styles.separator}>•</span>  */}
+          Made with ♥
+          {/* <span className={styles.separator}>•</span> 
+          {new Date().getFullYear()}  */}
         </p>
+        {/* <div className={styles.linksContainer}>Made with &lt;3</div> */}
         <p>
-          Get in touch below or directly at{' '}
-          <a href="mailto:jreider@luc.edu" className={styles.email}>
-            jreider@luc.edu
-          </a>
-        </p>
-        <div className={styles.linksContainer}>
+            Email me at{' '}
+            <a href="mailto:jreider@luc.edu" className={styles.email}>
+              jreider@luc.edu
+            </a>
+          </p>
+          <div className={styles.linksContainer}>
           <Link href="/" className={styles.homeLink}>
             Home
           </Link>
