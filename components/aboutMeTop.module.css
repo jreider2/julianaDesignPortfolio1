@@ -1,0 +1,25 @@
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
+}
+
+.title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* leading-trim: both;
+    text-edge: cap; */
+    font-family: MuseoModerno;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.125rem;
+    background: linear-gradient(180deg, #A7B2D9 30%, #F7F9FF 51.04%, #939DBF 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}  

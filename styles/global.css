@@ -7,7 +7,8 @@ body {
 }
 
 :root {
-  --Title-Light-Text-Gradient: linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%);
+  --Title-Light-Text-Gradient: -webkit-linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%);
+  --Title-Gradient-2: linear-gradient(180deg, #6679BD 30.38%, #F7F9FF 54.98%, #5C6EAD 70.42%);
   --main-bg: #172C5F;
   --light-text: #D5DCF4;
   --subheading-light-text: #A7B1CF;
