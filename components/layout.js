@@ -32,11 +32,11 @@ export default function Layout({ children, home }) {
       <main>
         {children} {/* Content specific to each page */}
       </main>
-      {!home && (
+      {/* {!home && (
         <div className={styles.backToHome}>
           <Link href="/">← Back to home</Link>
         </div>
-      )}
+      )} */}
       <Footer />
     </div>
   );

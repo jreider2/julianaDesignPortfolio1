@@ -40,7 +40,7 @@
   font-style: normal;
   font-weight: 300;
   letter-spacing: -0.05rem;
-  background: var(--Title-Light-Text-Gradient, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%));
+  background: linear-gradient(180deg, #A7B2D9 30%, #F7F9FF 51.04%, #939DBF 77%); /*percentage is adjusted for the card */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
