@@ -17,10 +17,10 @@ export default function AboutMeTop({ children, home }) {
                     <Image src={profileImage} alt="Image" layout="intrinsic"/>
                 </div>
                 <div>
-                    <p>My experience as an engineer at a consulting firm, working across sectors 
-                        like consumer electronics, natural gas, and finance, taught me to 
+                    <p>My experience as a senior software engineer at a top-tier consulting firm, working across sectors 
+                        like B2C software, consumer electronics, natural gas, and fintech, taught me to 
                         <span className={styles.emphasis}> quickly grasp complex information </span> 
-                        and turn challenges into manageable solutions.</p>
+                        and turn challenges into manageable solutions. Some of my work has affected millions of people.</p>
                     <p>This 
                     <span className={styles.emphasis}> foundation in analytical thinking </span>
                         and problem-solving paved the way for my transition to product design, 

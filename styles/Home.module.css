@@ -82,6 +82,12 @@
   z-index: 2;
 }
 
+.ghost {
+  position: relative;
+  z-index: 2;
+  top:-200px;
+}
+
 @media (max-width: 1030px) {
   .heroSection {
     background-position: center -10vh;

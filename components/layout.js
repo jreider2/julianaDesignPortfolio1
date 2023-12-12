@@ -5,10 +5,11 @@ import styles from './layout.module.css';
 
 import Nav from './nav';
 import Footer from './Footer';
+import React from 'react';
 
 export const siteTitle = "Juliana Alexis-Reider Bhattacharya's Portfolio";
 
-export default function Layout({ children, home }) {
+const Layout = React.forwardRef(({ children, home }, ref) => {
   return (
     <div>
       <Head>
@@ -27,7 +28,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        <Nav />
+        <Nav ref={ref} home={home} />
       </header>
       <main>
         {children} {/* Content specific to each page */}
@@ -40,4 +41,6 @@ export default function Layout({ children, home }) {
       <Footer />
     </div>
   );
-}
+});
+
+export default Layout;
