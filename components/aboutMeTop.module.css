@@ -6,9 +6,10 @@
     padding: 0rem;
     background-image: url('/images/DarkishCircle.png');
     background-size: cover;
-    background-position: center -35vh;
+    /* background-position: center -110vh; */
+    background-position: right -150vh;
     background-repeat: no-repeat;
-    background-size: 80%;
+    /* background-size: 130%; */
 }
 
 .titleContainer {
@@ -51,38 +52,40 @@
 .flexContainer1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
     justify-content: space-evenly;
     color: var(--subheading-light-text, #A7B1CF);
     text-align: justify;
     font-family: SF Pro Text, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    width: 60%;
+    width: 90%;
+    padding-top: 3rem;
     /* 2.25rem */
-}
-
-.emphasis {
-    color: var(--light-text, #D5DCF4);
-    font-family: SF Pro Text, sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    gap: 2rem;
 }
 
 .imageContainer {
     fill: lightgray 50% / cover no-repeat, linear-gradient(180deg, #2A4075 0%, #1D3369 100%);
     mix-blend-mode: luminosity;
     backdrop-filter: blur(23px);
-    max-width: 20rem;
+    max-width: 30rem;
 }
 
 .f1Text1 {
-    max-width: 20rem;
+    max-width: 30rem;
+}
+
+.f1Text1 p:first-child {
+    margin-top: 0rem;
+}
+
+.emphasis {
+    color: var(--light-text, #D5DCF4);
+    font-weight: 400;
 }
 
 .flexContainer2 {
@@ -92,6 +95,8 @@
     font-style: normal;
     font-weight: 200;
     line-height: 100%;
+    max-width: 65%;
+    text-align: center;
 }
 
 .emphasis2 {
@@ -114,17 +119,6 @@
     line-height: 100%;
 }
 
-.flexContainer3 {
-    color: var(--subheading-light-text, #A7B1CF);
-    leading-trim: both;
-    text-edge: cap;
-    font-family: SF Pro Text;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-}
-
 .midtitle {
     text-align: justify;
     font-family: MuseoModerno;
@@ -139,6 +133,36 @@
     -webkit-text-fill-color: transparent;
 }
 
+.callout {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: MuseoModerno;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 150%;
+    /* 9.375rem */
+    background: var(--Title-Gradient-2, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.calloutEmphasis {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: MuseoModerno;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 9.375rem */
+    background: var(--Title-Gradient-2, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 1030px) {
     .fullContent {
         background-size: 90%;
@@ -147,7 +171,17 @@
 }
 
 @media (max-width: 714px) {
+    .fullContent {
+        background-position: center -35vh;
+        background-size: 150%;
+    }
+
     .title {
         font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+        width: 85%;
     }
 }
