@@ -12,6 +12,7 @@ body {
   --main-bg: #172C5F;
   --light-text: #D5DCF4;
   --subheading-light-text: #A7B1CF;
+  --Light-blue: #D5DCF4;
   background-color: var(--main-bg); 
 }
 

@@ -21,5 +21,75 @@
     background: linear-gradient(180deg, #A7B2D9 30%, #F7F9FF 51.04%, #939DBF 70%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
-}  
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--Light-blue, #D5DCF4);
+    font-family: MuseoModerno;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 3rem */
+}
+
+.flexContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--subheading-light-text, #A7B1CF);
+    text-align: justify;
+    font-family: SF Pro Text, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 2.25rem */
+    
+}
+
+.emphasis {
+    color: var(--light-text, #D5DCF4);
+    font-family: SF Pro Text, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.imageContainer {
+    fill: lightgray 50% / cover no-repeat, linear-gradient(180deg, #2A4075 0%, #1D3369 100%);
+    mix-blend-mode: luminosity;
+    backdrop-filter: blur(23px);
+}
+
+.flexContainer2 {
+    color: var(--subheading-light-text, #A7B1CF);
+    font-family: SF Pro Text, sans-serif;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%;
+}
+
+.emphasis2 {
+    text-align: center;
+    font-family: MuseoModerno;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 3.75rem */
+    background: linear-gradient(180deg, #A7B2D9 20%, #F7F9FF 51.04%, #939DBF 93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--light-text, #D5DCF4);
+    font-family: MuseoModerno;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
