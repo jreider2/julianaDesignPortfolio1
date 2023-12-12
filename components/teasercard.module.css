@@ -87,8 +87,8 @@
   /* center the image horizontally */
   width: 90%;
   height: auto;
-  max-width: 33rem;
-  max-height: 27.23075rem;
+  max-width: 36rem;
+  max-height: auto;
   margin-bottom: 2rem;
 }
 
