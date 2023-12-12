@@ -93,3 +93,27 @@
     font-weight: 500;
     line-height: 100%;
 }
+
+.flexContainer3 {
+    color: var(--subheading-light-text, #A7B1CF);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: SF Pro Text;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.midtitle {
+    text-align: justify;
+font-family: MuseoModerno;
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 3rem */
+background: var(--Title-Light-Text-Gradient, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

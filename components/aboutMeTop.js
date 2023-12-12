@@ -19,7 +19,7 @@ export default function AboutMeTop({ children, home }) {
                 <div>
                     <p>My experience as an engineer at a consulting firm, working across sectors 
                         like consumer electronics, natural gas, and finance, taught me to 
-                        <span className={styles.emphasis}> quickly grasp complex information</span> 
+                        <span className={styles.emphasis}> quickly grasp complex information </span> 
                         and turn challenges into manageable solutions.</p>
                     <p>This 
                     <span className={styles.emphasis}> foundation in analytical thinking </span>
@@ -45,6 +45,7 @@ export default function AboutMeTop({ children, home }) {
                     <Image src={profileImage} alt="Image" layout="intrinsic" />
                 </div>
                 <div>
+                    <h3 className={styles.midTitle}>text part 1</h3>
                     <p>text part 1
                         <span className={styles.emphasis}> specail text</span> 
                         end of paragraph</p>
