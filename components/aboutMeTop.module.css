@@ -1,17 +1,29 @@
+.fullContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem;
+    background-image: url('/images/DarkishCircle.png');
+    background-size: cover;
+    background-position: center -35vh;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
 .titleContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 8rem;
+    padding-top: 8rem;
+    width: 100%;
 }
 
 .title {
     align-items: center;
     justify-content: center;
     display: flex;
-    /* leading-trim: both;
-    text-edge: cap; */
     font-family: MuseoModerno;
     font-size: 6.25rem;
     font-style: normal;
@@ -27,10 +39,12 @@
 .subtitle {
     color: var(--Light-blue, #D5DCF4);
     font-family: MuseoModerno;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 150%;
+    width: 64%;
+    text-align: center;
     /* 3rem */
 }
 
@@ -38,7 +52,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     color: var(--subheading-light-text, #A7B1CF);
     text-align: justify;
     font-family: SF Pro Text, sans-serif;
@@ -46,8 +61,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    width: 60%;
     /* 2.25rem */
-    
 }
 
 .emphasis {
@@ -63,6 +78,11 @@
     fill: lightgray 50% / cover no-repeat, linear-gradient(180deg, #2A4075 0%, #1D3369 100%);
     mix-blend-mode: luminosity;
     backdrop-filter: blur(23px);
+    max-width: 20rem;
+}
+
+.f1Text1 {
+    max-width: 20rem;
 }
 
 .flexContainer2 {
@@ -95,25 +115,39 @@
 }
 
 .flexContainer3 {
- color: var(--subheading-light-text, #A7B1CF);
-leading-trim: both;
-text-edge: cap;
-font-family: SF Pro Text;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: 150%;
+    color: var(--subheading-light-text, #A7B1CF);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: SF Pro Text;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 .midtitle {
     text-align: justify;
-font-family: MuseoModerno;
-font-size: 2rem;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 3rem */
-background: var(--Title-Light-Text-Gradient, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    font-family: MuseoModerno;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 3rem */
+    background: var(--Title-Light-Text-Gradient, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1030px) {
+    .fullContent {
+        background-size: 90%;
+        background-position: center -2vh;
+    }
+}
+
+@media (max-width: 714px) {
+    .title {
+        font-size: 3rem;
+    }
 }
