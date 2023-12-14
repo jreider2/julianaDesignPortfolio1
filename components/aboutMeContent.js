@@ -1,12 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 import profileImage from '/public/images/me.png';
 
 import styles from "./aboutMeContent.module.css";
 
 export default function AboutMeContent({ children, home }) {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+  
+    useEffect(() => {
+      if (inView) {
+        controls.start('visible');
+      }
+    }, [controls, inView]);
+
     return (
         <div className={styles.fullContent}>
             <motion.div className={styles.titleContainer}
@@ -77,10 +88,16 @@ export default function AboutMeContent({ children, home }) {
                     </p>
                 </div>
             </div>
-            <motion.p className={styles.callout}
-                initial={{ opacity: 0, y: 5 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+            <motion.p 
+                  ref={ref}
+                  initial="hidden"
+                  animate={controls}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 5 }
+                  }}
+                  transition={{ delay: .5, duration: 1 }}
+                  className={styles.callout}
             >
                 Let’s create something
                 <span className={styles.calloutEmphasis}> amazing together.</span>

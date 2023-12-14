@@ -1,93 +1,95 @@
 .navLink {
-    margin-right: 0px; /* Adjust the value as needed */
-    color:#D5DCF4;
-    
-  }
+  margin-right: 0px;
+  /* Adjust the value as needed */
+  color: #D5DCF4;
 
-  .nav a {
-    text-decoration: none;
-  }
+}
 
-  .navLink:hover {
-    color:#B892FF;
-  }
+.nav a {
+  text-decoration: none;
+}
 
-  .centerLinks {
-    display: flex;
-    flex-direction: row;
-    column-gap:24px;
-  }
+.navLink:hover {
+  color: #B892FF;
+}
 
+.centerLinks {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  position: fixed;
+  top: 24px;
+  z-index: 100;
+  border-radius: 300px;
+  background: var(--menu-bg-2, rgba(23, 44, 95, 0.40));
+  backdrop-filter: blur(20px);
+  padding: 24px 12px;
+}
+
+.primaryCTA {
+  background-color: #B892FF;
+  color: var(--main-bg);
+  padding: 12px 14px;
+  border-radius: 33px;
+
+}
+
+.primaryCTA:hover {
+  background-color: var(--light-text);
+  color: var(--main-bg);
+}
+
+.circleSmall {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #B892FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #B892FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+
+  /* BEGIN: abpxx6d04wxr */
   .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width:60%;
-    position: fixed;
-    top:24px;
-    z-index: 100;
-    border-radius: 300px;
-    background: var(--menu-bg-2, rgba(23, 44, 95, 0.40));
-    backdrop-filter: blur(20px);
-    padding:24px 12px;
+    width: 90vw;
+    padding: 28px;
+    border-radius: 00px;
+    top: 0px;
   }
-
-  .primaryCTA {
-    background-color: #B892FF;
-    color:var(--main-bg);
-    padding: 12px 14px;
-    border-radius: 33px;
-    
-  }
-
-  .primaryCTA:hover {
-    background-color: var(--light-text);
-    color:var(--main-bg);
-  }
-
-  .circleSmall {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #B892FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .linkContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    column-gap: 8px;
-  }
-
-  .logoContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    column-gap: 8px;
-  }
-
-  .circle {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #B892FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 600px) {
-    /* BEGIN: abpxx6d04wxr */
-    .nav {
-      width: 90vw;
-      padding: 12px;
-    }
-
-  }
-
+}
