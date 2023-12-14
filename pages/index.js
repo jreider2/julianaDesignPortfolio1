@@ -25,22 +25,26 @@ export default function Home({ allPostsData }) {
         <div className={styles.heroContainer}>
           <div className={styles.heroSection}>
 
-            <h1><span className={styles.EngineersLens}>Engineer's Lens</span></h1>
-            <h1><span className={styles.designerVision}>Designer's Vision</span></h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            ><span className={styles.EngineersLens}>Engineer's Lens</span><br></br>
+              <span className={styles.designerVision}>Designer's Vision</span></motion.h1>
 
-            <div className={styles.subheadContainer}>
-              <motion.h2
-                initial={{ opacity: 0, y: 5 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-              >hi! i’m juliana, an engineer turned product designer.</motion.h2>
+            <motion.div className={styles.subheadContainer}
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+            >
+              <h2>hi! i’m juliana, an engineer turned product designer.</h2>
               <h2 className={styles.subhead2}>my methodical nature merges aesthetics with functionality.</h2>
-            </div>
+            </motion.div>
 
             <motion.div onClick={() => scrollToWork()}
               initial={{ y: 10 }}
               animate={{ y: 0 }}
-              transition={{delay:1, duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+              transition={{ delay: 2, duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
               className={arrowStyles.arrowDown}>↓</motion.div>
           </div>
         </div>

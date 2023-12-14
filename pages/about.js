@@ -1,11 +1,11 @@
 import Layout from '../components/layout';
-import AboutMeTop from '../components/aboutMeTop';
+import AboutMeContent from '../components/aboutMeContent';
 
 export default function About() {
   return (
     <Layout>
       {/* Content for About page */}
-      <AboutMeTop />
+      <AboutMeContent />
     </Layout>
   );
 }

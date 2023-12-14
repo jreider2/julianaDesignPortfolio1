@@ -1,18 +1,28 @@
 import React from 'react';
-import styles from "./aboutMeTop.module.css";
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
 import profileImage from '/public/images/me.png';
 
+import styles from "./aboutMeContent.module.css";
 
-export default function AboutMeTop({ children, home }) {
+export default function AboutMeContent({ children, home }) {
     return (
         <div className={styles.fullContent}>
-            <div className={styles.titleContainer}>
+            <motion.div className={styles.titleContainer}
+                initial={{ opacity: 0, y: 5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
                 <h1 className={styles.title}>about me</h1>
 
                 <h2 className={styles.subtitle}>I’m Juliana, a software engineer turned product designer. </h2>
-            </div>
-            <div className={styles.flexContainer1}>
+            </motion.div>
+            <motion.div className={styles.flexContainer1}
+                initial={{ opacity: 0, y: 5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1, duration: 1 }}
+            >
                 {/* Flexbox container 1 */}
                 <div className={styles.imageContainer}>
                     <Image src={profileImage} alt="Image" layout="intrinsic" />
@@ -28,7 +38,7 @@ export default function AboutMeTop({ children, home }) {
                         where I found a deeper satisfaction in blending those skills with my visual
                         problem-solving abilities and my aesthetic sense on a daily basis.</p>
                 </div>
-            </div>
+            </motion.div>
             <div className={styles.flexContainer2}>
                 {/* Flexbox container 2 */}
                 <p> <span className={styles.emphasis2}>My pursuit of learning </span>
@@ -67,10 +77,14 @@ export default function AboutMeTop({ children, home }) {
                     </p>
                 </div>
             </div>
-            <p className={styles.callout}>
+            <motion.p className={styles.callout}
+                initial={{ opacity: 0, y: 5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
                 Let’s create something
                 <span className={styles.calloutEmphasis}> amazing together.</span>
-            </p>
+            </motion.p>
             <div className={styles.flexContainer5}>
                 {/* Flexbox container 5 */}
                 <div className={styles.imageContainer}>

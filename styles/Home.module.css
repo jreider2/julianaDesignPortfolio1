@@ -27,6 +27,11 @@
   z-index: 1;
 }
 
+.heroSection h1 {
+  position: relative;
+  z-index: 2;
+}
+
 .heroSection h1 span {
   font-family: 'MuseoModerno', sans-serif;
   background-clip: text;
@@ -46,6 +51,8 @@
   /* 110% */
   letter-spacing: -0.1rem;
   display: inline;
+  position: relative;
+  z-index: 2;
 }
 
 .designerVision {
@@ -57,6 +64,8 @@
   letter-spacing: -0.1rem;
   /* margin-bottom: 2rem; */
   display: inline;
+  position: relative;
+  z-index: 2;
 }
 
 .subheadContainer {
@@ -65,6 +74,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 .heroSection h2 {

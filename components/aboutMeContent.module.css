@@ -4,12 +4,14 @@
     align-items: center;
     flex-direction: column;
     padding: 0rem;
-    background-image: url('/images/DarkishCircle.png');
+    background-image: url('/images/AlternateDarkCircle.png');
     background-size: cover;
     /* background-position: center -110vh; */
-    background-position: right -150vh;
+    /* background-position: right -150vh; */
+    /* background-position: center -35vh; */
     background-repeat: no-repeat;
-    /* background-size: 130%; */
+    background-size: 100%;
+    width: 100%;
 }
 
 .titleContainer {
@@ -134,10 +136,8 @@
 }
 
 .callout {
-    leading-trim: both;
-    text-edge: cap;
     font-family: MuseoModerno;
-    font-size: 6.25rem;
+    font-size: 6.25rem; /* same size as title */
     font-style: normal;
     font-weight: 200;
     line-height: 150%;
@@ -165,9 +165,25 @@
 
 @media (max-width: 1030px) {
     .fullContent {
-        background-size: 90%;
-        background-position: center -2vh;
+        /* background-size: 90%;
+        background-position: center -2vh; */
     }
+
+    .flexContainer2 {
+        font-size: 1.8rem; /* same size as subtitle*/
+        max-width: 60%;
+    }
+
+    .emphasis2 {
+        font-size: 1.8rem;/* same size as subtitle*/
+    }
+
+    .callout {
+        /* keep the same size as title or the other quote 
+        currently it's the same size as title */
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 714px) {
@@ -181,7 +197,26 @@
     }
 
     .subtitle {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         width: 85%;
+    }
+
+    .flexContainer2 {
+        font-size: 1.5rem;
+        max-width: 85%;
+    }
+
+    .emphasis2 {
+        font-size: 1.5rem;
+    }
+
+    
+    .callout {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .calloutEmphasis {
+        font-size: 4rem;
     }
 }
