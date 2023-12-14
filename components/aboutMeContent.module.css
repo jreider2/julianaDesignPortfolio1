@@ -8,7 +8,6 @@
     background-size: cover;
     /* background-position: center -110vh; */
     /* background-position: right -150vh; */
-    /* background-position: center -35vh; */
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -189,7 +188,7 @@
 
 @media (max-width: 714px) {
     .fullContent {
-        background-position: center -35vh;
+        background-position: center 5vh;
         background-size: 150%;
     }
 
@@ -199,6 +198,10 @@
 
     .subtitle {
         font-size: 1.5rem;
+        width: 85%;
+    }
+
+    .flexContainer1 {
         width: 85%;
     }
 
