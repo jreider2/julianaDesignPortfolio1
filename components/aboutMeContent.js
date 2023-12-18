@@ -11,11 +11,11 @@ import styles from "./aboutMeContent.module.css";
 export default function AboutMeContent({ children, home }) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
-  
+
     useEffect(() => {
-      if (inView) {
-        controls.start('visible');
-      }
+        if (inView) {
+            controls.start('visible');
+        }
     }, [controls, inView]);
 
     return (
@@ -40,19 +40,19 @@ export default function AboutMeContent({ children, home }) {
                 </div>
                 <div className={styles.f1Text1}>
                     <p>My experience as a senior software engineer at a top-tier consulting firm, working across sectors
-                        like B2C software, consumer electronics, natural gas, and fintech, taught me to
+                        like B2C software, govtech, fintech, and natural gas, taught me to
                         <span className={styles.emphasis}> quickly grasp complex information </span>
                         and turn challenges into manageable solutions. Some of my work has affected millions of people.</p>
                     <p>This
                         <span className={styles.emphasis}> foundation in analytical thinking </span>
-                        and problem-solving paved the way for my transition to product design,
-                        where I found a deeper satisfaction in blending those skills with my visual
-                        problem-solving abilities and my aesthetic sense on a daily basis.</p>
+                        and problem-solving paved the way for my transition to product design.
+                        As a product designer I am able to find a deeper satisfaction in blending those skills with my visual
+                        problem-solving abilities, and my aesthetic sense, on a daily basis.</p>
                 </div>
             </motion.div>
             <div className={styles.flexContainer2}>
                 {/* Flexbox container 2 */}
-                <p> <span className={styles.emphasis2}>My pursuit of learning </span>
+                <p> My <span className={styles.emphasis2}> pursuit of learning </span>
                     how to best design useable products,
                     combined with my experience in development,
                     has enabled me to view design through
@@ -74,7 +74,7 @@ export default function AboutMeContent({ children, home }) {
                     <Image src={profileImage} alt="Image" layout="intrinsic" />
                 </div>
             </div>
-            <div className={styles.flexContainer1}>
+            <div className={`${styles.flexContainer1} ${styles.addedPadding}`}>
                 {/* Flexbox container 4 */}
                 <div className={styles.imageContainer}>
                     <Image src={profileImage} alt="Image" layout="intrinsic" />
@@ -82,37 +82,46 @@ export default function AboutMeContent({ children, home }) {
                 <div className={styles.f1Text1}>
                     <h3 className={styles.midTitle}>Collaboration, Communication, and Mentorship</h3>
                     <p>My consultancy background underlines the importance of teamwork, proactive communication, and adaptability.
-                        These skills, along with my experience as an ESL teacher in Japan and
+                        These skills, along with my experience as an ESL teacher in Japan, and
                         <span className={styles.emphasis}> mentoring young engineers</span>
                         , have ingrained a strong sense of mentorship and collaboration in me, which I eagerly bring to the world of design.
                     </p>
                 </div>
             </div>
-            <motion.p 
-                  ref={ref}
-                  initial="hidden"
-                  animate={controls}
-                  variants={{
+            <motion.p
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={{
                     visible: { opacity: 1, y: 0 },
                     hidden: { opacity: 0, y: 5 }
-                  }}
-                  transition={{ delay: .5, duration: 1 }}
-                  className={styles.callout}
+                }}
+                transition={{ delay: .5, duration: 1 }}
+                className={styles.callout}
             >
                 Let’s create something
                 <span className={styles.calloutEmphasis}> amazing together.</span>
             </motion.p>
-            <div className={styles.flexContainer5}>
+            <div className={`${styles.flexContainer1}`}>
                 {/* Flexbox container 5 */}
-                <div className={styles.imageContainer}>
-                    <Image src={profileImage} alt="Image" layout="intrinsic" />
+                <div className={`${styles.imageContainer} ${styles.image3}`}>
+                    <Image src={profileImage} alt="Image" layout="fill" objectFit="cover" />
                 </div>
                 <div className={styles.f1Text1}>
-                    <h3 className={styles.midTitle}>Collaboration, Communication, and Mentorship</h3>
-                    <p>My consultancy background underlines the importance of teamwork, proactive communication, and adaptability.
-                        These skills, along with my experience as an ESL teacher in Japan and
-                        <span className={styles.emphasis}> mentoring young engineers</span>
-                        , have ingrained a strong sense of mentorship and collaboration in me, which I eagerly bring to the world of design.
+                    <h3 className={styles.midTitle}>A Peek into My World</h3>
+                    <p>Outside of work, I'm an avid needlepointer, a devoted dog mom to my poodle,
+                        and a partner in adventure to my husband.
+                        Whether it's swimming, hiking, or reading my favorite poets,
+                        I cherish these moments that bring
+                        <span className={styles.emphasis}> balance and joy to my life.</span>
+                    </p>
+                    <h3 className={styles.midTitle}>Looking Ahead</h3>
+                    <p>I'm excited to use my
+                        <span className={styles.emphasis}>
+                            {' '} methodical nature, technical background, and creative insights
+                        </span>
+                        to create products that are not only visually appealing
+                        but also functional and intuitive.
                     </p>
                 </div>
             </div>

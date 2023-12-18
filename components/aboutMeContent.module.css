@@ -58,13 +58,13 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     color: var(--subheading-light-text, #A7B1CF);
-    text-align: justify;
+    text-align: start;
     font-family: SF Pro Text, sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    width: 90%;
+    width: 60rem;
     /* 2.25rem */
     gap: 2rem;
 }
@@ -73,7 +73,7 @@
     fill: lightgray 50% / cover no-repeat, linear-gradient(180deg, #2A4075 0%, #1D3369 100%);
     mix-blend-mode: luminosity;
     backdrop-filter: blur(23px);
-    max-width: 30rem;
+    max-width: 20rem;
 }
 
 .f1Text1 {
@@ -128,7 +128,8 @@
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 3rem */
+    line-height: 150%;
+    /* 3rem */
     background: linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -137,7 +138,8 @@
 
 .callout {
     font-family: MuseoModerno;
-    font-size: 6.25rem; /* same size as title */
+    font-size: 6.25rem;
+    /* same size as title */
     font-style: normal;
     font-weight: 200;
     line-height: 150%;
@@ -164,6 +166,18 @@
     -webkit-text-fill-color: transparent;
 }
 
+.addedPadding {
+    padding-top: 4rem;
+}
+
+.image3 {
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 @media (max-width: 1030px) {
     .fullContent {
         /* background-size: 90%;
@@ -171,12 +185,14 @@
     }
 
     .flexContainer2 {
-        font-size: 1.8rem; /* same size as subtitle*/
+        font-size: 1.8rem;
+        /* same size as subtitle*/
         max-width: 60%;
     }
 
     .emphasis2 {
-        font-size: 1.8rem;/* same size as subtitle*/
+        font-size: 1.8rem;
+        /* same size as subtitle*/
     }
 
     .callout {
@@ -215,7 +231,7 @@
         font-size: 1.5rem;
     }
 
-    
+
     .callout {
         font-size: 4rem;
         text-align: center;
