@@ -81,7 +81,7 @@ export default function AboutMeContent({ children, home }) {
                 </div>
                 <div className={styles.f1Text1}>
                     <h3 className={styles.midTitle}>Collaboration, Communication, and Mentorship</h3>
-                    <p>My consultancy background underlines the importance of teamwork, proactive communication, and adaptability.
+                    <p className={styles.removeBottomMargin}>My consultancy background underlines the importance of teamwork, proactive communication, and adaptability.
                         These skills, along with my experience as an ESL teacher in Japan, and
                         <span className={styles.emphasis}> mentoring young engineers</span>
                         , have ingrained a strong sense of mentorship and collaboration in me, which I eagerly bring to the world of design.
@@ -105,7 +105,7 @@ export default function AboutMeContent({ children, home }) {
             <div className={`${styles.flexContainer1}`}>
                 {/* Flexbox container 5 */}
                 <div className={`${styles.imageContainer} ${styles.image3}`}>
-                    <Image src={profileImage} alt="Image" layout="fill" objectFit="cover" />
+                     <Image src={profileImage} alt="Image" layout="intrinsic" /> {/*layout="fill" objectFit="cover" */}
                 </div>
                 <div className={styles.f1Text1}>
                     <h3 className={styles.midTitle}>A Peek into My World</h3>
