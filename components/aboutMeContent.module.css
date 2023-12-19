@@ -4,13 +4,37 @@
     align-items: center;
     flex-direction: column;
     padding: 0rem;
+
+    /* the image in the background */
     background-image: url('/images/AlternateDarkCircle.png');
     background-size: cover;
+    /* background-color: var(--main-bg); */
+    background-image: url('/images/lightCirlce_mainPage.png');
+    background-position: center -45vh;
+    position: relative;
+    text-align: center;
+    /* background-attachment: fixed; */
+
+
     /* background-position: center -110vh; */
     /* background-position: right -150vh; */
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
+    min-height: 120vh;
+}
+
+/* Gradient overlay */
+.fullContent::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 160vh;
+    background: linear-gradient(180deg, #172C5F 8%, rgba(23, 44, 95, .7) 30.65%, rgba(23, 44, 95, .9) 60%);
+    z-index: 1;
 }
 
 .titleContainer {
@@ -21,6 +45,8 @@
     padding-top: 8rem;
     width: 100%;
     padding-bottom: 3rem;
+    position: relative;
+    z-index: 2;
 }
 
 .title {
@@ -67,6 +93,8 @@
     width: 60rem;
     /* 2.25rem */
     gap: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .imageContainer {
@@ -98,6 +126,8 @@
     line-height: 100%;
     max-width: 65%;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .emphasis2 {
@@ -170,7 +200,7 @@
     padding-top: 4rem;
 }
 
-.removeBottomMargin{
+.removeBottomMargin {
     margin-block-end: 0px;
 }
 
@@ -184,7 +214,7 @@
 
 @media (max-width: 1030px) {
 
-    .flexContainer1{
+    .flexContainer1 {
         width: 80%;
     }
 

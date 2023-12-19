@@ -118,7 +118,7 @@ export default function AboutMeContent({ children, home }) {
                     <h3 className={styles.midTitle}>Looking Ahead</h3>
                     <p>I'm excited to use my
                         <span className={styles.emphasis}>
-                            {' '} methodical nature, technical background, and creative insights
+                            {' '} methodical nature, technical background, and creative insights {' '}
                         </span>
                         to create products that are not only visually appealing
                         but also functional and intuitive.
