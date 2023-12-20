@@ -4,7 +4,11 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
-import profileImage from '/public/images/me.png';
+import profileImage from '/public/images/julianaProfeshCropped.jpg';
+import woodsPic from '/public/images/woodsGoodQuality.jpg'
+import familyPic from '/public/images/marriagePicHighQuality.jpg';
+import hillsPic from '/public/images/hillsJuliana.jpg';
+import configPic from '/public/images/configJuliana.jpg';
 
 import styles from "./aboutMeContent.module.css";
 
@@ -36,7 +40,7 @@ export default function AboutMeContent({ children, home }) {
             >
                 {/* Flexbox container 1 */}
                 <div className={styles.imageContainer}>
-                    <Image src={profileImage} alt="Image" layout="intrinsic" />
+                    <Image src={configPic} alt="Image" layout="intrinsic" />
                 </div>
                 <div className={styles.f1Text1}>
                     <p>My experience as a senior software engineer at a top-tier consulting firm, working across sectors
@@ -71,7 +75,7 @@ export default function AboutMeContent({ children, home }) {
                     </p>
                 </div>
                 <div className={styles.imageContainer}>
-                    <Image src={profileImage} alt="Image" layout="intrinsic" />
+                    <Image src={hillsPic} alt="Image" layout="intrinsic" />
                 </div>
             </div>
             <div className={`${styles.flexContainer1} ${styles.addedPadding}`}>
@@ -105,7 +109,7 @@ export default function AboutMeContent({ children, home }) {
             <div className={`${styles.flexContainer1}`}>
                 {/* Flexbox container 5 */}
                 <div className={`${styles.imageContainer} ${styles.image3}`}>
-                     <Image src={profileImage} alt="Image" layout="intrinsic" /> {/*layout="fill" objectFit="cover" */}
+                     <Image src={familyPic} alt="Image" layout="intrinsic" /> {/*layout="fill" objectFit="cover" */}
                 </div>
                 <div className={styles.f1Text1}>
                     <h3 className={styles.midTitle}>A Peek into My World</h3>
