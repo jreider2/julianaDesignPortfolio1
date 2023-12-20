@@ -188,6 +188,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 0rem;
 }
 
 .callout {
@@ -234,31 +235,6 @@
         width: 80%;
     }
 
-    .imageContainer {
-        max-width: 41rem;
-    }
-
-
-    .imageSize1 {
-        height: 41rem;
-        width:  41rem;
-    }
-
-    .imageSize2 {
-        height: 41rem;
-        width:  41rem;
-    }
-
-    .imageSize3 {
-        height: 41rem;
-        width: 41rem;
-    }
-
-    .imageSize4 {
-       height: 41rem;
-        width:  41rem;
-    }
-
     .f1Text1 {
         width: 100%;
         max-width: 41rem;
@@ -285,6 +261,35 @@
 
     .calloutEmphasis {
         font-size: 4rem;
+    }
+
+    .imageContainer {
+        max-width: 41rem;
+    }
+
+
+    .imageSize1 {
+        height: 41rem;
+        width:  41rem;
+    }
+
+    .imageSize2 {
+        height: 41rem;
+        width:  41rem;
+    }
+
+    .imageSize3 {
+        height: 41rem;
+        width: 41rem;
+    }
+
+    .imageSize4 {
+       height: 41rem;
+        width:  41rem;
+    }
+
+    .midTitle {
+        padding-top: 1rem;
     }
 
 }
