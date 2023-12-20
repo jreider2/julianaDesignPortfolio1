@@ -104,6 +104,32 @@
     max-width: 20rem;
 }
 
+.roundedCorners {
+    border-radius: 15px;
+    /* Adjust the radius as needed */
+    overflow: hidden;
+}
+
+.imageSize1 {
+    height: 23rem;
+    width: 17rem;
+}
+
+.imageSize2 {
+    height: 18rem;
+    width: 20rem;
+}
+
+.imageSize3 {
+    height: 18rem;
+    width: 20rem;
+}
+
+.imageSize4 {
+    height: 30rem;
+    width: 20rem;
+}
+
 .f1Text1 {
     max-width: 30rem;
 }
@@ -152,8 +178,6 @@
 
 .midTitle {
     text-align: left;
-    leading-trim: both;
-    text-edge: cap;
     font-family: MuseoModerno;
     font-size: 1.2rem;
     font-style: normal;
@@ -204,14 +228,6 @@
     margin-block-end: 0px;
 }
 
-/* .image3 {
-    position: relative;
-    width: 20rem;
-    height: 25rem;
-    overflow: hidden;
-    border-radius: 15px;
-} */
-
 @media (max-width: 1030px) {
 
     .flexContainer1 {
@@ -219,7 +235,28 @@
     }
 
     .imageContainer {
-        max-width: 100%;
+        max-width: 41rem;
+    }
+
+
+    .imageSize1 {
+        height: 41rem;
+        width:  41rem;
+    }
+
+    .imageSize2 {
+        height: 41rem;
+        width:  41rem;
+    }
+
+    .imageSize3 {
+        height: 41rem;
+        width: 41rem;
+    }
+
+    .imageSize4 {
+       height: 41rem;
+        width:  41rem;
     }
 
     .f1Text1 {

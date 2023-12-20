@@ -39,8 +39,8 @@ export default function AboutMeContent({ children, home }) {
                 transition={{ delay: 1, duration: 1 }}
             >
                 {/* Flexbox container 1 */}
-                <div className={styles.imageContainer}>
-                    <Image src={configPic} alt="Image" layout="intrinsic" />
+                <div className={`${styles.imageContainer} ${styles.roundedCorners} ${styles.imageSize1}`}>
+                    <Image src={configPic} alt="Image" layout="fill" objectFit="cover" objectPosition="top" />
                 </div>
                 <div className={styles.f1Text1}>
                     <p>My experience as a senior software engineer at a top-tier consulting firm, working across sectors
@@ -56,11 +56,11 @@ export default function AboutMeContent({ children, home }) {
             </motion.div>
             <div className={styles.flexContainer2}>
                 {/* Flexbox container 2 */}
-                <p> My <span className={styles.emphasis2}> pursuit of learning </span>
+                <p> My <span className={styles.emphasis2}> </span>pursuit of learning
                     how to best design useable products,
                     combined with my experience in development,
-                    has enabled me to view design through
-                    <span className={styles.emphasis2}> a unique lens.</span>
+                    has enabled me 
+                    <span className={styles.emphasis2}> to view design through a unique lens.</span>
                 </p>
             </div>
             <div className={styles.flexContainer1}>
@@ -74,14 +74,14 @@ export default function AboutMeContent({ children, home }) {
                         business constraints is as important as presenting information in a user-friendly way.
                     </p>
                 </div>
-                <div className={styles.imageContainer}>
-                    <Image src={hillsPic} alt="Image" layout="intrinsic" />
+                <div className={`${styles.imageContainer} ${styles.roundedCorners} ${styles.imageSize2}`}>
+                    <Image src={hillsPic} alt="Image" layout="fill" objectFit="cover" objectPosition="bottom" />
                 </div>
             </div>
             <div className={`${styles.flexContainer1} ${styles.addedPadding}`}>
                 {/* Flexbox container 4 */}
-                <div className={styles.imageContainer}>
-                    <Image src={profileImage} alt="Image" layout="intrinsic" />
+                <div className={`${styles.imageContainer} ${styles.roundedCorners} ${styles.imageSize3}`}>
+                    <Image src={woodsPic} alt="Image" layout="fill" objectFit="cover" objectPosition="20% 100%" />
                 </div>
                 <div className={styles.f1Text1}>
                     <h3 className={styles.midTitle}>Collaboration, Communication, and Mentorship</h3>
@@ -108,9 +108,6 @@ export default function AboutMeContent({ children, home }) {
             </motion.p>
             <div className={`${styles.flexContainer1}`}>
                 {/* Flexbox container 5 */}
-                <div className={`${styles.imageContainer} ${styles.image3}`}>
-                     <Image src={familyPic} alt="Image" layout="intrinsic" /> {/*layout="fill" objectFit="cover" */}
-                </div>
                 <div className={styles.f1Text1}>
                     <h3 className={styles.midTitle}>A Peek into My World</h3>
                     <p>Outside of work, I'm an avid needlepointer, a devoted dog mom to my poodle,
@@ -127,6 +124,9 @@ export default function AboutMeContent({ children, home }) {
                         to create products that are not only visually appealing
                         but also functional and intuitive.
                     </p>
+                </div>
+                <div className={`${styles.imageContainer} ${styles.roundedCorners} ${styles.imageSize4}`}>
+                    <Image src={familyPic} alt="Image" layout="fill" objectFit="cover" /> {/*layout="fill" objectFit="cover" */}
                 </div>
             </div>
         </div>
