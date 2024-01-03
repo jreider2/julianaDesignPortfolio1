@@ -102,6 +102,13 @@
     mix-blend-mode: luminosity;
     backdrop-filter: blur(23px);
     max-width: 20rem;
+    /* This next section is a hack for safari rendering the images properly */
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    /* Above section is a hack for safari rendering the images properly */
 }
 
 .roundedCorners {
