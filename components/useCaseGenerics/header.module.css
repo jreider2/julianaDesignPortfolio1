@@ -1,0 +1,9 @@
+/* Generic Styles */
+
+.heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 24px; /* Add font size */
+}
+/* Add more generic styles as needed */
