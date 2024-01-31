@@ -42,6 +42,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+}
+
+
+@media (max-width: 1030px) {
+    .imageWrapper {
+        width: 62%;  /* Set the width */
+       /* Ensures the image does not spill outside the border-radius */
+    }
+}
+
+@media (max-width: 714px) {
+    .imageWrapper {
+        width: 80%;  /* Set the width */
+       /* Ensures the image does not spill outside the border-radius */
+    }
+
 }
 
 /* Add more generic styles as needed */

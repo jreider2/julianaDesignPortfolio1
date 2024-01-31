@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../useCaseGenerics/header'
-import convoImage from '../../public/images/macPlaceholder.png'
+import convoImage from '../../public/images/macPlaceHolder.png'
 
 export default function ConvoscopeUseCase(){
     return (
