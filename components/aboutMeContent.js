@@ -112,7 +112,7 @@ export default function AboutMeContent({ children, home }) {
                     <p>Outside of work, I'm an avid needlepointer, a devoted dog mom to my poodle,
                         and a partner in adventure to my husband.
                         Whether it's swimming, hiking, or reading my favorite poets,
-                        I cherish these moments that bring
+                        I cherish these moments that bring additional
                         <span className={styles.emphasis}> balance and joy to my life.</span>
                     </p>
                     <h3 className={styles.midTitle}>Looking Ahead</h3>
