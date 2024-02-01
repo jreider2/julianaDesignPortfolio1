@@ -5,8 +5,8 @@ import styles from "./header.module.css";
 
 export default function Header ({ image, heading, subheading }) {
     return (
-        <>
-            <div className={styles.headerContainer} > {/* New div element */}
+        <div>
+            <div className={styles.headerContainer} > 
                 <h1 className={styles.heading}>{heading}</h1>
                 <h2 className={styles.subheading}>{subheading}</h2>
                 <div className={styles.imageWrapper}>
@@ -16,8 +16,8 @@ export default function Header ({ image, heading, subheading }) {
                         layout='responsive'
                         objectFit='contain'/>
                 </div>
-            </div> {/* New div element */}
+            </div>
             <h2 className={styles.subheading}>test</h2>
-        </>
+        </div>
     );
-};
+}
