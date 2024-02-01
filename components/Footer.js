@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './footer.module.css';
 import LinkedInIcon from '/public/images/linkedin.png';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import GitHubIcon from '/public/images/github.png';
 
 export default function Footer() {

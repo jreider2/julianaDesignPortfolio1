@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
