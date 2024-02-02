@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
@@ -39,7 +39,15 @@ export default function AboutMeContent({ children, home }) {
             >
                 {/* Flexbox container 1 */}
                 <div className={`${styles.imageContainer} ${styles.roundedCorners} ${styles.imageSize1}`}>
-                    <Image src={configPic} alt="Image" layout="fill" objectFit="cover" objectPosition="top" />
+                    <Image
+                        src={configPic}
+                        alt="Image"
+                        fill
+                        sizes="100vw"
+                        style={{
+                            objectFit: "cover",
+                            objectPosition: "top"
+                        }} />
                 </div>
                 <div className={styles.f1Text1}>
                     <p>My experience as a senior software engineer at a top-tier consulting firm, working across sectors
@@ -74,13 +82,29 @@ export default function AboutMeContent({ children, home }) {
                     </p>
                 </div>
                 <div className={`${styles.imageContainer} ${styles.roundedCorners} ${styles.imageSize2}`}>
-                    <Image src={hillsPic} alt="Image" layout="fill" objectFit="cover" objectPosition="bottom" />
+                    <Image
+                        src={hillsPic}
+                        alt="Image"
+                        fill
+                        sizes="100vw"
+                        style={{
+                            objectFit: "cover",
+                            objectPosition: "bottom"
+                        }} />
                 </div>
             </div>
             <div className={`${styles.flexContainer1} ${styles.addedPadding}`}>
                 {/* Flexbox container 4 */}
                 <div className={`${styles.imageContainer} ${styles.roundedCorners} ${styles.imageSize3}`}>
-                    <Image src={woodsPic} alt="Image" layout="fill" objectFit="cover" objectPosition="20% 100%" />
+                    <Image
+                        src={woodsPic}
+                        alt="Image"
+                        fill
+                        sizes="100vw"
+                        style={{
+                            objectFit: "cover",
+                            objectPosition: "20% 100%"
+                        }} />
                 </div>
                 <div className={styles.f1Text1}>
                     <h3 className={styles.midTitle}>Collaboration, Communication, and Mentorship</h3>
@@ -125,7 +149,14 @@ export default function AboutMeContent({ children, home }) {
                     </p>
                 </div>
                 <div className={`${styles.imageContainer} ${styles.roundedCorners} ${styles.imageSize4}`}>
-                    <Image src={familyPic} alt="Image" layout="fill" objectFit="cover" /> {/*layout="fill" objectFit="cover" */}
+                    <Image
+                        src={familyPic}
+                        alt="Image"
+                        fill
+                        sizes="100vw"
+                        style={{
+                            objectFit: "cover"
+                        }} /> {/*layout="fill" objectFit="cover" */}
                 </div>
             </div>
         </div>

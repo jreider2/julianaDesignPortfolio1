@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './footer.module.css';
 import LinkedInIcon from '/public/images/linkedin.png';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import GitHubIcon from '/public/images/github.png';
 
 export default function Footer() {
@@ -19,7 +19,16 @@ export default function Footer() {
           <span className={styles.separator}></span> 
             {'  '}
           <a href="https://github.com/jreider2/nextjs-blog" target="_blank">
-            <Image src={GitHubIcon} alt="github" className={styles.GitHubIcon} width={20} height={20} />
+            <Image
+              src={GitHubIcon}
+              alt="github"
+              className={styles.GitHubIcon}
+              width={20}
+              height={20}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </a>
         </p>
         {/* <div className={styles.linksContainer}>Made with &lt;3</div> */}
@@ -37,7 +46,16 @@ export default function Footer() {
             resume
           </a>
           <a href="https://www.linkedin.com/in/juliana-reider/" target="_blank">
-            <Image src={LinkedInIcon} alt="linkedIn" className={styles.LinkedInIcon} width={20} height={20} />
+            <Image
+              src={LinkedInIcon}
+              alt="linkedIn"
+              className={styles.LinkedInIcon}
+              width={20}
+              height={20}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </a>
           {/* <a href="https://github.com/jreider2/nextjs-blog" target="_blank">
             <Image src={GitHubIcon} alt="github" className={styles.GitHubIcon} width={20} height={20} />
