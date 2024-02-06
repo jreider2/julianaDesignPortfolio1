@@ -7,13 +7,14 @@ body {
 }
 
 :root {
-  --Title-Light-Text-Gradient: -webkit-linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%);
+  /* --Title-Light-Text-Gradient: -webkit-linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%); */
   --Title-Gradient-2: linear-gradient(180deg, #A7B2D9 30%, #F7F9FF 51.04%, #939DBF 70%);
   --main-bg: #172C5F;
   --light-text: #D5DCF4;
   --subheading-light-text: #A7B1CF;
   --Light-blue: #D5DCF4;
   background-color: var(--main-bg); 
+  --widest-container-width: 58rem;
 }
 
 a {

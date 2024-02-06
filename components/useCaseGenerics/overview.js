@@ -30,6 +30,7 @@ export default function Overview ({ myRole, responsibilities, timeline, status, 
                     </p>
                 </div>
             </div>
+            
             {/* row 2 */}
             <div className={styles.row2}>
                 <h1 className={styles.heading}>Overview</h1>

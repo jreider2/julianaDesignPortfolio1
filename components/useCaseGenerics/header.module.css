@@ -1,4 +1,10 @@
-/* Generic Styles */
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: var(--widest-container-width);    
+}
 
 .heading {
     font-family: MuseoModerno;
@@ -6,7 +12,8 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    background: var(--Title-Light-Text-Gradient, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%));
+    background: var(--Title-Gradient-2);
+    /* var(--Title-Gradient-2, linear-gradient(180deg, #CDD4EB 0%, #F7F9FF 51.04%, #B1B7CC 100%)); */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,19 +37,12 @@
 
 .imageWrapper {
     position: relative;
-    width: 58rem;  /* Set the width */
+    /*width: 58rem;   Set the width */
+    width : 100%;
     height: auto;  /* Height is set to auto to maintain aspect ratio */
     max-height: 100%; /* Optional: Ensures the image does not exceed a certain height */
     border-radius: 15px;  /* Optional: if you want rounded corners */
     overflow: hidden;  /* Ensures the image does not spill outside the border-radius */
-}
-
-.headerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
 }
 
 

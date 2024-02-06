@@ -6,8 +6,7 @@
     font-size: 1rem;
     font-family: SF Pro Text, sans-serif;
     margin-top: 10rem;
-    width: 60rem;
-
+    width: var(--widest-container-width);
 }
 
 .row1{
