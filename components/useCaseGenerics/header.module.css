@@ -17,7 +17,7 @@
 
 .subheading {
     color: var(--subheading-light-text, #A7B1CF);
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -48,17 +48,13 @@
 
 @media (max-width: 1030px) {
     .imageWrapper {
-        width: 62%;  /* Set the width */
-       /* Ensures the image does not spill outside the border-radius */
+        width: 62%;
     }
 }
 
 @media (max-width: 714px) {
     .imageWrapper {
-        width: 80%;  /* Set the width */
-       /* Ensures the image does not spill outside the border-radius */
+        width: 80%;
     }
 
 }
-
-/* Add more generic styles as needed */

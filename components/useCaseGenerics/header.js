@@ -21,7 +21,6 @@ export default function Header ({ image, heading, subheading }) {
                         }} />
                 </div>
             </div>
-            <h2 className={styles.subheading}>test</h2>
         </div>
     );
 }
