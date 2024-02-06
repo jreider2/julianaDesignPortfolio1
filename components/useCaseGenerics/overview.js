@@ -1,40 +1,41 @@
 import React from 'react';
-import styles from "./overvievw.module.css";
+import overviewStyles from "./overvievw.module.css";
 
 export default function Overview ({ myRole, responsibilities, timeline, status, team, overviewText }) {
     return (
-        <div className={styles.outterContainer}>
+        <div className={overviewStyles.outterContainer}>
             {/* row 1 */}
-            <div className={styles.row1}>
-                <div>
-                    <div className={styles.heading}>My Role</div>
-                    <p className={styles.body}>
+            <div className={overviewStyles.row1}>
+            
+                    <h1 className={overviewStyles.heading}>My Role</h1>
+                    <p className={overviewStyles.body}>
                         {myRole}
                         {responsibilities}
                     </p>
-                </div>
-
-                <div>
-                    <h1 className={styles.heading}>Timeline & Status</h1>
-                    <p className={styles.body}>
+        
+                    <h1 className={overviewStyles.heading}>Timeline & Status</h1>
+                    <p className={overviewStyles.body}>
                         {timeline}
-                    </p>
-                    <p className={styles.emphais}>
+                        <br/>
+                        <span className={overviewStyles.emphasis}>
                         {status}
+                    </span>
                     </p>
-                </div>
-                <div>
-                    <h1 className={styles.heading}>Team</h1>
-                    <p className={styles.body}>
+                    
+        
+                    <h1 className={overviewStyles.heading}>Team</h1>
+                    <p className={overviewStyles.body}>
                         {team}
                     </p>
-                </div>
+              
             </div>
             
             {/* row 2 */}
-            <div className={styles.row2}>
-                <h1 className={styles.heading}>Overview</h1>
-                {overviewText}
+            <div className={overviewStyles.row2}>
+                <h1 className={overviewStyles.heading}>Overview</h1>
+                <p className={overviewStyles.body}>
+                    {overviewText}
+                </p>
             </div>
 
         </div>

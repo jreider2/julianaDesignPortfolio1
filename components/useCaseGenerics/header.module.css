@@ -10,7 +10,7 @@
 
 .heading {
     font-family: MuseoModerno;
-    font-size: 6.25rem;
+    font-size: var(--huge-text, 6.25rem);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -27,13 +27,13 @@
 .subheading {
     color: var(--subheading-light-text, #A7B1CF);
     font-family: SF Pro Text, sans-serif;
-    font-size: 1.5rem;
+    font-size: var(--subheading-txt, 1.8rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.045rem;
     text-align: center;
-    margin-block-end: 3rem;
+    margin-block-end: 4rem;
     margin-block-start: 0rem;
 }
 
@@ -58,5 +58,4 @@
     .imageWrapper {
         width: 80%;
     }
-
 }

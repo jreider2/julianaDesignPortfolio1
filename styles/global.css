@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   font-family: SF Pro Rounded, sans-serif, -apple-system, sans-serif;
+  /* font-size: 16px; */
 }
 
 :root {
@@ -15,6 +16,9 @@ body {
   --Light-blue: #D5DCF4;
   background-color: var(--main-bg); 
   --widest-container-width: 58rem;
+  --body-text: 1.2rem;
+  --subheading-txt: 1.44rem;
+  --huge-text: 6.25rem;
 }
 
 a {
@@ -24,4 +28,16 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1030px) {
+  :root {
+    --widest-container-width: 30rem;
+  }
+}
+
+@media (max-width: 714px) {
+  :root {
+    --widest-container-width: 30rem;
+  }
 }

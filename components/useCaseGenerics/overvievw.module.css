@@ -9,34 +9,42 @@
     font-family: SF Pro Text, sans-serif;
     margin-top: 10rem;
     width: var(--widest-container-width);
+    gap: 4rem 6rem;
+    justify-content: space-between;
 }
 
 .row1{
     display: flex;
     flex-direction: column;
     font-family: SF Pro Text, sans-serif;
+    width: 30%;
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    font-family: SF Pro Text, sans-serif;
+    width: 60%;
 }
 
 .heading{
     color: var(--light-text, #D5DCF4);
-    font-family: SF Pro Text, sans-serif;
-    font-size: 1rem;
-    line-height: normal;
+    font-family: "SF Pro Rounded";
+    font-size: var(--body-text, 1.2rem);
+    font-weight: 700;
     letter-spacing: 0.03rem;
     margin-top:0px;
 }
 
 .emphasis {
     color: var(--Light-blue, #D5DCF4);
-    font-size: 1.5rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 2.25rem */
 }
 
 .body {
     color: var(--subheading-light-text, #A7B1CF);
-    font-size: 1.5rem;
+    font-size: var(--body-text, 1.2rem);
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
