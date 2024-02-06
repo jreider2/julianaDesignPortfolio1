@@ -1,3 +1,6 @@
+@import '/styles/global.css';
+
+
 .useCaseContainer{
     display: flex;
     flex-direction: column;
