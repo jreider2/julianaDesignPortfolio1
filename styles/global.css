@@ -16,10 +16,14 @@ body {
   --Light-blue: #D5DCF4;
   background-color: var(--main-bg); 
   --widest-container-width: 58rem;
+  /* text sizes */
   --body-text: 1.2rem;
   --pull-quote-txt: 1.8rem;
   --subheading-txt: 1.44rem;
   --huge-text: 6.25rem;
+  --font-fam-body: SF Pro Text,sans-serif;
+  --font-family-round: SF Pro Rounded;
+  --margin-bottom-1: 2rem;
 }
 
 a {

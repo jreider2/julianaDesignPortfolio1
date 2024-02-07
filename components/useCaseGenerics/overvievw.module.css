@@ -29,7 +29,7 @@
 
 .heading{
     color: var(--light-text, #D5DCF4);
-    font-family: "SF Pro Rounded";
+    font-family: var(--font-fam-round, SF Pro Rounded, sans-serif);
     font-size: var(--body-text, 1.2rem);
     font-weight: 700;
     letter-spacing: 0.03rem;
@@ -48,6 +48,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+
 }
 
 @media (max-width: 1030px) {

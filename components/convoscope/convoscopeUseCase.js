@@ -11,26 +11,20 @@ import overviewStyles from "../useCaseGenerics/overvievw.module.css";
 import styles from "./convoscopeUseCase.module.css";
 
 const overviewTextP1= "Students in the MIT Media Lab wanted more information at their fingertips when having conversations with peers, and when listening to research presentations.";
-
 const overviewTextP2= <>I paired with researchers at MIT media lab to create a tool to aid in
     <span className={overviewStyles.emphasis}> seamlessly surfacing additional information during lab meetings.</span>
 </>;
-                
 const overviewTextP3= <> I worked on the end-to-end design of the desktop application. Our app was presented and used at MIT, 
     <span className={overviewStyles.emphasis}> meaningfully improved the quality of research conversations, </span>
     and is currently being adapted for use with AR by Team Open Smart Glasses.
 </>
-
 const overviewTextFull= <>{overviewTextP1} <br/> {overviewTextP2} <br/> {overviewTextP3}</>;
 
 import borderLinePng from '/public/images/line-8.png';
-
 const boarder = <div className={`${styles.borderSize} ${styles.imageContainer}`}>
-<Image src={borderLinePng} fill sizes="100vw"
-style={{ objectFit: "cover", objectPosition: "top" }} />
-</div>
-
-import configPic from '/public/images/configJuliana.jpg';
+        <Image src={borderLinePng} fill sizes="100vw"
+        style={{ objectFit: "cover", objectPosition: "top" }} />
+    </div>
 
 
 export default function ConvoscopeUseCase(){
@@ -38,7 +32,7 @@ export default function ConvoscopeUseCase(){
         <div className={styles.useCaseContainer}>
             <Header 
                 heading="ConvoScope" 
-                subheading="Designing an experimental AI interface for MIT Media Lab researchers"
+                subheading="Designing an experimental AI interface for MIT Media Lab researchers."
                 image={convoImage}
                 />
             <Overview
@@ -66,10 +60,18 @@ export default function ConvoscopeUseCase(){
             <SectionTopper
                 sectionTitletxt="Highlights"
                 sectionSubtitleTxt="Information must be easy to access, legible and useful."
-                topParagraphHTML={null}
+                topParagraphHTML={<div className={styles.bodyText}>With ConvoScope, users don’t waste time entering requests into a search tool. When activated, 
+                    the tool listens to the users’ conversation and, with the help of AI, automatically outputs 
+                    succinct information, aiding in a <span>deeper understanding of the topic at hand.</span></div>}
             />
 
             {boarder}
+
+            <SectionTopper
+                sectionTitletxt="Research"
+                sectionSubtitleTxt="An empathetic and research driven approach."
+                topParagraphHTML={null}
+            />
             
 
         </div>

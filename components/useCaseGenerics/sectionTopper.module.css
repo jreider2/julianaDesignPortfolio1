@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: var(--margin-bottom-1, 2rem);
 }
 
 .circle {
@@ -17,7 +17,7 @@
 
 .sectionTitle {
     color: var(--light-text, #D5DCF4);
-    font-family: "SF Pro Rounded";
+    font-family: var(--font-fam-round);
     font-size: var(--body-text);
     font-style: normal;
     font-weight: 400;
@@ -26,7 +26,7 @@
 
 .sectionSubtitle {
     color: var(--white, #FFF);
-    font-family: "SF Pro Rounded";
+    font-family: var(--font-fam-round);
     font-size: var(--pull-quote-txt, 1.8rem);
     font-style: normal;
     font-weight: 400;

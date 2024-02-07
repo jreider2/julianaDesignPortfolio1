@@ -8,11 +8,6 @@
     /* gap: 10px 20px; */
 }
 
-/* .borderSize{
-    width: 60.875rem;
-    height: 0.0625rem;
-} */
-
 .imageContainer {
     /* max-width: 60.875rem; */
     /* This next section is a hack for safari rendering the images properly */
@@ -24,4 +19,14 @@
     /* Above section is a hack for safari rendering the images properly */
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+.bodyText {
+    font-size: var(--body-text);
+    color: var(--light-text);
+    color: var(--subheading-light-text, #A7B1CF);
+    font-family: var(--font-fam-body, SF Pro Text, sans-serif);
+    font-weight: 300 ;
+    line-height: 150%; /* 2.25rem */
+    margin-top: 2.5rem;
 }
