@@ -17,6 +17,7 @@ body {
   background-color: var(--main-bg); 
   --widest-container-width: 58rem;
   --body-text: 1.2rem;
+  --pull-quote-txt: 1.8rem;
   --subheading-txt: 1.44rem;
   --huge-text: 6.25rem;
 }

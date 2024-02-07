@@ -7,3 +7,21 @@
     align-items: center;
     /* gap: 10px 20px; */
 }
+
+/* .borderSize{
+    width: 60.875rem;
+    height: 0.0625rem;
+} */
+
+.imageContainer {
+    /* max-width: 60.875rem; */
+    /* This next section is a hack for safari rendering the images properly */
+    width: var(--widest-container-width);
+    height: 0.0625rem;
+    /* border-radius: 15px; */
+    overflow: hidden;
+    position: relative;
+    /* Above section is a hack for safari rendering the images properly */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}

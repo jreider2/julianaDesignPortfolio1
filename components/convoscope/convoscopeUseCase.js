@@ -1,9 +1,11 @@
 import React from 'react';
+import Image from "next/image";
 
 import convoImage from '../../public/images/macPlaceHolder.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
+import SectionTopper from '../useCaseGenerics/sectionTopper';
 
 import overviewStyles from "../useCaseGenerics/overvievw.module.css";
 import styles from "./convoscopeUseCase.module.css";
@@ -21,13 +23,19 @@ const overviewTextP3= <> I worked on the end-to-end design of the desktop applic
 
 const overviewTextFull= <>{overviewTextP1} <br/> {overviewTextP2} <br/> {overviewTextP3}</>;
 
-const borderLinePng = "/images/line-8.png";
+import borderLinePng from '/public/images/line-8.png';
+
+const boarder = <div className={`${styles.borderSize} ${styles.imageContainer}`}>
+<Image src={borderLinePng} fill sizes="100vw"
+style={{ objectFit: "cover", objectPosition: "top" }} />
+</div>
+
+import configPic from '/public/images/configJuliana.jpg';
 
 
 export default function ConvoscopeUseCase(){
     return (
         <div className={styles.useCaseContainer}>
-            {/* <h1>Convoscope Use Case header test</h1> */}
             <Header 
                 heading="ConvoScope" 
                 subheading="Designing an experimental AI interface for MIT Media Lab researchers"
@@ -44,13 +52,26 @@ export default function ConvoscopeUseCase(){
                 Kenji Phang, SE"
                 overviewText={overviewTextFull}
             />
-            {/* <Image
-                src={borderLinePng}
-                alt="Border line"
-                layout="responsive"
-                width="608.75" // Example width in pixels
-                height="0.625" // Example height in pixels, adjust according to your aspect ratio
-            /> */}
+
+            {boarder}
+
+            <SectionTopper
+                sectionTitletxt="The Problem"
+                sectionSubtitleTxt="Researchers had trouble surfacing relevant information on-the-fly when discussing unfamiliar or new topics."
+                // topParagraphHTML={null}
+            />
+
+            {boarder}
+
+            <SectionTopper
+                sectionTitletxt="Highlights"
+                sectionSubtitleTxt="Information must be easy to access, legible and useful."
+                topParagraphHTML={null}
+            />
+
+            {boarder}
+            
+
         </div>
     );
 };
