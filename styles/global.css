@@ -21,6 +21,7 @@ body {
   --pull-quote-txt: 1.8rem;
   --subheading-txt: 1.44rem;
   --huge-text: 6.25rem;
+  /* text fonts */
   --font-fam-body: SF Pro Text,sans-serif;
   --font-fam-round: SF Pro Rounded;
   --margin-bottom-1: 2rem;
@@ -38,12 +39,20 @@ a:hover {
 
 @media (max-width: 1030px) {
   :root {
-    --widest-container-width: 30rem;
+    --widest-container-width: 80%;
+    /* --body-text: 1.2rem; */
+    /* --pull-quote-txt: 1.8rem; */
+    --subheading-txt: 1.44rem;
+    /* --huge-text: 3.5rem; */
   }
 }
 
 @media (max-width: 714px) {
   :root {
-    --widest-container-width: 30rem;
+    --widest-container-width: 85%;
+    /* --body-text: 1.2rem; */
+    /* --pull-quote-txt: 1.8rem; */
+    --subheading-txt: 1.2rem;
+    --huge-text: 3.5rem;
   }
 }

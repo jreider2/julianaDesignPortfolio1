@@ -10,7 +10,7 @@
 
 .heading {
     font-family: MuseoModerno;
-    font-size: var(--huge-text, 6.25rem);
+    font-size: var(--huge-text);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -40,7 +40,7 @@
 .imageWrapper {
     position: relative;
     /*width: 58rem;   Set the width */
-    width : 100%;
+    width : 100%; /* 100% of .headerContainer */
     height: auto;  /* Height is set to auto to maintain aspect ratio */
     max-height: 100%; /* Optional: Ensures the image does not exceed a certain height */
     border-radius: var(--boarder-radius);  /* Optional: if you want rounded corners */
@@ -49,13 +49,16 @@
 
 
 @media (max-width: 1030px) {
-    .imageWrapper {
-        width: 62%;
-    }
+    /* .headerContainer {
+        width: 80%;    
+    } */
+    /* .imageWrapper {
+        width: 100%;
+    } */
 }
 
 @media (max-width: 714px) {
-    .imageWrapper {
-        width: 80%;
-    }
+    /* .imageWrapper {
+        width: 90%;
+    } */
 }

@@ -9,7 +9,7 @@
     font-family: SF Pro Text, sans-serif;
     margin-top: 10rem;
     width: var(--widest-container-width);
-    gap: 4rem 6rem;
+    gap: 4rem;
     justify-content: space-between;
 }
 
@@ -53,15 +53,24 @@
 
 @media (max-width: 1030px) {
     .outterContainer{
-
-    
+        margin-top: 6.5rem;
+        /* gap: 2rem 2rem; */
+        gap: 2rem;
+        
+    }
+    .row1{
+        width: 100%;
+    }
+    .row2{
+        width: 100%;
     }
 }
 
 @media (max-width: 714px) {
     .outterContainer{
-   
-    
+        margin-top: 4rem;
+        /* gap: 2rem 2rem; */
+        flex-direction: column;
     }
 
 }
