@@ -14,10 +14,13 @@ body {
   --light-text: #D5DCF4;
   --subheading-light-text: #A7B1CF;
   --Light-blue: #D5DCF4;
-  background-color: var(--main-bg); 
+  background-color: var(--main-bg);
+  /*colors on usecase page*/
+  --background-card-gradient: linear-gradient(180deg, #2A4075 0%, #1D3369 100%);
 
   /*widths*/
   --widest-container-width: 58rem;
+  --innerPicWidth: 51rem;
   /* text sizes */
   --body-text: 1.2rem;
   --pull-quote-txt: 1.8rem;

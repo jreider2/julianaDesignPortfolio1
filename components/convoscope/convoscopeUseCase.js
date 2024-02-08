@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 
 import convoImage from '../../public/images/macPlaceHolder.png'
+import highlightsImage1 from '../../public/images/macPlaceHolder.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -67,13 +68,12 @@ export default function ConvoscopeUseCase(){
             />
 
             <Card
-                p1="With ConvoScope, users don’t waste time entering requests into a search tool. When activated, 
-                the tool listens to the users’ conversation and, with the help of AI, automatically outputs 
-                succinct information, aiding in a deeper understanding of the topic at hand."
+                p1="Main screen - lorem ipsum dolor sit amet lacrima susspendisse nunc et  
+                lorem ipsum dolor sit amet lacrima susspendisse nunc et "
                 bullet1="AI listens to conversation"
                 bullet2="Surfaces relevant information"
-                imgage1={null}
-                imgage2={null}
+                imgage1={highlightsImage1}
+                imgage2={highlightsImage1}
             />
 
             {boarder}
