@@ -61,13 +61,15 @@ export default function ConvoscopeUseCase(){
             <SectionTopper
                 sectionTitletxt="Highlights"
                 sectionSubtitleTxt="Information must be easy to access, legible and useful."
-                topParagraphHTML={<div className={styles.bodyText}>With ConvoScope, users don’t waste time entering requests into a search tool. When activated, 
+                topParagraphHTML={<div className={'bodyText'}>With ConvoScope, users don’t waste time entering requests into a search tool. When activated, 
                     the tool listens to the users’ conversation and, with the help of AI, automatically outputs 
                     succinct information, aiding in a <span>deeper understanding of the topic at hand.</span></div>}
             />
 
             <Card
-                p1="01"
+                p1="With ConvoScope, users don’t waste time entering requests into a search tool. When activated, 
+                the tool listens to the users’ conversation and, with the help of AI, automatically outputs 
+                succinct information, aiding in a deeper understanding of the topic at hand."
                 bullet1="AI listens to conversation"
                 bullet2="Surfaces relevant information"
                 imgage1={null}

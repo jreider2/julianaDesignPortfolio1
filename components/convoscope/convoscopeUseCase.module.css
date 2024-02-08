@@ -14,7 +14,7 @@
     /* This next section is a hack for safari rendering the images properly */
     width: var(--widest-container-width);
     height: 0.0625rem;
-    /* border-radius: 15px; */
+    /* border-radius: var(--boarder-radius); */
     overflow: hidden;
     position: relative;
     /* Above section is a hack for safari rendering the images properly */
@@ -22,13 +22,14 @@
     margin-bottom: 5rem;
 }
 
-.bodyText {
+
+/* .bodyText {
     font-size: var(--body-text);
     color: var(--light-text);
     color: var(--subheading-light-text, #A7B1CF);
     font-family: var(--font-fam-body, SF Pro Text, sans-serif);
     font-weight: 300 ;
-    line-height: 150%; /* 2.25rem */
+    line-height: 150%; /* 2.25rem 
     margin-top: 2.5rem;
 }
-
+ */

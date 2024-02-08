@@ -4,14 +4,14 @@
 /* Rest of the CSS code for the file */
 
 .outterContainer {
+    display:flex;
     background-color: red;
     color: white; /* Set the text color to white for better contrast */
-    text-align: center; /* Center the text horizontally */
     max-width: var(--widest-container-width); 
     width: var(--widest-container-width);
     margin: 0 auto; /* Optional: Center the box on the page */
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-    border-radius: var(--boarder-radius); /* Optional: Add rounded corners to the box */
+    border-radius: var(--boarder-radius); 
   }
   
