@@ -6,6 +6,7 @@ import convoImage from '../../public/images/macPlaceHolder.png'
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
 import SectionTopper from '../useCaseGenerics/sectionTopper';
+import Card from '../useCaseGenerics/card';
 
 import overviewStyles from "../useCaseGenerics/overvievw.module.css";
 import styles from "./convoscopeUseCase.module.css";
@@ -63,6 +64,14 @@ export default function ConvoscopeUseCase(){
                 topParagraphHTML={<div className={styles.bodyText}>With ConvoScope, users don’t waste time entering requests into a search tool. When activated, 
                     the tool listens to the users’ conversation and, with the help of AI, automatically outputs 
                     succinct information, aiding in a <span>deeper understanding of the topic at hand.</span></div>}
+            />
+
+            <Card
+                p1="01"
+                bullet1="AI listens to conversation"
+                bullet2="Surfaces relevant information"
+                imgage1={null}
+                imgage2={null}
             />
 
             {boarder}

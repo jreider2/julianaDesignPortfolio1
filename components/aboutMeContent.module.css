@@ -1,3 +1,6 @@
+/* Import Global Styles */
+@import url("/styles/global.css");
+
 .fullContent {
     display: flex;
     justify-content: center;
@@ -105,14 +108,14 @@
     /* This next section is a hack for safari rendering the images properly */
     width: 20rem;
     height: 20rem;
-    border-radius: 15px;
+    border-radius: var(--boarder-radius);
     overflow: hidden;
     position: relative;
     /* Above section is a hack for safari rendering the images properly */
 }
 
 .roundedCorners {
-    border-radius: 15px;
+    border-radius: var(--boarder-radius);
     /* Adjust the radius as needed */
     overflow: hidden;
 }

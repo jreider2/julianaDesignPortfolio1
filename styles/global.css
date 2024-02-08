@@ -22,8 +22,9 @@ body {
   --subheading-txt: 1.44rem;
   --huge-text: 6.25rem;
   --font-fam-body: SF Pro Text,sans-serif;
-  --font-family-round: SF Pro Rounded;
+  --font-fam-round: SF Pro Rounded;
   --margin-bottom-1: 2rem;
+  --boarder-radius: 15px;
 }
 
 a {

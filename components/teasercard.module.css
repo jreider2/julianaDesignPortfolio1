@@ -1,3 +1,6 @@
+/* Import Global Styles */
+@import url("/styles/global.css");
+
 .card {
   display: flex;
   flex-direction: column;

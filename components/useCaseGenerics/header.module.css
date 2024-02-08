@@ -43,7 +43,7 @@
     width : 100%;
     height: auto;  /* Height is set to auto to maintain aspect ratio */
     max-height: 100%; /* Optional: Ensures the image does not exceed a certain height */
-    border-radius: 15px;  /* Optional: if you want rounded corners */
+    border-radius: var(--boarder-radius);  /* Optional: if you want rounded corners */
     overflow: hidden;  /* Ensures the image does not spill outside the border-radius */
 }
 

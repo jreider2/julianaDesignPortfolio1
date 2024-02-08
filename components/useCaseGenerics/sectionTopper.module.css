@@ -1,3 +1,5 @@
+@import '/styles/global.css';
+
 .sectionContainer {
     /* styles for class1 */
     width: var(--widest-container-width);
