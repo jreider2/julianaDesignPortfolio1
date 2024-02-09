@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import convoImage from '../../public/images/macPlaceHolder.png'
 import highlightsImage1 from '../../public/images/macPlaceHolder.png'
+import eye from '../../public/images/eye.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -68,13 +69,66 @@ export default function ConvoscopeUseCase(){
             />
 
             <Card
-                p1="Main screen - lorem ipsum dolor sit amet lacrima susspendisse nunc et  
-                lorem ipsum dolor sit amet lacrima susspendisse nunc et "
+                p1= {<div><span className={`emphasis`}> Main screen -</span> Cards flow in from the top, and are pushed out the bottom.</div> }
                 bullet1="AI listens to conversation"
                 bullet2="Surfaces relevant information"
                 imgage1={highlightsImage1}
                 imgage2={highlightsImage1}
+                bullets={
+                <div className={`bodyText ${styles.bulletContainer}`}>
+                        <div>
+                            <span className={`emphasis`}>Key Features:</span><br />
+                            • Information is easy to access<br />
+                            • Definition of key terms<br />
+                            • Fact checks + corrections<br />
+                            • Expert opinions<br />
+                            • Oppositional theories + more<br />
+                        </div>
+                        <div>
+                            <span className={`emphasis`}>Key Features:</span><br />
+                            • Cards provide visual separation<br />
+                            • Limit of 7-12 words per card body<br />
+                            • Typography chosen carefully for legibility<br />
+                            • Absence of clutter<br />
+                            • Throttled quantity of cards produced<br />
+                        </div>
+                    </div>}
+
             />
+
+            <div className={styles.speakerModsWrapper}>
+                <div className={styles.middleModContainner}>
+                    <div className={styles.sModsPicContainer}>
+                        <Image
+                            src={eye}
+                            alt="Use Case Image"
+                            sizes="100vw"
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "contain"
+                            }} />
+                    </div>
+                    <div className={`emphasis ${styles.modeTitle}`}>Speaker Mode</div>
+                    <div className={`bodyText ${styles.modeBody}`}>Participants only see cards<br/>selected by the Speaker</div>
+                </div>
+                <div className={styles.middleModContainner}>
+                    <div className={styles.sModsPicContainer}>
+                        <Image
+                            src={eye}
+                            alt="Use Case Image"
+                            sizes="100vw"
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "contain"
+                            }} />
+                    </div>
+                    <div className={`emphasis ${styles.modeTitle}`}>Default Mode</div>
+                    <div className={`bodyText ${styles.modeBody}`}>All participants see the<br/>full set of cards
+                    </div> 
+                </div>
+            </div>
 
             {boarder}
 

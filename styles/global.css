@@ -20,7 +20,8 @@ body {
 
   /*widths*/
   --widest-container-width: 58rem;
-  --innerPicWidth: 51rem;
+  --innerPicWidth: 51rem; /* --widest-container-width minus --margin-2 x 2 (for left and right) */
+  --innerTxtWidth: var(--innerPicWidth);
   /* text sizes */
   --body-text: 1.2rem;
   --pull-quote-txt: 1.8rem;
@@ -32,6 +33,7 @@ body {
   /*sizing*/
   --boarder-radius: 15px;
   --margin-bottom-1: 2rem;
+  --margin-1p5: 2.33rem;
   --margin-2: 3.5rem;
 }
 
@@ -43,6 +45,16 @@ body {
   font-weight: 300 ;
   line-height: 150%; /* 2.25rem */
   margin-top: 2.5rem;
+}
+
+.emphasis{
+  font-size: var(--body-text);
+  color: var(--white, #FFF);
+  font-family: var(--font-fam-round, sans-serif);
+  /* font-size: 1.5rem; */
+  font-weight: 600;
+  line-height: 150%; /* 2.25rem */
+  letter-spacing: 0.024em;
 }
 
 a {
@@ -57,6 +69,8 @@ a:hover {
 @media (max-width: 1030px) {
   :root {
     --widest-container-width: 80%;
+    --innerPicWidth: 80%;
+    /* --innerTextWidth: var(--innerPicWidth + 0.25rem); */
     /* --body-text: 1.2rem; */
     /* --pull-quote-txt: 1.8rem; */
     --subheading-txt: 1.44rem;

@@ -19,19 +19,17 @@
 .cardBody{
     /* display: flex;
     flex-direction: column; */
-    margin-left: var(--margin-2);
-    margin-right: var(--margin-2);
+    /* margin-left: var(--margin-2);
+    margin-right: var(--margin-2); */
     margin-top: var(--margin-2);
-    margin-bottom: var(--margin-2);
-    /* width: var(--innerPicWidth, 54.5rem); */
-    
-
+    margin-bottom: var(--margin-1p5);
     color: var(--light-text, #D5DCF4);
+    width: var(--innerTxtWidth, 51.25rem);
 }
 
 .imageWrapper {
     /* position: relative; */
-    width: var(--innerPicWidth, 54.5rem);
+    width: var(--innerPicWidth, 51rem);
      /*width : 100%; 100% of .headerContainer */
     height: auto;  /* Height is set to auto to maintain aspect ratio */
     max-height: 100%; 
