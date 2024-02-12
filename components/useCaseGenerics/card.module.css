@@ -17,10 +17,6 @@
 }
 
 .cardBody{
-    /* display: flex;
-    flex-direction: column; */
-    /* margin-left: var(--margin-2);
-    margin-right: var(--margin-2); */
     margin-top: var(--margin-2);
     margin-bottom: var(--margin-1p5);
     color: var(--light-text, #D5DCF4);

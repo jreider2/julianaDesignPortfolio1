@@ -134,13 +134,8 @@ export default function ConvoscopeUseCase(){
 
             <Card
                 p1= {<div><span className={`emphasis`}>Speaker View–</span> In Speaker Mode, the speaker selects the cards to highlight.</div> }
-                image1={highlightsImage1}
             >
-                <div className={`bodyText ${cardStyles.cardBody}`}>
-                    <div><span className={`emphasis`}>Participant view–</span> Participants will see only the selected cards.</div>
-                </div>
-
-                <div className={cardStyles .imageWrapper}>
+                <div className={styles.imageWrapper2}>
                     <Image
                         src={highlightsImage1}
                         alt="Use Case Image"
@@ -152,7 +147,23 @@ export default function ConvoscopeUseCase(){
                         }} />
                 </div>
 
-                <div className={`bodyText ${cardStyles.cardBody}`}>
+                <div className={`bodyText ${styles.cardBody2}`}>
+                    <div><span className={`emphasis`}>Participant view–</span> Participants will see only the selected cards.</div>
+                </div>
+
+                <div className={styles.imageWrapper2}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom2}`}>
                     <div>The rationed output will help highlight the most useful information and minimize distractions.</div>
                 </div>
 
@@ -160,8 +171,19 @@ export default function ConvoscopeUseCase(){
 
             <Card
                 p1= {<div><span className={`emphasis`}>“Hey Convo” –</span> Voice interface available for users to ask burning questions.</div> }
-                image1={highlightsImage1}
-            ></Card>
+            >
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+            </Card>
 
             {boarder}
 

@@ -28,8 +28,26 @@
 }
 
 .marginBottom{
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     display: inline-block;
+}
+
+.cardBody2{
+    margin-bottom: var(--margin-1p5);
+    color: var(--light-text, #D5DCF4);
+    width: var(--innerTxtWidth, 51.25rem);
+}
+
+.imageWrapper2{
+    width: var(--innerPicWidth, 51rem);
+    height: auto;  /* Height is set to auto to maintain aspect ratio */
+    max-height: 100%; 
+    border-radius: var(--boarder-radius); 
+    overflow: hidden;
+}
+
+.marginBottom2{
+    margin-bottom: var(--margin-2);
 }
 
 .speakerModsWrapper{
@@ -39,6 +57,7 @@
     align-items: center;
     width: var(--widest-container-width, 51.25rem);
     margin-top: var(--margin-1p5);
+    margin-bottom: var(--margin-1p5);
 }
 
 .sModsPicContainer{
@@ -78,7 +97,6 @@
     }
     .speakerModsWrapper{
         flex-direction: column;
-        margin-top: 0px;
         row-gap: var(--margin-2);
     }
   }
