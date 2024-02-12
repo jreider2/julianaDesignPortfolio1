@@ -4,6 +4,7 @@ import Image from "next/image";
 import convoImage from '../../public/images/macPlaceHolder.png'
 import highlightsImage1 from '../../public/images/macPlaceHolder.png'
 import eye from '../../public/images/eye.png'
+import speakerIcon from '../../public/images/speakerIcon.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -12,6 +13,7 @@ import Card from '../useCaseGenerics/card';
 
 import overviewStyles from "../useCaseGenerics/overvievw.module.css";
 import styles from "./convoscopeUseCase.module.css";
+import cardStyles from "../useCaseGenerics/card.module.css";
 
 const overviewTextP1= "Students in the MIT Media Lab wanted more information at their fingertips when having conversations with peers, and when listening to research presentations.";
 const overviewTextP2= <>I paired with researchers at MIT media lab to create a tool to aid in
@@ -65,19 +67,19 @@ export default function ConvoscopeUseCase(){
                 sectionSubtitleTxt="Information must be easy to access, legible and useful."
                 topParagraphHTML={<div className={'bodyText'}>With ConvoScope, users don’t waste time entering requests into a search tool. When activated, 
                     the tool listens to the users’ conversation and, with the help of AI, automatically outputs 
-                    succinct information, aiding in a <span>deeper understanding of the topic at hand.</span></div>}
+                    succinct information, aiding in a <span className={`emphasis`}>deeper understanding of the topic at hand.</span></div>}
             />
 
             <Card
-                p1= {<div><span className={`emphasis`}> Main screen -</span> Cards flow in from the top, and are pushed out the bottom.</div> }
-                bullet1="AI listens to conversation"
-                bullet2="Surfaces relevant information"
-                imgage1={highlightsImage1}
-                imgage2={highlightsImage1}
+                p1= {<div><span className={`emphasis`}>Main screen -</span> Cards flow in from the top, and are pushed out the bottom.</div> }
+                // bullet1="AI listens to conversation"
+                // bullet2="Surfaces relevant information"
+                image1={highlightsImage1}
+                image2={highlightsImage1}
                 bullets={
                 <div className={`bodyText ${styles.bulletContainer}`}>
                         <div>
-                            <span className={`emphasis`}>Key Features:</span><br />
+                            <span className={`emphasis ${styles.marginBottom}`}>Key Features</span><br />
                             • Information is easy to access<br />
                             • Definition of key terms<br />
                             • Fact checks + corrections<br />
@@ -85,7 +87,7 @@ export default function ConvoscopeUseCase(){
                             • Oppositional theories + more<br />
                         </div>
                         <div>
-                            <span className={`emphasis`}>Key Features:</span><br />
+                            <div className={`emphasis ${styles.marginBottom}`}>Quick to Scan</div><br />
                             • Cards provide visual separation<br />
                             • Limit of 7-12 words per card body<br />
                             • Typography chosen carefully for legibility<br />
@@ -93,7 +95,6 @@ export default function ConvoscopeUseCase(){
                             • Throttled quantity of cards produced<br />
                         </div>
                     </div>}
-
             />
 
             {/* Speaker mode icons  */}
@@ -101,7 +102,7 @@ export default function ConvoscopeUseCase(){
                 <div className={styles.middleModContainner}>
                     <div className={styles.sModsPicContainer}>
                         <Image
-                            src={eye}
+                            src={speakerIcon}
                             alt="Use Case Image"
                             sizes="100vw"
                             style={{
@@ -131,14 +132,71 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
 
+            <Card
+                p1= {<div><span className={`emphasis`}>Speaker View–</span> In Speaker Mode, the speaker selects the cards to highlight.</div> }
+                image1={highlightsImage1}
+            >
+                <div className={`bodyText ${cardStyles.cardBody}`}>
+                    <div><span className={`emphasis`}>Participant view–</span> Participants will see only the selected cards.</div>
+                </div>
+
+                <div className={cardStyles .imageWrapper}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`bodyText ${cardStyles.cardBody}`}>
+                    <div>The rationed output will help highlight the most useful information and minimize distractions.</div>
+                </div>
+
+            </Card>
+
+            <Card
+                p1= {<div><span className={`emphasis`}>“Hey Convo” –</span> Voice interface available for users to ask burning questions.</div> }
+                image1={highlightsImage1}
+            ></Card>
+
             {boarder}
 
             <SectionTopper
                 sectionTitletxt="Research"
                 sectionSubtitleTxt="An empathetic and research driven approach."
-                topParagraphHTML={null}
+                topParagraphHTML={<div className={'bodyText'}>I conducted user interviews, created personas, incrementally iterated on the design,
+                integrated SME and user feedback to hone the best product possible.</div>}
             />
+
+            {boarder}
             
+            <SectionTopper
+                sectionTitletxt="Ideation"
+                sectionSubtitleTxt="Honing in on an impactful solution– step by step."
+                topParagraphHTML={<div className={'bodyText'}>Before diving into the more detailed designs, I started with some quick iterations with hand drawn ideas, and moved onto low fidelity wireframes in figma.</div>}
+            />
+
+            {boarder}
+
+            <SectionTopper
+                sectionTitletxt="Initial Directions"
+                sectionSubtitleTxt="The look and feel of the app was undefined as of yet."
+                topParagraphHTML={<div className={'bodyText'}>The main stakeholder wanted an other-worldly feel that would also feel like a fit in an academic serious context, but we needed to narrow it down. We started with a branding exercise where we <span className={`emphasis`}> defined and refined</span> our general style direction.</div>}
+            />
+
+            {boarder}
+
+            <SectionTopper
+                sectionTitletxt="Testing + Improvementst"
+                sectionSubtitleTxt="The path of successful design never did run smooth."
+                topParagraphHTML={<div className={'bodyText'}>In order to have the best product possible, listening, responding and prioritizing feedback are paramount. During the course of design iterations,<span className={`emphasis`}>  I updated the design based on feedback in order to have the largest impact. </span> Following are a handful of those improvements.</div>}
+            />
+
+            {boarder}
 
         </div>
     );
