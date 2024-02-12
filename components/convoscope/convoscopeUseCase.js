@@ -96,6 +96,7 @@ export default function ConvoscopeUseCase(){
 
             />
 
+            {/* Speaker mode icons  */}
             <div className={styles.speakerModsWrapper}>
                 <div className={styles.middleModContainner}>
                     <div className={styles.sModsPicContainer}>

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import styles from "./card.module.css";
 
-export default function Card ({ p1, p2, p3, p4, p5, p6, bullets, imgage1, imgage2, imgage3, imgage4, imgage5, imgage6}) {
+export default function Card ({ p1, bullets, imgage1, imgage2, children}) {
     return (
         <div className={styles.outterContainer}>
             <div className={`bodyText ${styles.cardBody}`}>
@@ -33,7 +33,7 @@ export default function Card ({ p1, p2, p3, p4, p5, p6, bullets, imgage1, imgage
                     }} />
             </div>
             {bullets}
-
+            {children}
         </div>
     );
 }
