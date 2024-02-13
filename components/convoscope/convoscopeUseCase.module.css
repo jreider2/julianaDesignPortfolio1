@@ -18,6 +18,8 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+
+/* Card styles */
 .bulletContainer {
     display: flex;
     flex-direction: row;
@@ -25,11 +27,6 @@
     width: var(--innerTxtWidth, 51.25rem);
     margin-bottom: var(--margin-2);
     justify-content: space-around;
-}
-
-.marginBottom{
-    margin-bottom: 1rem;
-    display: inline-block;
 }
 
 .cardBody2{
@@ -45,11 +42,9 @@
     border-radius: var(--boarder-radius); 
     overflow: hidden;
 }
+/* END Card styles END*/
 
-.marginBottom2{
-    margin-bottom: var(--margin-2);
-}
-
+/* speaker mode icon section */
 .speakerModsWrapper{
     display: flex;
     flex-direction: row;
@@ -79,6 +74,40 @@
     margin-top: .5rem;
     text-align: center;
 }
+/* END speaker mode icon section END */
+
+.sectionSubheading{
+    color: var(--light-text, #D5DCF4);
+    font-family: var(--round, SF Pro Rounded, sans-serif);
+    font-size: var(--body-text, 1.44rem);
+    font-weight: 400;
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+    text-align: left;
+    width: var(--widest-container-width);
+}
+
+/* .sectionSubheadingContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-bottom-1);
+    width: var(--widest-container-width);
+} */
+
+/* Indents and margins */
+.indent{
+    margin-left: 1rem;
+}
+
+.marginBottom{
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.marginBottom2{
+    margin-bottom: var(--margin-2);
+}
+/* END Indents and margins END */
 
 @media (max-width: 1030px) {
     .bulletContainer {

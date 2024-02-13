@@ -11,7 +11,7 @@ import Overview from '../useCaseGenerics/overview';
 import SectionTopper from '../useCaseGenerics/sectionTopper';
 import Card from '../useCaseGenerics/card';
 
-import overviewStyles from "../useCaseGenerics/overvievw.module.css";
+import overviewStyles from "../useCaseGenerics/overview.module.css";
 import styles from "./convoscopeUseCase.module.css";
 import cardStyles from "../useCaseGenerics/card.module.css";
 
@@ -193,6 +193,20 @@ export default function ConvoscopeUseCase(){
                 topParagraphHTML={<div className={'bodyText'}>I conducted user interviews, created personas, incrementally iterated on the design,
                 integrated SME and user feedback to hone the best product possible.</div>}
             />
+
+            <div className={`sectionOutterContainer`}>
+                <div className={styles.sectionSubheading}>
+                    Questions Included
+                </div>
+
+                <div className={`bodyText ${styles.indent}`}>
+                • What  is the biggest pain point related to participating in research discussions?<br />
+                • What other solutions or workarounds have you tried?<br />
+                • What do you like about how you currently solve your pain point?<br />
+                • Do you feel this design was made for you? Why or why not?<br />
+                • What's the single most important thing we could do to make ConvoScope better?<br />
+                </div>
+            </div>
 
             {boarder}
             

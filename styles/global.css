@@ -57,6 +57,13 @@ body {
   letter-spacing: 0.024em;
 }
 
+.sectionOutterContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--margin-bottom-1);
+  width: var(--widest-container-width);
+}
+
 a {
   color: #e300f3;
   text-decoration: none;

@@ -1,5 +1,5 @@
 import React from 'react';
-import overviewStyles from "./overvievw.module.css";
+import overviewStyles from "./overview.module.css";
 
 export default function Overview ({ myRole, responsibilities, timeline, status, team, overviewText }) {
     return (
