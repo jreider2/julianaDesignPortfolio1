@@ -1,10 +1,11 @@
+/* entire page container */
 .useCaseContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 10px 20px; */
 }
+/*END  entire page container END */
 
 .imageContainer {
     /* max-width: 60.875rem; */

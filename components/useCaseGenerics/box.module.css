@@ -1,0 +1,32 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--widest-container-width, 51.25rem);
+    border-radius: var(--main-corner-radius, 0.9375rem) var(--main-corner-radius, 0.9375rem) 0.3125rem 0.3125rem;
+    border: 1px solid var(--blue-stroke-2, #465F9C);
+    background: #172C5F;
+    width: var(--innerPicWidth, 51rem);
+  }
+  
+  .iconContainer {
+    max-width: var(--small-icon-size); 
+    margin-right: 40px;
+
+  }
+  
+  .text {
+    flex-grow: 1;
+    margin-top: var(--margin-none, 0rem);
+  }
+
+  .padding {
+    padding: var(--margin-2);
+  }
+  

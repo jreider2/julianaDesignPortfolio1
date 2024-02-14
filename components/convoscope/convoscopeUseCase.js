@@ -5,11 +5,13 @@ import convoImage from '../../public/images/macPlaceHolder.png'
 import highlightsImage1 from '../../public/images/macPlaceHolder.png'
 import eye from '../../public/images/eye.png'
 import speakerIcon from '../../public/images/speakerIcon.png'
+import bookOpen from '../../public/images/book-open.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
 import SectionTopper from '../useCaseGenerics/sectionTopper';
 import Card from '../useCaseGenerics/card';
+import Box from '../useCaseGenerics/box';
 
 import overviewStyles from "../useCaseGenerics/overview.module.css";
 import styles from "./convoscopeUseCase.module.css";
@@ -225,6 +227,28 @@ export default function ConvoscopeUseCase(){
                 <div className={`bodyText ${styles.marginTop2}`}>
                     Users were much more likely to quickly find the info they needed if the output in the app was <span class="emphasis"> collected, curated, and concise.</span>
                 </div>
+            </div>
+
+            <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
+            </Box>
+
+            {/* Persona Title */}
+            <div className={`sectionOutterContainer`}>
+                <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
+                    Additional Insights
+                </div>
+            </div>
+            {/* Persona image */}
+            <div className={`${styles.imageWrapper2} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
             </div>
 
             {boarder} 
