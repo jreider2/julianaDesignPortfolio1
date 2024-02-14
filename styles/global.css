@@ -24,14 +24,17 @@ body {
   --innerTxtWidth: var(--innerPicWidth);
   /* text sizes */
   --body-text: 1.2rem;
-  --pull-quote-txt: 1.8rem;
   --subheading-txt: 1.44rem;
+  --pull-quote-txt: 1.8rem;
   --huge-text: 6.25rem;
   /* text fonts */
   --font-fam-body: SF Pro Text,sans-serif;
   --font-fam-round: SF Pro Rounded;
   /*sizing*/
   --boarder-radius: 15px;
+  /*margins*/
+  --margin-none: 0rem;
+  --margin-p5: 1rem;
   --margin-bottom-1: 2rem;
   --margin-1p5: 2.33rem;
   --margin-2: 3.5rem;

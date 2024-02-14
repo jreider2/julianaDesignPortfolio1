@@ -5,9 +5,11 @@ import styles from "./card.module.css";
 export default function Card ({ p1, bullets, image1, image2, children}) {
     return (
         <div className={styles.outterContainer}>
-            <div className={`bodyText ${styles.cardBody}`}>
-                {p1}
-            </div>
+            {p1 && (
+                <div className={`bodyText ${styles.cardBody}`}>
+                    {p1}
+                </div>
+            )}
 
             {image1 && (
                 <div className={styles.imageWrapper}>

@@ -194,12 +194,12 @@ export default function ConvoscopeUseCase(){
                 integrated SME and user feedback to hone the best product possible.</div>}
             />
 
-            <div className={`sectionOutterContainer`}>
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
                     Questions Included
                 </div>
 
-                <div className={`bodyText ${styles.indent}`}>
+                <div className={`bodyText ${styles.indent} ${styles.marginTop2}`}>
                 • What  is the biggest pain point related to participating in research discussions?<br />
                 • What other solutions or workarounds have you tried?<br />
                 • What do you like about how you currently solve your pain point?<br />
@@ -208,7 +208,26 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
 
-            {boarder}
+            <Card>
+                <div className={`${styles.mainInsightTitle} ${styles.marginTop}`}>
+                    Main Insight
+                </div>
+                <div className={`${styles.cardCallout} ${styles.marginBottom2}`}>
+                    Current tooling produced <span className={`${styles.whiteTxt}`}>too much irrelevant information</span> to sort through in a timely manor.
+                </div>
+            </Card>
+
+            <div className={`sectionOutterContainer ${styles.marginTopNone}`}>
+                <div className={styles.sectionSubheading}>
+                    Additional Insights
+                </div>
+
+                <div className={`bodyText ${styles.marginTop2}`}>
+                    Users were much more likely to quickly find the info they needed if the output in the app was <span class="emphasis"> collected, curated, and concise.</span>
+                </div>
+            </div>
+
+            {boarder} 
             
             <SectionTopper
                 sectionTitletxt="Ideation"

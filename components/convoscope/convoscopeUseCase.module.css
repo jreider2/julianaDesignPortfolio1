@@ -87,12 +87,31 @@
     width: var(--widest-container-width);
 }
 
-/* .sectionSubheadingContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: var(--margin-bottom-1);
-    width: var(--widest-container-width);
-} */
+.mainInsightTitle {
+    margin-bottom: var(--margin-p5);
+    color: var(--subheading-light-text, #A7B1CF);
+    font-family: "SF Pro Rounded";
+    font-size: var(--subheading-txt);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    width: var(--innerTxtWidth, 51.25rem);
+}
+
+.cardCallout {
+    color: var(--subheading-light-text, #A7B1CF);
+    font-family: MuseoModerno;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: var(--innerTxtWidth, 54.125rem);
+}
+
+.whiteTxt {
+    color: white; 
+}
 
 /* Indents and margins */
 .indent{
@@ -106,6 +125,18 @@
 
 .marginBottom2{
     margin-bottom: var(--margin-2);
+}
+
+.marginTop{
+    margin-top: var(--margin-2);
+}
+
+.marginTop2{
+    margin-top: var(--margin-bottom-1);
+}
+
+.marginTopNone{
+    margin-top: var(--margin-none);
 }
 /* END Indents and margins END */
 
