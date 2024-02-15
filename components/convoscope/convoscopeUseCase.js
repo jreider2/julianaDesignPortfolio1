@@ -231,17 +231,21 @@ export default function ConvoscopeUseCase(){
 
             {/* <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
             </Box> */}
-            <Box className={styles.marginTop} txt='During discussion students routinely wanted access During discussion students routinely wanted access During discussion students routinely wanted access' icon={bookOpen}>
+            <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='During discussion students routinely wanted access' icon={bookOpen}>
+            <Box className={styles.marginTopSlim} txt='Flow should not be disrupted' icon={bookOpen}>
+            </Box>
+            <Box className={styles.marginTopSlim} txt='Hide irrelevant information so no time is wasted reading it' icon={bookOpen}>
+            </Box>
+            <Box className={styles.marginTopSlim} txt='Desire all information to be collected in a single location' icon={bookOpen}>
             </Box>
             {/* <Box className={styles.marginTopSlim} txt='During discussion students routinely wanted access' icon={bookOpen}>
             </Box> */}
 
             {/* Persona Title */}
-            <div className={`sectionOutterContainer`}>
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
-                    Additional Insights
+                    Persona
                 </div>
             </div>
             {/* Persona image */}
