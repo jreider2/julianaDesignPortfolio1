@@ -6,6 +6,9 @@ import highlightsImage1 from '../../public/images/macPlaceHolder.png'
 import eye from '../../public/images/eye.png'
 import speakerIcon from '../../public/images/speakerIcon.png'
 import bookOpen from '../../public/images/book-open.png'
+import alertIcon from '../../public/images/alert-triangle.png'
+import eyeOffIcon from '../../public/images/eye-off.png'
+import folderIcon from '../../public/images/folder.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -14,7 +17,7 @@ import Card from '../useCaseGenerics/card';
 import Box from '../useCaseGenerics/box';
 
 import overviewStyles from "../useCaseGenerics/overview.module.css";
-import styles from "./convoscopeUseCase.module.css";
+import styles from "./useCase.module.css";
 import cardStyles from "../useCaseGenerics/card.module.css";
 
 const overviewTextP1= "Students in the MIT Media Lab wanted more information at their fingertips when having conversations with peers, and when listening to research presentations.";
@@ -233,11 +236,11 @@ export default function ConvoscopeUseCase(){
             </Box> */}
             <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='Flow should not be disrupted' icon={bookOpen}>
+            <Box className={styles.marginTopSlim} txt='Flow should not be disrupted' icon={alertIcon}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='Hide irrelevant information so no time is wasted reading it' icon={bookOpen}>
+            <Box className={styles.marginTopSlim} txt='Hide irrelevant information so no time is wasted reading it' icon={eyeOffIcon}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='Desire all information to be collected in a single location' icon={bookOpen}>
+            <Box className={styles.marginTopSlim} txt='Desire all information to be collected in a single location' icon={folderIcon}>
             </Box>
             {/* <Box className={styles.marginTopSlim} txt='During discussion students routinely wanted access' icon={bookOpen}>
             </Box> */}
