@@ -229,8 +229,14 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
 
-            <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
+            {/* <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
+            </Box> */}
+            <Box className={styles.marginTop} txt='During discussion students routinely wanted access During discussion students routinely wanted access During discussion students routinely wanted access' icon={bookOpen}>
             </Box>
+            <Box className={styles.marginTopSlim} txt='During discussion students routinely wanted access' icon={bookOpen}>
+            </Box>
+            {/* <Box className={styles.marginTopSlim} txt='During discussion students routinely wanted access' icon={bookOpen}>
+            </Box> */}
 
             {/* Persona Title */}
             <div className={`sectionOutterContainer`}>
@@ -239,7 +245,7 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
             {/* Persona image */}
-            <div className={`${styles.imageWrapper2} ${styles.marginTop2}`}>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
                         src={highlightsImage1}
                         alt="Use Case Image"

@@ -2,10 +2,10 @@ import React from 'react';
 import Image from "next/image";
 import styles from './box.module.css';
 
-export default function Card ({ className, icon, txt, children}) {
+export default function Card ({ className, icon, txt, children, ...props}) {
     return (
         <div className={`${styles.outerContainer} ${className}` }>
-            <div className={`${styles.container} ${styles.padding}`}>
+            <div className={`${styles.container} ${styles.marginboxOuter}`}>
                 <div className={styles.iconContainer}>
                     <Image
                         src={icon}

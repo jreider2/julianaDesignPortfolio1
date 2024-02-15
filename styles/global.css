@@ -22,6 +22,10 @@ body {
   --widest-container-width: 58rem;
   --innerPicWidth: 51rem; /* --widest-container-width minus --margin-2 x 2 (for left and right) */
   --innerTxtWidth: var(--innerPicWidth);
+  /* --boxTxtWidth: 45rem; */
+  /*sizing*/
+  --boarder-radius: 15px;
+  --small-icon-size: 40px;
   /* text sizes */
   --body-text: 1.2rem;
   --subheading-txt: 1.44rem;
@@ -30,9 +34,7 @@ body {
   /* text fonts */
   --font-fam-body: SF Pro Text,sans-serif;
   --font-fam-round: SF Pro Rounded;
-  /*sizing*/
-  --boarder-radius: 15px;
-  --small-icon-size: 40px;
+  
   /*margins*/
   --margin-none: 0rem;
   --margin-p5: 1rem;

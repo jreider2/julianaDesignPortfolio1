@@ -45,6 +45,14 @@
 }
 /* END Card styles END*/
 
+.imageWrapper3{
+    width: var(--widest-container-width); /* may want to change image at top to: width: var(--innerPicWidth, 51rem);*/
+    height: auto;  /* Height is set to auto to maintain aspect ratio */
+    max-height: 100%; 
+    border-radius: var(--boarder-radius); 
+    overflow: hidden;
+}
+
 /* speaker mode icon section */
 .speakerModsWrapper{
     display: flex;
@@ -138,6 +146,11 @@
 
 .marginTopNone{
     margin-top: var(--margin-none);
+}
+
+.marginTopSlim{
+    margin-top: .5rem;
+
 }
 /* END Indents and margins END */
 
