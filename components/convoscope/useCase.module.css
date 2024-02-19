@@ -68,6 +68,12 @@
 
 .sModsPicContainer{
     width: 6rem;
+    display: flex;
+    height: 80px;
+}
+
+.modHeightLimit {
+    height: 76px;
 }
 
 .middleModContainner{

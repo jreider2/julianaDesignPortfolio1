@@ -11,6 +11,8 @@ import eyeOffIcon from '../../public/images/eye-off.png'
 import folderIcon from '../../public/images/folder.png'
 import processHorizontal from '../../public/images/processVisualHorizontal.png'
 import processVertical from '../../public/images/processVisualVertial.png'
+import artifactsIcon from '../../public/images/artifactsIcon.png'
+import feedbackIcon from '../../public/images/feedbackIcon.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -326,78 +328,61 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-
+            
+            {/* Iterations and deliverables Infographic*/}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
                     Iterations and Deliverables
                 </div>
-                {/* Speaker mode icons  */}
             </div>
             <div className={styles.speakerModsWrapper}>
-                    <div className={styles.middleModContainner}>
-                        <div className={styles.sModsPicContainer}>
-                            <Image
-                                src={speakerIcon}
-                                alt="Use Case Image"
-                                sizes="100vw"
-                                style={{
-                                    width: "100%",
-                                    height: "auto",
-                                    objectFit: "contain"
-                                }} />
-                        </div>
-                        <div className={`emphasis ${styles.modeTitle}`}>Weekly Demos</div>
-                        <div className={`bodyText ${styles.modeBody}`}>Presentations of current designs<br/>and prototypes</div>
+                <div className={styles.middleModContainner}>
+                    <div className={`${styles.sModsPicContainer} ${styles.modHeightLimit}`}>
+                        <Image
+                            src={speakerIcon}
+                            alt="Use Case Image"
+                            sizes="100vw"
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "contain"
+                            }} />
                     </div>
-                    <div className={styles.middleModContainner}>
-                        <div className={styles.sModsPicContainer}>
-                            <Image
-                                src={eye}
-                                alt="Use Case Image"
-                                sizes="100vw"
-                                style={{
-                                    width: "100%",
-                                    height: "auto",
-                                    objectFit: "contain"
-                                }} />
-                        </div>
-                        <div className={`emphasis ${styles.modeTitle}`}>Iterative Feedback</div>
-                        <div className={`bodyText ${styles.modeBody}`}>Gathered continuous feedback<br/>from users and devs
-                        </div> 
-                    </div>
-                    <div className={styles.middleModContainner}>
-                        <div className={styles.sModsPicContainer}>
-                            <Image
-                                src={speakerIcon}
-                                alt="Use Case Image"
-                                sizes="100vw"
-                                style={{
-                                    width: "100%",
-                                    height: "auto",
-                                    objectFit: "contain"
-                                }} />
-                        </div>
-                        <div className={`emphasis ${styles.modeTitle}`}>Artifacts Delivered</div>
-                        <div className={`bodyText ${styles.modeBody}`}>Figma designs, animations,<br/>and style guides</div>
-                    </div>  
+                    <div className={`emphasis ${styles.modeTitle}`}>Weekly Demos</div>
+                    <div className={`bodyText ${styles.modeBody}`}>Presentations of current designs<br/>and prototypes</div>
                 </div>
-                {/* <div className={styles.speakerModsWrapper}>
-                    <div className={styles.middleModContainner}>
-                        <div className={styles.sModsPicContainer}>
-                            <Image
-                                src={speakerIcon}
-                                alt="Use Case Image"
-                                sizes="100vw"
-                                style={{
-                                    width: "100%",
-                                    height: "auto",
-                                    objectFit: "contain"
-                                }} />
-                        </div>
-                        <div className={`emphasis ${styles.modeTitle}`}>Artifacts Delivered</div>
-                        <div className={`bodyText ${styles.modeBody}`}>Figma designs, animations,<br/>and style guides</div>
-                    </div>           
-                </div> */}
+                <div className={styles.middleModContainner}>
+                    <div className={`${styles.sModsPicContainer} ${styles.modHeightLimit}`}>
+                        <Image
+                            src={feedbackIcon}
+                            alt="Use Case Image"
+                            sizes="100vw"
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "contain"
+                            }} />
+                    </div>
+                    <div className={`emphasis ${styles.modeTitle}`}>Iterative Feedback</div>
+                    <div className={`bodyText ${styles.modeBody}`}>Gathered continuous feedback<br/>from users and devs
+                    </div> 
+                </div>
+                <div className={styles.middleModContainner}>
+                    <div className={`${styles.sModsPicContainer} ${styles.modHeightLimit}`}>
+                        <Image
+                            src={artifactsIcon}
+                            alt="Use Case Image"
+                            sizes="100vw"
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "contain"
+                            }} />
+                    </div>
+                    <div className={`emphasis ${styles.modeTitle}`}>Artifacts Delivered</div>
+                    <div className={`bodyText ${styles.modeBody}`}>Figma designs, animations,<br/>and style guides</div>
+                </div>  
+            </div>
 
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading} `}>
