@@ -152,6 +152,11 @@
     margin-top: .5rem;
 
 }
+
+.marginSides1{
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
 /* END Indents and margins END */
 
 @media (max-width: 1030px) {

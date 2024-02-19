@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 
 import convoImage from '../../public/images/macPlaceHolder.png'
@@ -9,6 +9,8 @@ import bookOpen from '../../public/images/book-open.png'
 import alertIcon from '../../public/images/alert-triangle.png'
 import eyeOffIcon from '../../public/images/eye-off.png'
 import folderIcon from '../../public/images/folder.png'
+import processHorizontal from '../../public/images/processVisualHorizontal.png'
+import processVertical from '../../public/images/processVisualVertial.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -38,6 +40,27 @@ const boarder = <div className={`${styles.borderSize} ${styles.imageContainer}`}
 
 
 export default function ConvoscopeUseCase(){
+    const [imageSrc, setImageSrc] = useState(processHorizontal);
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 700) {
+          setImageSrc(processVertical); // Use the vertical image if the viewport width is less than 700
+        } else {
+          setImageSrc(processHorizontal); // Otherwise, use the horizontal image
+        }
+      };
+  
+      // Set the initial image based on the current window size
+      handleResize();
+  
+      // Add event listener for window resize
+      window.addEventListener('resize', handleResize);
+  
+      // Cleanup the event listener on component unmount
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <div className={styles.useCaseContainer}>
             <Header 
@@ -232,8 +255,6 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
 
-            {/* <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
-            </Box> */}
             <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
             </Box>
             <Box className={styles.marginTopSlim} txt='Flow should not be disrupted' icon={alertIcon}>
@@ -242,16 +263,14 @@ export default function ConvoscopeUseCase(){
             </Box>
             <Box className={styles.marginTopSlim} txt='Desire all information to be collected in a single location' icon={folderIcon}>
             </Box>
-            {/* <Box className={styles.marginTopSlim} txt='During discussion students routinely wanted access' icon={bookOpen}>
-            </Box> */}
 
             {/* Persona Title */}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
                     Persona
                 </div>
-            </div>
-            {/* Persona image */}
+                
+            </div>{/* Persona image */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
                         src={highlightsImage1}
@@ -271,6 +290,67 @@ export default function ConvoscopeUseCase(){
                 sectionSubtitleTxt="Honing in on an impactful solution– step by step."
                 topParagraphHTML={<div className={'bodyText'}>Before diving into the more detailed designs, I started with some quick iterations with hand drawn ideas, and moved onto low fidelity wireframes in figma.</div>}
             />
+
+            {/* Minimal Lo-fi Designs Title */}
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
+                    Minimal Lo-fi Designs
+                </div>
+            </div>{/* Minimal Lo-fi Designs image */}
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+
+            {/* Wire frames Title */}
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
+                    Wire frames
+                </div>
+            </div>{/* Wire frames image */}
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
+                    Iterations and Deliverables
+                </div>
+            </div>
+
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`${styles.sectionSubheading} `}>
+                    Process
+                </div>
+            </div>
+            <Card>
+                <div className={`${styles.imageWrapper2} ${styles.marginSides1}`}>
+                        <Image
+                            src={imageSrc}
+                            alt="Use Case Image"
+                            sizes="100vw"
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "contain"
+                            }} />
+                </div>
+            </Card>
 
             {boarder}
 
