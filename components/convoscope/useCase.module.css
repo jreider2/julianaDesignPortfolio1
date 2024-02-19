@@ -178,4 +178,12 @@
         flex-direction: column;
         row-gap: var(--margin-2);
     }
+
+    .processImgCon {
+        height: auto;
+        width: 30vh;
+        margin: var(--margin-2)
+    }
+
+
   }

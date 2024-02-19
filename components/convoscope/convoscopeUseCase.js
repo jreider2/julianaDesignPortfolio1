@@ -44,7 +44,7 @@ export default function ConvoscopeUseCase(){
 
     useEffect(() => {
       const handleResize = () => {
-        if (window.innerWidth < 700) {
+        if (window.innerWidth < 714) {
           setImageSrc(processVertical); // Use the vertical image if the viewport width is less than 700
         } else {
           setImageSrc(processHorizontal); // Otherwise, use the horizontal image
@@ -337,20 +337,18 @@ export default function ConvoscopeUseCase(){
                 <div className={`${styles.sectionSubheading} `}>
                     Process
                 </div>
+             </div> {/*Process image infographic  */}
+            <div className={`${styles.imageWrapper2} ${styles.marginSides1} ${styles.processImgCon} `}>
+                    <Image
+                        src={imageSrc}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
             </div>
-            <Card>
-                <div className={`${styles.imageWrapper2} ${styles.marginSides1}`}>
-                        <Image
-                            src={imageSrc}
-                            alt="Use Case Image"
-                            sizes="100vw"
-                            style={{
-                                width: "100%",
-                                height: "auto",
-                                objectFit: "contain"
-                            }} />
-                </div>
-            </Card>
 
             {boarder}
 
