@@ -15,7 +15,7 @@ import artifactsIcon from '../../public/images/artifactsIcon.png'
 import feedbackIcon from '../../public/images/feedbackIcon.png'
 import thumbsDownIcon from '../../public/images/thumbsDownIcon.png'
 import thumbsUpIcon from '../../public/images/thumbsUpIcon.png'
-import styleTyleMain from '../../public/images/styleTile.png'
+import styleTyleMain from '../../public/images/StyleTile.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
