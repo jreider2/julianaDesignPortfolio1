@@ -13,6 +13,9 @@ import processHorizontal from '../../public/images/processVisualHorizontal.png'
 import processVertical from '../../public/images/processVisualVertial.png'
 import artifactsIcon from '../../public/images/artifactsIcon.png'
 import feedbackIcon from '../../public/images/feedbackIcon.png'
+import thumbsDownIcon from '../../public/images/thumbsDownIcon.png'
+import thumbsUpIcon from '../../public/images/thumbsUpIcon.png'
+import styleTyleMain from '../../public/images/styleTile.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -409,15 +412,324 @@ export default function ConvoscopeUseCase(){
                 topParagraphHTML={<div className={'bodyText'}>The main stakeholder wanted an other-worldly feel that would also feel like a fit in an academic serious context, but we needed to narrow it down. We started with a branding exercise where we <span className={`emphasis`}> defined and refined</span> our general style direction.</div>}
             />
 
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+
+            {/* Styles and design language */}
+            <Card
+                p1= {<div><span className={`emphasis`}>Design Language– </span> create an otherworldly feel requested by the stakeholder</div> }
+            >
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`${styles.imageWrapper2} `}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom2}`}>
+                    <div><span className={`emphasis`}>Initial Directions–</span> I prepared and presented two styles to our stakeholder, in order to get a sense of which direction fit the product best. In the end, we went with a combination of the two styles. The visual style fit our branding goals of serious and harmonious and the color was chosen for better contrast and legibility overall. </div>
+                </div>
+
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+            </Card>
+
             {boarder}
 
             <SectionTopper
                 sectionTitletxt="Testing + Improvementst"
                 sectionSubtitleTxt="The path of successful design never did run smooth."
-                topParagraphHTML={<div className={'bodyText'}>In order to have the best product possible, listening, responding and prioritizing feedback are paramount. During the course of design iterations,<span className={`emphasis`}>  I updated the design based on feedback in order to have the largest impact. </span> Following are a handful of those improvements.</div>}
+                topParagraphHTML={<div className={`bodyText`}>In order to have the best product possible, listening, responding and prioritizing feedback are paramount. During the course of design iterations,<span className={`emphasis`}>  I updated the design based on feedback in order to have the largest impact. </span> Following are a handful of those improvements.</div>}
             />
 
+            {/* Before and After: Incread Legibility */}
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                    Increased Legibility
+                </div>
+            </div>
+            <Box className={`${styles.marginTop}`} txt='Before: At first Users found the contrast in the initial designs difficult to read' icon={thumbsDownIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <Box className={`${styles.marginTop}`} txt='After: but color and sizing  was dialed in, students were able to read the interface clearly from their seats at the back of the lecture hall in MIT media lab.' icon={thumbsUpIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            
+            {/* Before and After: Clean it up */}
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                    Clean it up
+                </div>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                The space was cluttered and I <span class="emphasis"> needed to make the app more breathable</span>, which would in the end make the app more usable.
+                </div>
+            </div>
+            <Box className={`${styles.marginTop}`} txt='Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing to the listeners that the app was processing the conversation. Other elements that were distracting were XYZ.' icon={thumbsDownIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <Box className={`${styles.marginTop}`} txt='After– Removed distracting elements, such as the transcript, while maintaining clarity.' icon={thumbsUpIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <Box className={`${styles.marginTop}`} txt='After– We added a animation, which indicated the app was processing before any cards were created.' icon={thumbsUpIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                This animation deliverable itself took a few iteration due to quality issues encountered with export. An animated PNG(???) was successful in the end.
+                </div>
+            </div>
+
+            {/* Before and After: Hone in typography*/}
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                    Hone in typography
+                </div>
+            </div>
+            <Box className={`${styles.marginTop}`} txt='Before: typography at first did not optimize scanability for users. NOTICE If don’t have anything to talk about here: 
+can talk about Structural and interactive colors chosen for clarity ' icon={thumbsDownIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <Box className={`${styles.marginTop}`} txt='After: TODO Touch on any hierarchy, contrast, color, weight and spacing used to optimize legibility, and clarity' icon={thumbsUpIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+
             {boarder}
+
+            <SectionTopper
+                sectionTitletxt="Final Design"
+                sectionSubtitleTxt="I was proud of what I had created."
+                topParagraphHTML={<div className={`bodyText`}><span className={`emphasis`}>  TODO </span>: Final design should have <span className={`emphasis`}>  5 key screens. </span> After many iterations and experimentations, here are some of the elements I wish to highlight.</div>}
+            />
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                    TODO Some Subheading
+                </div>
+            </div>
+
+            {/* 5 major screens */}
+            <Card
+                p1= {<div><span className={`emphasis`}>TODO– </span> TODO 5 major screens </div> }
+            >
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`${styles.imageWrapper2} `}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom2}`}>
+                    <div><span className={`emphasis`}>TODO–</span> TODO. </div>
+                </div>
+
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+            </Card>
+
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                    Style guide
+                </div>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                I created a style that evoked academia, while also reflecting a moody otherworldly, biological atmosphere requested by the stakeholder. For example, the puffiness of the icons and rounded corners felt more based in nature than harsh edges would. In additon, the font helped<span class="emphasis">  evoke the science fiction vibes that</span> we desired.
+                </div>
+            </div>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={styleTyleMain}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+
+            {/* animations */}
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                    Animations
+                </div>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                hold for text<span class="emphasis"> todo</span> .
+                </div>
+            </div>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+
+            {/* style deck */}
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                    Slide deck
+                </div>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                hold for text<span class="emphasis"> todo</span> .
+                </div>
+            </div>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+{boarder}
+            <SectionTopper
+                sectionTitletxt="Reflections"
+                sectionSubtitleTxt="Learn by Doing."
+                topParagraphHTML={<div className={`bodyText`}>As this was my first design project, I grew my skills an incredible amount. From components to finding the middle ground with stakeholders,<span className={`emphasis`}> my mind is awash with possibilities </span>for the future.</div>}
+            />
+
+            
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                Take-aways
+                </div>
+            </div>
 
         </div>
     );
