@@ -4,7 +4,7 @@ import Image from "next/image";
 import convoImage from '../../public/images/macPlaceHolder.png'
 import highlightsImage1 from '../../public/images/macPlaceHolder.png'
 import eye from '../../public/images/eye.png'
-import speakerIcon from '../../public/images/speakerIcon.png'
+import speakerIcon from '../../public/images/SpeakerIcon.png'
 import bookOpen from '../../public/images/book-open.png'
 import alertIcon from '../../public/images/alert-triangle.png'
 import eyeOffIcon from '../../public/images/eye-off.png'
@@ -314,12 +314,12 @@ export default function ConvoscopeUseCase(){
                         }} />
             </div>
 
-            {/* Wire frames Title */}
+            {/* Wireframes Title */}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
-                    Wire frames
+                    Wireframes
                 </div>
-            </div>{/* Wire frames image */}
+            </div>{/* Wireframes image */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
                         src={highlightsImage1}
@@ -472,7 +472,7 @@ export default function ConvoscopeUseCase(){
             {boarder}
 
             <SectionTopper
-                sectionTitletxt="Testing + Improvementst"
+                sectionTitletxt="Testing + Improvements"
                 sectionSubtitleTxt="The path of successful design never did run smooth."
                 topParagraphHTML={<div className={`bodyText`}>In order to have the best product possible, listening, responding and prioritizing feedback are paramount. During the course of design iterations,<span className={`emphasis`}>  I updated the design based on feedback in order to have the largest impact. </span> Following are a handful of those improvements.</div>}
             />
@@ -516,10 +516,24 @@ export default function ConvoscopeUseCase(){
                     Clean it up
                 </div>
                 <div className={`bodyText ${styles.marginTop2}`}>
-                The space was cluttered and I <span class="emphasis"> needed to make the app more breathable</span>, which would in the end make the app more usable.
+                The space was cluttered and I  needed to<span class="emphasis"> make the app more breathable</span>, which would in the end make the app more usable.
                 </div>
             </div>
-            <Box className={`${styles.marginTop}`} txt='Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing to the listeners that the app was processing the conversation. Other elements that were distracting were XYZ.' icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop}`} txt='Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing the listeners that the app was active.' icon={thumbsDownIcon}>
+            </Box>
+            {/* {Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing to the listeners that the app was processing the conversation. Other elements that were distracting were XYZ.'} */}
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={highlightsImage1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <Box className={`${styles.marginTop}`} txt='After: Removed distracting elements, such as the transcript, while maintaining clarity.' icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -532,20 +546,7 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt='After– Removed distracting elements, such as the transcript, while maintaining clarity.' icon={thumbsUpIcon}>
-            </Box>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
-                    <Image
-                        src={highlightsImage1}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
-            </div>
-            <Box className={`${styles.marginTop}`} txt='After– We added a animation, which indicated the app was processing before any cards were created.' icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt='After: We added a animation, which indicated the app was processing before any cards were created.' icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
