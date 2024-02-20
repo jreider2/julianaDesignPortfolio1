@@ -4,10 +4,15 @@ import Image from "next/image";
 
 // constants/convoscopeConstants.js
 export const takeaways = [
-    "First takeaway from the project.",
-    "Second insight you gained.",
-    "Another important point to remember.",
-    // Add as many as needed
+    <div><span className={`emphasis`}>Go slow to go fast. </span>For my next project, I resolve to use reusable components in Figma earlier in the design process. At the right moment, taking the time to create well chosen components will pay-off in spades later.</div>,
+
+    <div><span className={`emphasis`}>Validate the feature set and challenge it when appropriate. </span>For example, Speaker Mode might add undesirable cognitive load to a speaker who is curating the ConvoScope content while simultaneously giving the lecture. Given more time, gathering more data around this, and other alternatives, could be fruitful to create a better product in the long run.</div>,
+
+    <div><span className={`emphasis`}>Refine tooling. </span>I used Adobe After Effects to create the moving assets. It is a powerful tool but a bit clunky. Therefore, I might try X for more simple tooling in the future.</div>,
+
+    <div><span className={`emphasis`}>I learned how to fish. </span>It was tricky to handoff the animation assets. Through a series of onerous experiments we discovered that gifs are too low quality, MP4s don't support transparency, Lottie files do not support blending modes or complex gradients, and animated svg doesn't support complex gradients. In the end we resorted to animated PNGs. In the future I would start there ;).</div>,
+
+    <div><span className={`emphasis`}>Start with the essential. </span>For this project, I started by designing the desktop app. Next step will be to design the smart glasses app. In future, it could be better to begin with the more limited interface (e.g. the smart glasses) in order to discern what are the most essential features for the product. I suspect that it can be more straightforward to adapt from a limited interface to a more expansive one, rather than vice versa. </div>,
   ];
   
 
