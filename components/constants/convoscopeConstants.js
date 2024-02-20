@@ -1,5 +1,5 @@
 import overviewStyles from "../useCaseGenerics/overview.module.css";
-import styles from "../convoScope/useCase.module.css";
+import styles from "../convoscope/useCase.module.css";
 import Image from "next/image";
 
 // constants/convoscopeConstants.js
