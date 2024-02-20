@@ -31,11 +31,11 @@ const overviewTextP1= "Students in the MIT Media Lab wanted more information at 
 const overviewTextP2= <>I paired with researchers at MIT media lab to create a tool to aid in
     <span className={overviewStyles.emphasis}> seamlessly surfacing additional information during lab meetings.</span>
 </>;
-const overviewTextP3= <> I worked on the end-to-end design of the desktop application. Our app was presented and used at MIT, 
+const overviewTextP3= <> I worked on the end-to-end design of the desktop application.<br/><br/> Our app was presented and used at MIT, 
     <span className={overviewStyles.emphasis}> meaningfully improved the quality of research conversations, </span>
     and is currently being adapted for use with AR by Team Open Smart Glasses.
 </>
-const overviewTextFull= <>{overviewTextP1} <br/> {overviewTextP2} <br/> {overviewTextP3}</>;
+const overviewTextFull= <>{overviewTextP1} <br/><br/> {overviewTextP2} <br/><br/> {overviewTextP3}</>;
 
 import borderLinePng from '/public/images/line-8.png';
 const boarder = <div className={`${styles.borderSize} ${styles.imageContainer}`}>
@@ -78,10 +78,11 @@ export default function ConvoscopeUseCase(){
                 responsibilities="Interaction Design, UX Design, Visual Design, User Flows, Prototyping"
                 timeline="Q3, Q4 2023 Design Stage"
                 status="Currently in development"
-                team="Ayon Bhattacharya, UX
-                Cayden Pierce, PM + SE Lead
-                Alex Israelov, Head of Apps
-                Kenji Phang, SE"
+                team={<div>Ayon Bhattacharya, UX<br/>
+                Cayden Pierce,
+                PM + SE Lead<br/>
+                Alex Israelov, Head of Apps<br/>
+                Kenji Phang, SE</div>}
                 overviewText={overviewTextFull}
             />
 
@@ -496,7 +497,7 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt='After: but color and sizing  was dialed in, students were able to read the interface clearly from their seats at the back of the lecture hall in MIT media lab.' icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt='After: once color and sizing was dialed in, students were able to read the interface clearly from their seats at the back of the lecture hall in MIT media lab.' icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
