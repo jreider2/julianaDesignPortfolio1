@@ -22,26 +22,12 @@ import Overview from '../useCaseGenerics/overview';
 import SectionTopper from '../useCaseGenerics/sectionTopper';
 import Card from '../useCaseGenerics/card';
 import Box from '../useCaseGenerics/box';
+import NumberedList from '../useCaseGenerics/numberedList';
 
-import overviewStyles from "../useCaseGenerics/overview.module.css";
 import styles from "./useCase.module.css";
-import cardStyles from "../useCaseGenerics/card.module.css";
 
-const overviewTextP1= "Students in the MIT Media Lab wanted more information at their fingertips when having conversations with peers, and when listening to research presentations.";
-const overviewTextP2= <>I paired with researchers at MIT media lab to create a tool to aid in
-    <span className={overviewStyles.emphasis}> seamlessly surfacing additional information during lab meetings.</span>
-</>;
-const overviewTextP3= <> I worked on the end-to-end design of the desktop application.<br/><br/> Our app was presented and used at MIT, 
-    <span className={overviewStyles.emphasis}> meaningfully improved the quality of research conversations, </span>
-    and is currently being adapted for use with AR by Team Open Smart Glasses.
-</>
-const overviewTextFull= <>{overviewTextP1} <br/><br/> {overviewTextP2} <br/><br/> {overviewTextP3}</>;
-
-import borderLinePng from '/public/images/line-8.png';
-const boarder = <div className={`${styles.borderSize} ${styles.imageContainer}`}>
-        <Image src={borderLinePng} fill sizes="100vw"
-        style={{ objectFit: "cover", objectPosition: "top" }} />
-    </div>
+// data
+import { takeaways, overviewTextFull, boarder } from '../constants/convoscopeConstants';
 
 
 export default function ConvoscopeUseCase(){
@@ -731,10 +717,15 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
                 topParagraphHTML={<div className={`bodyText`}>As this was my first design project, I grew my skills an incredible amount. From components to finding the middle ground with stakeholders,<span className={`emphasis`}> my mind is awash with possibilities </span>for the future.</div>}
             />
 
-
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
                 Take-aways
+                </div>
+
+                <div className={`bodyText ${styles.indent} ${styles.marginTop2}`}>
+                {/* insert numbered list here */}
+                        <NumberedList takeaways={takeaways}>
+                        </NumberedList>
                 </div>
             </div>
 
