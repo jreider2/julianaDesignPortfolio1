@@ -242,11 +242,13 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
 
-            <Card>
-                <div className={`${styles.mainInsightTitle} ${styles.marginTop}`}>
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
                     Main Insight
                 </div>
-                <div className={`${styles.cardCallout} ${styles.marginBottom2}`}>
+            </div>
+            <Card>
+                <div className={`${styles.cardCallout} ${styles.marginBottom2} ${styles.marginTop}`}>
                     Current tooling produced <span className={`${styles.whiteTxt}`}>too much irrelevant information</span> to sort through in a timely manor.
                 </div>
             </Card>
@@ -261,13 +263,13 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
 
-            <Box className={styles.marginTop} txt='During discussion students routinely wanted access to supplemental information quickly' icon={bookOpen}>
+            <Box className={styles.marginTop} txt='During discussion, students routinely wanted access to supplemental information quickly' icon={bookOpen}>
             </Box>
             <Box className={styles.marginTopSlim} txt='Flow should not be disrupted' icon={alertIcon}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='Hide irrelevant information so no time is wasted reading it' icon={eyeOffIcon}>
+            <Box className={styles.marginTopSlim} txt='Irrelevant information should be hidden so no time is wasted reading it' icon={eyeOffIcon}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='Desire all information to be collected in a single location' icon={folderIcon}>
+            <Box className={styles.marginTopSlim} txt='There was a desire for all information to be collected in a single location' icon={folderIcon}>
             </Box>
 
             {/* Persona Title */}
@@ -719,19 +721,35 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
                             objectFit: "contain"
                         }} />
             </div>
-{boarder}
+
+
+            {boarder}
+
             <SectionTopper
                 sectionTitletxt="Reflections"
                 sectionSubtitleTxt="Learn by Doing."
                 topParagraphHTML={<div className={`bodyText`}>As this was my first design project, I grew my skills an incredible amount. From components to finding the middle ground with stakeholders,<span className={`emphasis`}> my mind is awash with possibilities </span>for the future.</div>}
             />
 
-            
+
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
                 Take-aways
                 </div>
             </div>
+
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={styles.sectionSubheading}>
+                    Smart Glasses, Here I Come
+                </div>
+            </div>
+            <Card>
+                <div className={`${styles.cardCallout} ${styles.marginBottom2} ${styles.marginTop}`}>
+                Given that <span className={`${styles.whiteTxt}`}>Smart Glasses</span> are almost entirely text based, finding ways of emphasizing hierarchy, such as through spacing and other methods, will be essential. <span className={`${styles.whiteTxt}`}> I’m pumped for my next learning journey!</span>
+                </div>
+            </Card>
+
+            {boarder}
 
         </div>
     );
