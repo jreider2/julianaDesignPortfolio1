@@ -1,0 +1,36 @@
+.buttonContainer{
+display: flex;
+flex-direction: row;
+width: var(--widest-container-width);
+justify-content: flex-start;
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: #51558F !important;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--round-radius, 60px);
+    outline: none;
+    transition: background-color 0.3s ease;
+    /* move later */
+    color: var(--Light-blue, #D5DCF4);
+    font-family: var(--font-fancy);
+    font-size: var(--body-text);
+    letter-spacing: 0.04rem;
+}
+
+.button svg {
+    margin-right: 4px; /* Space between icon and text */
+}
+
+.buttonText{
+    padding-right: 6px;
+}
+
+/* .button:hover {
+    background-color: black;
+} */

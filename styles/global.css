@@ -25,16 +25,17 @@ body {
   /* --boxTxtWidth: 45rem; */
   /*sizing*/
   --boarder-radius: 15px;
+  --round-radius: 60px;
   --small-icon-size: 35px;
   /* text sizes */
   --body-text: 1.2rem;
   --subheading-txt: 1.44rem;
   --pull-quote-txt: 1.8rem;
-  /* --callout-txt: 2.25rem; */
   --huge-text: 6.25rem;
   /* text fonts */
   --font-fam-body: SF Pro Text,sans-serif;
   --font-fam-round: SF Pro Rounded;
+  --font-fancy: MuseoModerno;
   
   /*margins*/
   --margin-none: 0rem;

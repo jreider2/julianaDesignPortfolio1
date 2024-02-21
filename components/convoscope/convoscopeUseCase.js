@@ -23,6 +23,7 @@ import SectionTopper from '../useCaseGenerics/sectionTopper';
 import Card from '../useCaseGenerics/card';
 import Box from '../useCaseGenerics/box';
 import NumberedList from '../useCaseGenerics/numberedList';
+import BackButton from '../useCaseGenerics/backButton';
 
 import styles from "./useCase.module.css";
 
@@ -741,6 +742,8 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             </Card>
 
             {boarder}
+
+            <BackButton />
 
         </div>
     );
