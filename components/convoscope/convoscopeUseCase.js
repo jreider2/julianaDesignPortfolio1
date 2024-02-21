@@ -24,6 +24,7 @@ import Card from '../useCaseGenerics/card';
 import Box from '../useCaseGenerics/box';
 import NumberedList from '../useCaseGenerics/numberedList';
 import BackButton from '../useCaseGenerics/backButton';
+import TeaserCard from '../teasercard';
 
 import styles from "./useCase.module.css";
 
@@ -741,9 +742,11 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
                 </div>
             </Card>
 
-            {boarder}
+            {/* {boarder} */}
 
             <BackButton />
+
+            {/* <TeaserCard title="Thought Filter" description="First designer for a B2B content marketing SaaS tool." image="/images/macx2.png" link={"/thoughtFilter"}></TeaserCard> */}
 
         </div>
     );

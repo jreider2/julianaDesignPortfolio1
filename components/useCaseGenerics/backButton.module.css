@@ -21,6 +21,7 @@ justify-content: flex-start;
     font-family: var(--font-fancy);
     font-size: var(--body-text);
     letter-spacing: 0.04rem;
+    margin-top: var(--margin-2);
 }
 
 .button svg {
