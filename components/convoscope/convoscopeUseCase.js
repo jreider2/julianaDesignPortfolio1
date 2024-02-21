@@ -738,7 +738,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             </div>
             <Card>
                 <div className={`${styles.cardCallout} ${styles.marginBottom2} ${styles.marginTop}`}>
-                Given that <span className={`${styles.whiteTxt}`}>Smart Glasses</span> are almost entirely text based, finding ways of emphasizing hierarchy, such as through spacing and other methods, will be essential. <span className={`${styles.whiteTxt}`}> I’m pumped for my next learning journey!</span>
+                Given that <span className={`${styles.whiteTxt}`}>Smart Glasses</span> are almost entirely text based, finding ways of emphasizing hierarchy, such as through spacing and other methods, will be essential. <span className={`${styles.whiteTxt}`}>I’m pumped for my next learning journey!</span>
                 </div>
             </Card>
 
