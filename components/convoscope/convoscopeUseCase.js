@@ -67,7 +67,7 @@ export default function ConvoscopeUseCase(){
                 team={<div>Ayon Bhattacharya, UX<br/>
                 Cayden Pierce,
                 PM + SE Lead<br/>
-                Alex Israelov, Head of Apps<br/>
+                Alex Israelov, SE Lead<br/>
                 Kenji Phang, SE</div>}
                 overviewText={overviewTextFull}
             />
