@@ -1,5 +1,6 @@
 import overviewStyles from "../useCaseGenerics/overview.module.css";
 import styles from "../convoscope/useCase.module.css";
+import boarderStyles from "../useCaseGenerics/boarder.module.css"
 import Image from "next/image";
 
 // constants/convoscopeConstants.js
@@ -29,7 +30,7 @@ export const overviewTextFull= <>{overviewTextP1} <br/><br/> {overviewTextP2} <b
 
 import borderLinePng from '/public/images/line-8.png';
 
-export const boarder = <div className={`${styles.borderSize} ${styles.imageContainer}`}>
+export const boarder = <div className={`${styles.borderSize} ${boarderStyles.boarderContainer}`}>
         <Image src={borderLinePng} fill sizes="100vw"
         style={{ objectFit: "cover", objectPosition: "top" }} />
     </div>
