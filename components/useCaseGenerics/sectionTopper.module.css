@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: var(--margin-bottom-1, 2rem);
+    margin-bottom: var(--margin-2, 2rem);
 }
 
 .circle {

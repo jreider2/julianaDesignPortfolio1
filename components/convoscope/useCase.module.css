@@ -26,12 +26,12 @@
     flex-direction: row;
     margin-top: 0px;
     width: var(--innerTxtWidth, 51.25rem);
-    margin-bottom: var(--margin-2);
+    margin-bottom: var(--margin-4);
     justify-content: space-around;
 }
 
 .cardBody2{
-    margin-bottom: var(--margin-1p5);
+    margin-bottom: var(--margin-3);
     color: var(--light-text, #D5DCF4);
     width: var(--innerTxtWidth, 51.25rem);
 }
@@ -61,8 +61,8 @@
     align-items: center;
     flex-wrap: wrap;
     width: var(--widest-container-width, 51.25rem);
-    margin-top: var(--margin-1p5);
-    margin-bottom: var(--margin-1p5);
+    margin-top: var(--margin-3);
+    margin-bottom: var(--margin-3);
     gap: 10px 10rem;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .modeTitle{
-    margin-top: var(--margin-bottom-1);
+    margin-top: var(--margin-2);
 }
 
 .modeBody{
@@ -106,7 +106,7 @@
 }
 
 .mainInsightTitle {
-    margin-bottom: var(--margin-p5);
+    margin-bottom: var(--margin-1);
     color: var(--subheading-light-text, #A7B1CF);
     font-family: "SF Pro Rounded";
     font-size: var(--subheading-txt);
@@ -142,15 +142,15 @@
 }
 
 .marginBottom2{
-    margin-bottom: var(--margin-2);
+    margin-bottom: var(--margin-4);
 }
 
 .marginTop{
-    margin-top: var(--margin-2);
+    margin-top: var(--margin-4);
 }
 
 .marginTop2{
-    margin-top: var(--margin-bottom-1);
+    margin-top: var(--margin-2);
 }
 
 .marginTopNone{
@@ -199,13 +199,13 @@
     }
     .speakerModsWrapper{
         flex-direction: column;
-        row-gap: var(--margin-2);
+        row-gap: var(--margin-4);
     }
 
     .processImgCon {
         height: auto;
         width: 30vh;
-        margin: var(--margin-2)
+        margin: var(--margin-4)
     }
 
     .cardCallout {

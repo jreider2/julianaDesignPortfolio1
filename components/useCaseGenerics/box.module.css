@@ -6,7 +6,7 @@
     width: var(--widest-container-width); /* // change to width?  */
     border-radius: var(--boarder-radius);
     border: 1px solid var(--blue-stroke-2, #465F9C);
-    /* margin-top: var(--margin-2); */
+    /* margin-top: var(--margin-4); */
   }
   
   .container {
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     background: #172C5F;
-    gap: var(--margin-2, 3.5rem);
+    gap: var(--margin-4, 3.5rem);
     width: var(--innerTxtWidth, 54.125rem);
   }
   
@@ -41,10 +41,10 @@
   }
 
   .marginboxOuter{
-    margin: var(--margin-bottom-1) auto;
+    margin: var(--margin-2) auto;
   }
 
   .padding {
-    padding: var(--margin-1p5) var(--margin-2);
+    padding: var(--margin-3) var(--margin-4);
   }
   

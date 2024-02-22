@@ -20,7 +20,7 @@ body {
 
   /*widths*/
   --widest-container-width: 58rem;
-  --innerPicWidth: 51rem; /* --widest-container-width minus --margin-2 x 2 (for left and right) */
+  --innerPicWidth: 51rem; /* --widest-container-width minus --margin-4 x 2 (for left and right) */
   --innerTxtWidth: var(--innerPicWidth);
   /* --boxTxtWidth: 45rem; */
   /*sizing*/
@@ -38,11 +38,12 @@ body {
   --font-fancy: MuseoModerno;
   
   /*margins*/
-  --margin-none: 0rem;
-  --margin-p5: 1rem;
-  --margin-bottom-1: 2rem;
-  --margin-1p5: 2.33rem;
-  --margin-2: 3.5rem;
+  --margin-none: 0rem; /* 0 */
+  --margin-1: 1rem; /* 1 */
+  --margin-2: 2rem; /* 2 */
+  --margin-3: 2.33rem; /* 3 */
+  --margin-4: 3.5rem; /* 4 */
+  --margin-5: 5rem;
 }
 
 .bodyText {
@@ -68,7 +69,7 @@ body {
 .sectionOutterContainer{
   display: flex;
   flex-direction: column;
-  margin-top: var(--margin-bottom-1);
+  margin-top: var(--margin-2);
   width: var(--widest-container-width);
 }
 

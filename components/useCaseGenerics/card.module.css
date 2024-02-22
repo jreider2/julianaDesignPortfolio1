@@ -12,13 +12,13 @@
     color: white; /* Set the text color to white for better contrast */
     max-width: var(--widest-container-width); 
     width: var(--widest-container-width);
-    margin: var(--margin-2) auto; /* Optional: Center the box on the page */
+    margin: var(--margin-4) auto; /* Optional: Center the box on the page */
     border-radius: var(--boarder-radius); 
 }
 
 .cardBody{
-    margin-top: var(--margin-2);
-    margin-bottom: var(--margin-1p5);
+    margin-top: var(--margin-4);
+    margin-bottom: var(--margin-3);
     color: var(--light-text, #D5DCF4);
     width: var(--innerTxtWidth, 51.25rem);
 }
@@ -31,5 +31,5 @@
     max-height: 100%; 
     border-radius: var(--boarder-radius); 
     overflow: hidden;
-    margin-bottom: var(--margin-2);
+    margin-bottom: var(--margin-4);
 }
