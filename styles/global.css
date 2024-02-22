@@ -34,7 +34,7 @@ body {
   --huge-text: 6.25rem;
   /* text fonts */
   --font-fam-body: SF Pro Text,sans-serif;
-  --font-fam-round: SF Pro Rounded;
+  --font-fam-round: SF Pro Rounded, sans-serif;
   --font-fancy: MuseoModerno;
   
   /*margins*/
