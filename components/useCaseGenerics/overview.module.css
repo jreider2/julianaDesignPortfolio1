@@ -1,4 +1,4 @@
-@import '/styles/global.css';
+/* @import '/styles/global.css'; */
 
 .outterContainer{
     display: flex;
@@ -53,6 +53,10 @@
 
 .marginTopNone {
     margin-top: 0px;
+}
+
+.marginBottomNone {
+    margin-bottom: 0px;
 }
 
 @media (max-width: 1030px) {

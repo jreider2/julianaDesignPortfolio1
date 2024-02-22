@@ -34,7 +34,7 @@ export default function Overview ({ myRole, responsibilities, timeline, status, 
             {/* row 2 */}
             <div className={overviewStyles.row2}>
                 <h1 className={overviewStyles.heading}>Overview</h1>
-                <p className={`${overviewStyles.body} ${overviewStyles.marginTopNone}`}>
+                <p className={`${overviewStyles.body} ${overviewStyles.marginTopNone} ${overviewStyles.marginBottomNone}`}>
                     {overviewText}
                 </p>
             </div>
