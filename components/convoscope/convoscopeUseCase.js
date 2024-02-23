@@ -120,7 +120,7 @@ export default function ConvoscopeUseCase(){
             />
 
             {/* Speaker mode icons  */}
-            <div className={styles.speakerModsWrapper}>
+            <div className={`${styles.speakerModsWrapper}`}>
                 <div className={styles.middleModContainner}>
                     <div className={styles.sModsPicContainer}>
                         <Image
@@ -193,6 +193,7 @@ export default function ConvoscopeUseCase(){
 
             <Card
                 p1= {<div><span className={`emphasis`}>“Hey Convo” –</span> Voice interface available for users to ask burning questions.</div> }
+                className={`${styles.marginBottomNone} ${styles.marginTopNone}`}
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
@@ -235,7 +236,8 @@ export default function ConvoscopeUseCase(){
                     Main Insight
                 </div>
             </div>
-            <Card>
+            <Card
+            className={`${styles.marginTop3}`}>
                 <div className={`${styles.cardCallout} ${styles.marginBottom2} ${styles.marginTop}`}>
                     Current tooling produced <span className={`${styles.whiteTxt}`}>too much irrelevant information</span> to sort through in a timely manor.
                 </div>
@@ -251,7 +253,7 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
 
-            <Box className={styles.marginTop} txt='During discussion, students routinely wanted access to supplemental information quickly' icon={bookOpen}>
+            <Box className={styles.marginTop2} txt='During discussion, students routinely wanted access to supplemental information quickly' icon={bookOpen}>
             </Box>
             <Box className={styles.marginTopSlim} txt='Flow should not be disrupted' icon={alertIcon}>
             </Box>
@@ -324,12 +326,12 @@ export default function ConvoscopeUseCase(){
             </div>
             
             {/* Iterations and deliverables Infographic*/}
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+            <div className={`sectionOutterContainer ${styles.marginTop5}`}>
                 <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
                     Iterations and Deliverables
                 </div>
             </div>
-            <div className={styles.speakerModsWrapper}>
+            <div className={`${styles.speakerModsWrapper} ${styles.marginBottomNone} ${styles.marginTop5} ${styles.marginVpTopSmall}`}>
                 <div className={styles.middleModContainner}>
                     <div className={`${styles.sModsPicContainer} ${styles.modHeightLimit}`}>
                         <Image
@@ -738,9 +740,10 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             </div>
             <Card>
                 <div className={`${styles.cardCallout} ${styles.marginBottom2} ${styles.marginTop}`}>
-                Given that <span className={`${styles.whiteTxt}`}>Smart Glasses</span> are almost entirely text based, finding ways of emphasizing hierarchy, such as through spacing and other methods, will be essential. <span className={`${styles.whiteTxt}`}>I’m pumped for my next learning journey!</span>
+                The next iteration will involve creating a <span className={`${styles.whiteTxt}`}>smart glasses</span> interface. <span className={`${styles.whiteTxt}`}>I’m pumped for my next learning journey!</span>
                 </div>
             </Card>
+            <p>Smart glasses require highly focused design work in a constrained environment. Finding ways of emphasizing hierarchy through spacing, emphasis, and visual interest will be essential. </p>
 
             {/* {boarder} */}
 

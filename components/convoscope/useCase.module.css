@@ -136,6 +136,10 @@
     margin-left: 1rem;
 }
 
+.marginBottomNone {
+    margin-bottom: 0px;
+}
+
 .marginBottom{
     margin-bottom: 1rem;
     display: inline-block;
@@ -145,8 +149,16 @@
     margin-bottom: var(--margin-4);
 }
 
+.marginTop5{
+    margin-top: var(--margin-5);
+}
+
 .marginTop{
     margin-top: var(--margin-4);
+}
+
+.marginTop3 {
+    margin-top: var(--margin-3);
 }
 
 .marginTop2{
@@ -158,8 +170,7 @@
 }
 
 .marginTopSlim{
-    margin-top: .5rem;
-
+    margin-top: var(--margin-1);
 }
 
 .marginSides1{
@@ -188,6 +199,10 @@
     /* speaker mode icon section */
     .speakerModsWrapper{
         gap: 3rem 10rem;
+    }
+
+    .marginVpTopSmall{
+        margin-top: var(margin-3);
     }
 }
 

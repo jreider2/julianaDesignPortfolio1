@@ -2,9 +2,9 @@ import React from 'react';
 import Image from "next/image";
 import styles from "./card.module.css";
 
-export default function Card ({ p1, bullets, image1, image2, children}) {
+export default function Card ({ className, p1, bullets, image1, image2, children}) {
     return (
-        <div className={styles.outterContainer}>
+        <div className={`${styles.outterContainer} ${className}`}>
             {p1 && (
                 <div className={`bodyText ${styles.cardBody}`}>
                     {p1}
