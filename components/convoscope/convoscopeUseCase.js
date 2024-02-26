@@ -420,6 +420,7 @@ export default function ConvoscopeUseCase(){
             {/* Styles and design language */}
             <Card
                 p1= {<div><span className={`emphasis`}>Design Language– </span> create an otherworldly feel requested by the stakeholder</div> }
+                className={`${styles.marginBottomNone}`}
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
@@ -459,7 +460,6 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
                 </div>
-
             </Card>
 
             {boarder}
@@ -472,11 +472,11 @@ export default function ConvoscopeUseCase(){
 
             {/* Before and After: Incread Legibility */}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
-                <div className={styles.sectionSubheading}>
+                <div className={`${styles.sectionSubheading}`}>
                     Increased Legibility
                 </div>
             </div>
-            <Box className={`${styles.marginTop}`} txt='Before: At first Users found the contrast in the initial designs difficult to read' icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt='Before: At first Users found the contrast in the initial designs difficult to read' icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
