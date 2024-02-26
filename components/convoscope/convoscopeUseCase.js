@@ -468,7 +468,7 @@ export default function ConvoscopeUseCase(){
             <SectionTopper
                 sectionTitletxt="Testing + Improvements"
                 sectionSubtitleTxt="The path of successful design never did run smooth."
-                topParagraphHTML={<div className={`bodyText`}>In order to have the best product possible, listening, responding and prioritizing feedback are paramount. During the course of design iterations,<span className={`emphasis`}>  I updated the design based on feedback in order to have the largest impact. </span> Following are a handful of those improvements.</div>}
+                topParagraphHTML={<div className={`bodyText`}>In order to have the best product possible, eliciting, and prioritizing feedback are paramount. During the course of design iterations,<span className={`emphasis`}>  I updated the design based on feedback in order to have the largest impact. </span> Following are a handful of those improvements.</div>}
             />
 
             {/* Before and After: Incread Legibility */}
@@ -505,7 +505,7 @@ export default function ConvoscopeUseCase(){
             </div>
             
             {/* Before and After: Clean it up */}
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+            <div className={`sectionOutterContainer ${styles.marginTop5}`}>
                 <div className={styles.sectionSubheading}>
                     Clean it up
                 </div>
