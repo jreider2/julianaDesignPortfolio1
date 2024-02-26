@@ -34,3 +34,8 @@ export const boarder = <div className={`${styles.borderSize} ${boarderStyles.boa
         <Image src={borderLinePng} fill sizes="100vw"
         style={{ objectFit: "cover", objectPosition: "top" }} />
     </div>
+
+export const boarder2 = <div className={`${styles.borderSize} ${boarderStyles.boarderContainer2}`}>
+    <Image src={borderLinePng} fill sizes="100vw"
+style={{ objectFit: "cover", objectPosition: "top" }} />
+</div>

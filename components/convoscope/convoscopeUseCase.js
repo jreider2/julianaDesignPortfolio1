@@ -29,7 +29,7 @@ import BackButton from '../useCaseGenerics/backButton';
 import styles from "./useCase.module.css";
 
 // data
-import { takeaways, overviewTextFull, boarder } from '../constants/convoscopeConstants';
+import { takeaways, overviewTextFull, boarder, boarder2} from '../constants/convoscopeConstants';
 
 
 export default function ConvoscopeUseCase(){
@@ -384,8 +384,8 @@ export default function ConvoscopeUseCase(){
                 <div className={`${styles.sectionSubheading} `}>
                     Process
                 </div>
-             </div> {/*Process image infographic  */}
-            <div className={`${styles.imageWrapper2} ${styles.marginSides1} ${styles.processImgCon} `}>
+            </div> {/*Process image infographic  */}
+            <div className={`${styles.imageWrapper2} ${styles.marginSides1} ${styles.marginBottomNone}`}>
                     <Image
                         src={imageSrc}
                         alt="Use Case Image"
@@ -397,7 +397,8 @@ export default function ConvoscopeUseCase(){
                         }} />
             </div>
 
-            {boarder}
+            {/* {boarder} */}
+            {boarder2}
 
             <SectionTopper
                 sectionTitletxt="Initial Directions"
