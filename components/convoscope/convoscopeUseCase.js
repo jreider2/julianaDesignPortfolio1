@@ -16,6 +16,7 @@ import feedbackIcon from '../../public/images/feedbackIcon.png'
 import thumbsDownIcon from '../../public/images/thumbsDownIcon.png'
 import thumbsUpIcon from '../../public/images/thumbsUpIcon.png'
 import styleTyleMain from '../../public/images/StyleTile.png'
+import tempImg from '../../public/images/tempImg.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -24,7 +25,6 @@ import Card from '../useCaseGenerics/card';
 import Box from '../useCaseGenerics/box';
 import NumberedList from '../useCaseGenerics/numberedList';
 import BackButton from '../useCaseGenerics/backButton';
-import TeaserCard from '../teasercard';
 
 import styles from "./useCase.module.css";
 
@@ -96,8 +96,8 @@ export default function ConvoscopeUseCase(){
                 p1= {<div><span className={`emphasis`}>Main screen -</span> Cards flow in from the top, and are pushed out the bottom.</div> }
                 // bullet1="AI listens to conversation"
                 // bullet2="Surfaces relevant information"
-                image1={highlightsImage1}
-                image2={highlightsImage1}
+                image1={tempImg}
+                image2={tempImg}
                 bullets={
                 <div className={`bodyText ${styles.bulletContainer}`}>
                         <div>
@@ -159,7 +159,7 @@ export default function ConvoscopeUseCase(){
             >
                 <div className={styles.imageWrapper2}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -175,7 +175,7 @@ export default function ConvoscopeUseCase(){
 
                 <div className={styles.imageWrapper2}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -197,7 +197,7 @@ export default function ConvoscopeUseCase(){
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -271,7 +271,7 @@ export default function ConvoscopeUseCase(){
             </div>{/* Persona image */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -297,7 +297,7 @@ export default function ConvoscopeUseCase(){
             </div>{/* Minimal Lo-fi Designs image */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -315,7 +315,7 @@ export default function ConvoscopeUseCase(){
             </div>{/* Wireframes image */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -407,7 +407,7 @@ export default function ConvoscopeUseCase(){
 
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -424,7 +424,7 @@ export default function ConvoscopeUseCase(){
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -436,7 +436,7 @@ export default function ConvoscopeUseCase(){
 
                 <div className={`${styles.imageWrapper2} `}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -451,7 +451,7 @@ export default function ConvoscopeUseCase(){
 
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -480,7 +480,7 @@ export default function ConvoscopeUseCase(){
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -493,7 +493,7 @@ export default function ConvoscopeUseCase(){
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -517,7 +517,7 @@ export default function ConvoscopeUseCase(){
             {/* {Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing to the listeners that the app was processing the conversation. Other elements that were distracting were XYZ.'} */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -530,7 +530,7 @@ export default function ConvoscopeUseCase(){
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -543,7 +543,7 @@ export default function ConvoscopeUseCase(){
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -569,7 +569,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -582,7 +582,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -611,7 +611,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -623,7 +623,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
 
                 <div className={`${styles.imageWrapper2} `}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -638,7 +638,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
 
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -681,7 +681,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -702,7 +702,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={highlightsImage1}
+                        src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
