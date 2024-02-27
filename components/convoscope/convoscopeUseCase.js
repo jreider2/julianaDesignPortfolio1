@@ -472,12 +472,12 @@ export default function ConvoscopeUseCase(){
             />
 
             {/* Before and After: Incread Legibility */}
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+            <div className={`sectionOutterContainer ${styles.marginTop5}`}>
                 <div className={`${styles.sectionSubheading}`}>
                     Increased Legibility
                 </div>
             </div>
-            <Box className={`${styles.marginTop2}`} txt='Before: At first Users found the contrast in the initial designs difficult to read' icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> At first Users found the contrast in the initial designs difficult to read'</>} icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -513,7 +513,7 @@ export default function ConvoscopeUseCase(){
                 The space was cluttered and I  needed to<span class="emphasis"> make the app more breathable</span>, which would in the end make the app more usable.
                 </div>
             </div>
-            <Box className={`${styles.marginTop}`} txt='Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing the listeners that the app was active.' icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt= {<><span className={`emphasis`}>Before: </span>The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing the listeners that the app was active.</>} icon={thumbsDownIcon}>
             </Box>
             {/* {Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing to the listeners that the app was processing the conversation. Other elements that were distracting were XYZ.'} */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
@@ -553,19 +553,19 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+            <div className={`sectionOutterContainer ${styles.marginTopNone} ${styles.marginBottom}`}>
                 <div className={`bodyText ${styles.marginTop2}`}>
-                This animation deliverable itself took a few iteration due to quality issues encountered with export. An animated PNG(???) was successful in the end.
+                This animation deliverable itself took a few iteration due to quality issues encountered with export. Animated PNGs was successful in the end.
                 </div>
             </div>
 
             {/* Before and After: Hone in typography*/}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
-                <div className={styles.sectionSubheading}>
+                <div className={`${styles.sectionSubheading}`}>
                     Hone in typography
                 </div>
             </div>
-            <Box className={`${styles.marginTop}`} txt='Before: typography at first did not optimize scanability for users. NOTICE If don’t have anything to talk about here: 
+            <Box className={`${styles.marginTop2}`} txt='Before: typography at first did not optimize scanability for users. NOTICE If don’t have anything to talk about here: 
 can talk about Structural and interactive colors chosen for clarity ' icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
@@ -651,7 +651,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
 
             </Card>
 
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+            <div className={`sectionOutterContainer ${styles.marginTop2}`}>
                 <div className={styles.sectionSubheading}>
                     Style guide
                 </div>
