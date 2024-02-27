@@ -651,7 +651,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
 
             </Card>
 
-            <div className={`sectionOutterContainer ${styles.marginTop2}`}>
+            <div className={`sectionOutterContainer ${styles.marginTopSlim}`}>
                 <div className={styles.sectionSubheading}>
                     Style guide
                 </div>
@@ -672,7 +672,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
             </div>
 
             {/* animations */}
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+            <div className={`sectionOutterContainer ${styles.marginTop5}`}>
                 <div className={styles.sectionSubheading}>
                     Animations
                 </div>
