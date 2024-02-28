@@ -21,6 +21,11 @@
     letter-spacing: -0.0225rem;
 }
 
+/* Add this to your CSS module for specific page adjustments */
+.convoscopeFooter .innerContainer {
+    width: var(--widest-container-width);
+}
+
 .innerContainer {
     width: 60%;
     display: flex;

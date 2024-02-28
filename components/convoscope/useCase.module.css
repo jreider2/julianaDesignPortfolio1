@@ -227,4 +227,9 @@
 
     }
 
+    .processContainer{
+        margin-top: var(--margin-4);
+        margin-bottom: var(--margin-4);
+    }
+
   }

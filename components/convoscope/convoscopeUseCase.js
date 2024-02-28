@@ -385,7 +385,7 @@ export default function ConvoscopeUseCase(){
                     Process
                 </div>
             </div> {/*Process image infographic  */}
-            <div className={`${styles.imageWrapper2} ${styles.marginSides1} ${styles.marginBottomNone}`}>
+            <div className={`${styles.imageWrapper2} ${styles.marginSides1} ${styles.marginBottomNone} ${styles.processContainer}`}>
                     <Image
                         src={imageSrc}
                         alt="Use Case Image"

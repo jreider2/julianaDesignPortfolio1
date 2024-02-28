@@ -1,21 +1,20 @@
 import Link from 'next/link';
-import styles from './footer.module.css';
-import LinkedInIcon from '/public/images/linkedin.png';
+import { useRouter } from 'next/router';
 import Image from "next/image";
+
+import LinkedInIcon from '/public/images/linkedin.png';
 import GitHubIcon from '/public/images/github.png';
 
+import styles from './footer.module.css';
+
 export default function Footer() {
+  const router = useRouter();
+  const isConvoPage = router.pathname === '/convoScope';
+
   return (
-    <div className={styles.footer}>
+    <div className={`${styles.footer} ${isConvoPage ? styles.convoscopeFooter : ''}`}>
       <div className={styles.innerContainer}>
-        <p>
-          {/* Juliana Reider 
-          <span className={styles.separator}>•</span>  */}
-          portfolio coded with love
-          {/* <span className={styles.separator}></span> 
-          ♥<span className={styles.separator}></span>  */}
-          {/* <span className={styles.separator}>•</span>  */}
-          {/* {new Date().getFullYear()}  */}
+        <p>portfolio coded with love
           <span className={styles.separator}></span> 
             {'  '}
           <a href="https://github.com/jreider2/nextjs-blog" target="_blank">
@@ -31,7 +30,6 @@ export default function Footer() {
               }} />
           </a>
         </p>
-        {/* <div className={styles.linksContainer}>Made with &lt;3</div> */}
         <p>
             email {' '}
             <a href="mailto:jreider@luc.edu" className={styles.email}>
