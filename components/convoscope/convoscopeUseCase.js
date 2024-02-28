@@ -739,12 +739,18 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
                     Smart Glasses, Here I Come
                 </div>
             </div>
-            <Card>
+            <Card className={`${styles.marginBottomNone}`}
+            >
                 <div className={`${styles.cardCallout} ${styles.marginBottom2} ${styles.marginTop}`}>
                 The next iteration will involve creating a <span className={`${styles.whiteTxt}`}>smart glasses</span> interface. <span className={`${styles.whiteTxt}`}>I’m pumped for my next learning journey!</span>
                 </div>
             </Card>
-            <p>Smart glasses require highly focused design work in a constrained environment. Finding ways of emphasizing hierarchy through spacing, emphasis, and visual interest will be essential. </p>
+            <div className={`sectionOutterContainer ${styles.marginTopNone}`}>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                Smart glasses require highly focused design work in a constrained environment. Finding ways of <span class="emphasis"> emphasizing hierarchy </span> through spacing, emphasis, and visual interest will be essential.
+                </div>
+            </div>
+            <p> </p>
 
             {/* {boarder} */}
 
