@@ -192,7 +192,7 @@ export default function ConvoscopeUseCase(){
             </Card>
 
             <Card
-                p1= {<div><span className={`emphasis`}>“Hey Convo” –</span> Voice interface available for users to ask burning questions.</div> }
+                p1= {<div><span className={`emphasis`}>“Hey Convo”–</span> Voice interface available for users to ask burning questions.</div> }
                 className={`${styles.marginBottomNone} ${styles.marginTopNone}`}
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
@@ -477,7 +477,7 @@ export default function ConvoscopeUseCase(){
                     Increased Legibility
                 </div>
             </div>
-            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> At first Users found the contrast in the initial designs difficult to read'</>} icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> At first Users found the contrast in the initial designs difficult to read.</>} icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -490,7 +490,7 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt='After: once color and sizing was dialed in, students were able to read the interface clearly from their seats at the back of the lecture hall in MIT media lab.' icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>once color and sizing was dialed in, students were able to read the interface clearly from their seats at the back of the lecture hall in MIT media lab.</>} icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -513,7 +513,7 @@ export default function ConvoscopeUseCase(){
                 The space was cluttered and I  needed to<span class="emphasis"> make the app more breathable</span>, which would in the end make the app more usable.
                 </div>
             </div>
-            <Box className={`${styles.marginTop2}`} txt= {<><span className={`emphasis`}>Before: </span>The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing the listeners that the app was active.</>} icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span>The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing the listeners that the app was active.</>} icon={thumbsDownIcon}>
             </Box>
             {/* {Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing to the listeners that the app was processing the conversation. Other elements that were distracting were XYZ.'} */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
@@ -527,7 +527,7 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt='After: Removed distracting elements, such as the transcript, while maintaining clarity.' icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span> Removed distracting elements, such as the transcript, while maintaining clarity.</>}  icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -540,7 +540,7 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt='After: We added a animation, which indicated the app was processing before any cards were created.' icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>We added a animation, which indicated the app was processing before any cards were created.</>} icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -565,8 +565,7 @@ export default function ConvoscopeUseCase(){
                     Hone in typography
                 </div>
             </div>
-            <Box className={`${styles.marginTop2}`} txt='Before: typography at first did not optimize scanability for users. NOTICE If don’t have anything to talk about here: 
-can talk about Structural and interactive colors chosen for clarity ' icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span>typography at first did not optimize scanability for users. NOTICE If don’t have anything to talk about here: can talk about Structural and interactive colors chosen for clarity.</>} icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -579,7 +578,7 @@ can talk about Structural and interactive colors chosen for clarity ' icon={thum
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt='After: TODO Touch on any hierarchy, contrast, color, weight and spacing used to optimize legibility, and clarity' icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>TODO Touch on any hierarchy, contrast, color, weight and spacing used to optimize legibility, and clarity.</>} icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
