@@ -39,7 +39,7 @@ const Nav = React.forwardRef((props, ref) => {
 
       </div>
 
-      <Link href="/contact">
+      <Link href="https://www.linkedin.com/in/juliana-reider/">
         <span className={styles.navLink + " " + styles.primaryCTA}>contact</span>
       </Link>
     </nav>
