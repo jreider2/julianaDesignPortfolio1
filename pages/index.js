@@ -1,10 +1,16 @@
-import Layout, { siteTitle } from '../components/layout';
-
+import { useRef, useEffect } from 'react';
 import Head from 'next/head';
 import { getSortedPostsData } from '../lib/posts';
-import TeaserCard from '../components/teasercard';
-import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
+
+// components
+import Layout, { siteTitle } from '../components/layout';
+import TeaserCard from '../components/teasercard';
+
+// images
+import tempImg from '../public/images/tempImg.png'
+
+// styles
 import arrowStyles from '../components/arrowDown.module.css';
 import styles from '../styles/Home.module.css';
 
@@ -49,7 +55,7 @@ export default function Home({ allPostsData }) {
         </div>
         <div className={styles.ghost} ref={workRef}></div>
         <TeaserCard title="Thought Filter" description="First designer for a B2B content marketing SaaS tool." image="/images/macx2.png" link={"/thoughtFilter"}></TeaserCard>
-        <TeaserCard title="Convoscope" description="Designing an experimental AI interface for MIT Media Lab researchers." image="/images/macx2.png" link={"/convoScope"}></TeaserCard>
+        <TeaserCard title="Convoscope" description="Designing an experimental AI interface for MIT Media Lab researchers." image="/images/tempImg.png" link={"/convoScope"}></TeaserCard>
         <TeaserCard title="CodeHarbor" description="Leading the design of an innovative collaborative coding platform, blending the power of real-time collaboration with advanced version control for software teams." image="/images/macx2.png" link={"/case3"}></TeaserCard>
 
       </Layout >

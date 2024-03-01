@@ -17,6 +17,7 @@ import thumbsDownIcon from '../../public/images/thumbsDownIcon.png'
 import thumbsUpIcon from '../../public/images/thumbsUpIcon.png'
 import styleTyleMain from '../../public/images/StyleTile.png'
 import tempImg from '../../public/images/tempImg.png'
+import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -681,7 +682,7 @@ export default function ConvoscopeUseCase(){
             </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={voiceUiGif}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -744,12 +745,11 @@ export default function ConvoscopeUseCase(){
                 The next iteration will involve creating a <span className={`${styles.whiteTxt}`}>smart glasses</span> interface. <span className={`${styles.whiteTxt}`}>I’m pumped for my next learning journey!</span>
                 </div>
             </Card>
-            <div className={`sectionOutterContainer ${styles.marginTopNone}`}>
+            {/* <div className={`sectionOutterContainer ${styles.marginTopNone}`}>
                 <div className={`bodyText ${styles.marginTop2}`}>
                 Smart glasses require highly focused design work in a constrained environment. Finding ways of <span class="emphasis"> emphasizing hierarchy </span> through spacing, emphasis, and visual interest will be essential.
                 </div>
-            </div>
-            <p> </p>
+            </div> */}
 
             {/* {boarder} */}
 
