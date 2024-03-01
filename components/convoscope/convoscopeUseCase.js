@@ -16,7 +16,10 @@ import feedbackIcon from '../../public/images/feedbackIcon.png'
 import thumbsDownIcon from '../../public/images/thumbsDownIcon.png'
 import thumbsUpIcon from '../../public/images/thumbsUpIcon.png'
 import styleTyleMain from '../../public/images/StyleTile.png'
-import tempImg from '../../public/images/tempImg.png'
+import tempImg from '../../public/images/mainScrene.png'
+import dataPic1 from '../../public/images/dataViz.png'
+import mainScrene from '../../public/images/mainScrene.png'
+
 import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
 
 import Header from '../useCaseGenerics/header';
@@ -97,8 +100,8 @@ export default function ConvoscopeUseCase(){
                 p1= {<div><span className={`emphasis`}>Main screen -</span> Cards flow in from the top, and are pushed out the bottom.</div> }
                 // bullet1="AI listens to conversation"
                 // bullet2="Surfaces relevant information"
-                image1={tempImg}
-                image2={tempImg}
+                image1={mainScrene}
+                image2={dataPic1}
                 bullets={
                 <div className={`bodyText ${styles.bulletContainer}`}>
                         <div>
