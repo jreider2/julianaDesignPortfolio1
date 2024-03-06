@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import styles from "./card.module.css";
 
-export default function Card ({ className, p1, bullets, image1, image2, children}) {
+export default function Card ({ className, p1, bullets, image1, image2, video1, children}) {
     return (
         <div className={`${styles.outterContainer} ${className}`}>
             {p1 && (
@@ -24,6 +24,16 @@ export default function Card ({ className, p1, bullets, image1, image2, children
                         }} />
                 </div>
             )}
+
+            {video1 && (
+                <div className={styles.imageWrapper}>
+                    <video controls autoplay loop muted width="100%" height="auto">
+                        <source src={video1} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            )}
+
             
             {image2 && (
                 <div className={styles.imageWrapper}>

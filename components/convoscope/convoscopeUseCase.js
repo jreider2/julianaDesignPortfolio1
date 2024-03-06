@@ -21,6 +21,7 @@ import dataPic1 from '../../public/images/dataViz.png'
 import mainScrene from '../../public/images/mainScrene.png'
 import speakerHighlight from '../../public/images/speakerHighlight.png'
 import participantView from '../../public/images/participantView.png'
+import teaserImage from '../../public/images/TeaserImage.png'
 
 import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
 import mainFlowGif from '../../public/gifs/mainFlowGif.gif'
@@ -68,7 +69,7 @@ export default function ConvoscopeUseCase(){
                 heading="ConvoScope" 
                 subheading="Designing an experimental AI interface for MIT Media Lab researchers."
                 // image={testVid}
-                image={convoImage}
+                image={teaserImage}
                 />
             <Overview
                 myRole="Lead Product Designer – "
@@ -105,8 +106,9 @@ export default function ConvoscopeUseCase(){
                 p1= {<div><span className={`emphasis`}>Main screen -</span> Cards flow in from the top, and are pushed out the bottom.</div> }
                 // bullet1="AI listens to conversation"
                 // bullet2="Surfaces relevant information"
-                image1={mainFlowGif}
+                // image1={mainFlowGif}
                 image2={dataPic1}
+                video1="/video/cardFlowStartVid.mp4"
                 bullets={
                 <div className={`bodyText ${styles.bulletContainer}`}>
                         <div>
@@ -205,7 +207,7 @@ export default function ConvoscopeUseCase(){
                 className={`${styles.marginBottomNone} ${styles.marginTopNone}`}
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
-                    <Image
+                    {/* <Image
                         src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
@@ -213,7 +215,11 @@ export default function ConvoscopeUseCase(){
                             width: "100%",
                             height: "auto",
                             objectFit: "contain"
-                        }} />
+                        }} /> */}
+                    <video controls autoplay loop muted width="100%" height="auto">
+                        <source src="/video/HeyConvoVid.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </Card>
 
@@ -628,18 +634,6 @@ export default function ConvoscopeUseCase(){
                             height: "auto",
                             objectFit: "contain"
                         }} /> */}
-
-                    {/* <video
-                            src={FullFlowVideo}// Path relative to the public directory
-                            width="750" // Adjust the width as needed
-                            height="500" // Adjust the height as needed
-                            controls // Adds video controls (play, pause, etc.)
-                            autoplay // Uncomment to autoplay the video
-                            loop // Uncomment to loop the video
-                            muted // Recommended if you use autoplay to follow best practices
-                        >
-                            Your browser does not support the video tag.
-                    </video> */}
 
                     <video controls autoplay loop muted width="100%" height="auto">
                         <source src="/video/FullFlowVideo.mp4" type="video/mp4" />
