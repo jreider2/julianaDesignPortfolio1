@@ -22,6 +22,8 @@ import mainScrene from '../../public/images/mainScrene.png'
 import speakerHighlight from '../../public/images/speakerHighlight.png'
 import participantView from '../../public/images/participantView.png'
 import teaserImage from '../../public/images/TeaserImage.png'
+import convoPersona from '../../public/images/ResearcherPersona.png'
+import wireframes from '../../public/images/wireframes2.png'
 
 import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
 import mainFlowGif from '../../public/gifs/mainFlowGif.gif'
@@ -286,7 +288,7 @@ export default function ConvoscopeUseCase(){
             </div>{/* Persona image */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={convoPersona}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -305,12 +307,13 @@ export default function ConvoscopeUseCase(){
             />
 
             {/* Minimal Lo-fi Designs Title */}
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+            {/* <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
                     Minimal Lo-fi Designs
                 </div>
-            </div>{/* Minimal Lo-fi Designs image */}
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+            </div> */}
+            {/* Minimal Lo-fi Designs image */}
+            {/* <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
                         src={tempImg}
                         alt="Use Case Image"
@@ -320,7 +323,7 @@ export default function ConvoscopeUseCase(){
                             height: "auto",
                             objectFit: "contain"
                         }} />
-            </div>
+            </div> */}
 
             {/* Wireframes Title */}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
@@ -330,7 +333,7 @@ export default function ConvoscopeUseCase(){
             </div>{/* Wireframes image */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={wireframes}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -616,7 +619,7 @@ export default function ConvoscopeUseCase(){
             />
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
-                    TODO Some Subheading
+                    Major Screens
                 </div>
             </div>
 
@@ -653,9 +656,8 @@ export default function ConvoscopeUseCase(){
                         }} />
                 </div>
                 <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom2}`}>
-                    <div><span className={`emphasis`}>TODO–</span> TODO. </div>
+                    <div><span className={`emphasis`}>Sign Up–</span> Sign Up Flow and First time Use. </div>
                 </div>
-
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
                         src={tempImg}
