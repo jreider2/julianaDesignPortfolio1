@@ -19,8 +19,12 @@ import styleTyleMain from '../../public/images/StyleTile.png'
 import tempImg from '../../public/images/mainScrene.png'
 import dataPic1 from '../../public/images/dataViz.png'
 import mainScrene from '../../public/images/mainScrene.png'
+import speakerHighlight from '../../public/images/speakerHighlight.png'
+import participantView from '../../public/images/participantView.png'
 
 import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
+import mainFlowGif from '../../public/gifs/mainFlowGif.gif'
+//import FullFlowVideo from '../../public/gifs/FullFlowVideo.mp4'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -63,6 +67,7 @@ export default function ConvoscopeUseCase(){
             <Header 
                 heading="ConvoScope" 
                 subheading="Designing an experimental AI interface for MIT Media Lab researchers."
+                // image={testVid}
                 image={convoImage}
                 />
             <Overview
@@ -100,7 +105,7 @@ export default function ConvoscopeUseCase(){
                 p1= {<div><span className={`emphasis`}>Main screen -</span> Cards flow in from the top, and are pushed out the bottom.</div> }
                 // bullet1="AI listens to conversation"
                 // bullet2="Surfaces relevant information"
-                image1={mainScrene}
+                image1={mainFlowGif}
                 image2={dataPic1}
                 bullets={
                 <div className={`bodyText ${styles.bulletContainer}`}>
@@ -163,7 +168,7 @@ export default function ConvoscopeUseCase(){
             >
                 <div className={styles.imageWrapper2}>
                     <Image
-                        src={tempImg}
+                        src={speakerHighlight}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -179,7 +184,7 @@ export default function ConvoscopeUseCase(){
 
                 <div className={styles.imageWrapper2}>
                     <Image
-                        src={tempImg}
+                        src={participantView}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
