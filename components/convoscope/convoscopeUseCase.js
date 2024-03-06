@@ -24,7 +24,7 @@ import participantView from '../../public/images/participantView.png'
 
 import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
 import mainFlowGif from '../../public/gifs/mainFlowGif.gif'
-//import FullFlowVideo from '../../public/gifs/FullFlowVideo.mp4'
+// import FullFlowVideo from '../../public/gifs/FullFlowVideo.mp4'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -619,7 +619,7 @@ export default function ConvoscopeUseCase(){
                 p1= {<div><span className={`emphasis`}>TODO– </span> TODO 5 major screens </div> }
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
-                    <Image
+                    {/* <Image
                         src={tempImg}
                         alt="Use Case Image"
                         sizes="100vw"
@@ -627,7 +627,24 @@ export default function ConvoscopeUseCase(){
                             width: "100%",
                             height: "auto",
                             objectFit: "contain"
-                        }} />
+                        }} /> */}
+
+                    {/* <video
+                            src={FullFlowVideo}// Path relative to the public directory
+                            width="750" // Adjust the width as needed
+                            height="500" // Adjust the height as needed
+                            controls // Adds video controls (play, pause, etc.)
+                            autoplay // Uncomment to autoplay the video
+                            loop // Uncomment to loop the video
+                            muted // Recommended if you use autoplay to follow best practices
+                        >
+                            Your browser does not support the video tag.
+                    </video> */}
+
+                    <video controls autoplay loop muted width="100%" height="auto">
+                        <source src="/video/FullFlowVideo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 <div className={`${styles.imageWrapper2} `}>
@@ -688,7 +705,7 @@ export default function ConvoscopeUseCase(){
                 hold for text<span class="emphasis"> todo</span> .
                 </div>
             </div>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottomNone}`}>
                     <Image
                         src={voiceUiGif}
                         alt="Use Case Image"
@@ -700,8 +717,8 @@ export default function ConvoscopeUseCase(){
                         }} />
             </div>
 
-            {/* style deck */}
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+            {/* slide deck */}
+            {/* <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
                     Slide deck
                 </div>
@@ -719,7 +736,7 @@ export default function ConvoscopeUseCase(){
                             height: "auto",
                             objectFit: "contain"
                         }} />
-            </div>
+            </div> */}
 
 
             {boarder}
