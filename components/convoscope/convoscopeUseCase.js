@@ -31,6 +31,8 @@ import firstPassGreen from '../../public/images/firstPassGreen.png'
 import beforeContrast from '../../public/images/beforeContrast.png'
 import statsInWords from '../../public/images/statsInWords.png'
 import transcriptBefore from '../../public/images/transcriptBefore.png'
+import agentsBefore from '../../public/images/agentsBefore.png'
+import agentsAFter from '../../public/images/agentsAFter.png'
 
 import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
 
@@ -536,7 +538,7 @@ export default function ConvoscopeUseCase(){
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={statsInWords}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -582,36 +584,40 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>We added a animation, which indicated the app was processing before any cards were created.</>} icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>We added a button animation, and text which indicated the app was processing before any cards were created.</>} icon={thumbsUpIcon}>
             </Box>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
-                    <Image
-                        src={tempImg}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottom}`}>
+                {/* <Image
+                    src={tempImg}
+                    alt="Use Case Image"
+                    sizes="100vw"
+                    style={{
+                        width: "100%",
+                        height: "auto",
+                        objectFit: "contain"
+                }} /> */}
+                <video controls autoplay loop muted width="100%" height="auto">
+                    <source src="/video/cardFlowStartVid.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <div className={`sectionOutterContainer ${styles.marginTopNone} ${styles.marginBottom}`}>
+            {/* <div className={`sectionOutterContainer ${styles.marginTopNone} ${styles.marginBottom}`}>
                 <div className={`bodyText ${styles.marginTop2}`}>
-                This animation deliverable itself took a few iteration due to quality issues encountered with export. Animated PNGs was successful in the end.
+                This center animation deliverable took a few iterations due to quality issues encountered with export. Animated PNGs was successful in the end.
                 </div>
-            </div>
+            </div> */}
 
             {/* Before and After: Emjoi and Icons*/}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading}`}>
-                    Hone in typography
+                    Hone in Imagery
                 </div>
             </div>
             <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> Our icons and use of emojis didn't quite fit the design language and proved to be distracting.</>} icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={agentsBefore}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -620,11 +626,11 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>We had ways to display statistics to make them quicker to consume at a glance.</>} icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>The icons created to replace them fit the look and feel much better. They were rounded, breathable, and identifiable at a glance without being too distracting.</>} icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={agentsAFter}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -736,28 +742,6 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-
-            {/* slide deck */}
-            {/* <div className={`sectionOutterContainer ${styles.marginTop}`}>
-                <div className={styles.sectionSubheading}>
-                    Slide deck
-                </div>
-                <div className={`bodyText ${styles.marginTop2}`}>
-                hold for text<span class="emphasis"> todo</span> .
-                </div>
-            </div>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
-                    <Image
-                        src={tempImg}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
-            </div> */}
-
 
             {boarder}
 
