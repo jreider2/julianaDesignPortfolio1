@@ -24,10 +24,15 @@ import participantView from '../../public/images/participantView.png'
 import teaserImage from '../../public/images/TeaserImage.png'
 import convoPersona from '../../public/images/ResearcherPersona.png'
 import wireframes from '../../public/images/wireframes2.png'
+import branding from '../../public/images/brandingConvo.png'
+import itterationsGreen from '../../public/images/itterationsGreen.png'
+import firstPassBlue from '../../public/images/firstPassBlue.png'
+import firstPassGreen from '../../public/images/firstPassGreen.png'
+import beforeContrast from '../../public/images/beforeContrast.png'
+import statsInWords from '../../public/images/statsInWords.png'
+import transcriptBefore from '../../public/images/transcriptBefore.png'
 
 import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
-import mainFlowGif from '../../public/gifs/mainFlowGif.gif'
-// import FullFlowVideo from '../../public/gifs/FullFlowVideo.mp4'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -41,6 +46,7 @@ import styles from "./useCase.module.css";
 
 // data
 import { takeaways, overviewTextFull, boarder, boarder2} from '../constants/convoscopeConstants';
+import { te } from 'date-fns/locale';
 
 
 export default function ConvoscopeUseCase(){
@@ -108,7 +114,7 @@ export default function ConvoscopeUseCase(){
                 p1= {<div><span className={`emphasis`}>Main screen -</span> Cards flow in from the top, and are pushed out the bottom.</div> }
                 // bullet1="AI listens to conversation"
                 // bullet2="Surfaces relevant information"
-                // image1={mainFlowGif}
+                image1={tempImg}
                 image2={dataPic1}
                 video1="/video/cardFlowStartVid.mp4"
                 bullets={
@@ -421,12 +427,12 @@ export default function ConvoscopeUseCase(){
             <SectionTopper
                 sectionTitletxt="Initial Directions"
                 sectionSubtitleTxt="The look and feel of the app was undefined as of yet."
-                topParagraphHTML={<div className={'bodyText'}>The main stakeholder wanted an other-worldly feel that would also feel like a fit in an academic serious context, but we needed to narrow it down. We started with a branding exercise where we <span className={`emphasis`}> defined and refined</span> our general style direction.</div>}
+                topParagraphHTML={<div className={'bodyText'}>The main stakeholder had some great ideas for for the look and feel of the app, but we needed to narrow it down. We started with a branding exercise where we <span className={`emphasis`}> defined and refined</span> our general style direction. </div>}
             />
 
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={branding}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -438,12 +444,12 @@ export default function ConvoscopeUseCase(){
 
             {/* Styles and design language */}
             <Card
-                p1= {<div><span className={`emphasis`}>Design Language– </span> create an otherworldly feel requested by the stakeholder</div> }
+                p1= {<div><span className={`emphasis`}>Design Language– </span> We decided that the app should have an otherworldly feel, but also evoke harmony, while fitting into an academic context. I prepared and presented two styles to our stakeholder, in order to get a sense of which direction fit the product best.</div>}
                 className={`${styles.marginBottomNone}`}
             >
-                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
                     <Image
-                        src={tempImg}
+                        src={firstPassGreen}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -453,9 +459,9 @@ export default function ConvoscopeUseCase(){
                         }} />
                 </div>
 
-                <div className={`${styles.imageWrapper2} `}>
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
                     <Image
-                        src={tempImg}
+                        src={firstPassBlue}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -464,8 +470,26 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
                 </div>
-                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom2}`}>
-                    <div><span className={`emphasis`}>Initial Directions–</span> I prepared and presented two styles to our stakeholder, in order to get a sense of which direction fit the product best. In the end, we went with a combination of the two styles. The visual style fit our branding goals of serious and harmonious and the color was chosen for better contrast and legibility overall. </div>
+
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
+                    <div><span className={`emphasis`}>Initial Directions–</span> At first the stakeholder resquested the green theming. Thus, I continued to iterate on the formatting and other aspects of the application in green. Some iternations shown below. </div>
+                </div>
+                
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
+                    <Image
+                        src={itterationsGreen}   
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
+                    <div><span className={`emphasis`}>New Direction–</span> In the end, we went with a combination of the two styles. The softer cleaner visual style fit our branding goals of serious and harmonious and the blue color theme was chosen for better contrast and legibility overall. </div>
                 </div>
 
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
@@ -499,7 +523,7 @@ export default function ConvoscopeUseCase(){
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={beforeContrast}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -536,7 +560,7 @@ export default function ConvoscopeUseCase(){
             {/* {Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing to the listeners that the app was processing the conversation. Other elements that were distracting were XYZ.'} */}
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={tempImg}
+                        src={transcriptBefore}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -577,13 +601,13 @@ export default function ConvoscopeUseCase(){
                 </div>
             </div>
 
-            {/* Before and After: Hone in typography*/}
+            {/* Before and After: Emjoi and Icons*/}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading}`}>
                     Hone in typography
                 </div>
             </div>
-            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span>typography at first did not optimize scanability for users. NOTICE If don’t have anything to talk about here: can talk about Structural and interactive colors chosen for clarity.</>} icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> Our icons and use of emojis didn't quite fit the design language and proved to be distracting.</>} icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -596,7 +620,7 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>TODO Touch on any hierarchy, contrast, color, weight and spacing used to optimize legibility, and clarity.</>} icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>We had ways to display statistics to make them quicker to consume at a glance.</>} icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -615,7 +639,7 @@ export default function ConvoscopeUseCase(){
             <SectionTopper
                 sectionTitletxt="Final Design"
                 sectionSubtitleTxt="I was proud of what I had created."
-                topParagraphHTML={<div className={`bodyText`}><span className={`emphasis`}>  TODO </span>: Final design should have <span className={`emphasis`}>  5 key screens. </span> After many iterations and experimentations, here are some of the elements I wish to highlight.</div>}
+                topParagraphHTML={<div className={`bodyText`}><span className={`emphasis`}>  TODO </span>: Final design should have <span className={`emphasis`}>  5 key screens. discuss the statistics!!!</span> After many iterations and experimentations, here are some of the elements I wish to highlight.</div>}
             />
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
@@ -646,7 +670,7 @@ export default function ConvoscopeUseCase(){
 
                 <div className={`${styles.imageWrapper2} `}>
                     <Image
-                        src={tempImg}
+                        src={statsInWords}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
