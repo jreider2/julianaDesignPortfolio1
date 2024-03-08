@@ -217,15 +217,6 @@ export default function ConvoscopeUseCase(){
                 className={`${styles.marginBottomNone} ${styles.marginTopNone}`}
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
-                    {/* <Image
-                        src={tempImg}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} /> */}
                     <video controls autoplay loop muted width="100%" height="auto">
                         <source src="/video/HeyConvoVid.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
@@ -571,7 +562,7 @@ export default function ConvoscopeUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span> Removed distracting elements, such as the transcript, while maintaining clarity.</>}  icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span> Removed distracting elements, such as the transcript and the side panels, while maintaining clarity.</>}  icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -728,19 +719,41 @@ export default function ConvoscopeUseCase(){
                     Animations
                 </div>
                 <div className={`bodyText ${styles.marginTop2}`}>
-                hold for text<span class="emphasis"> todo</span> .
+                Annimations were included to both evoke the sense of otherwordliness, and natural phamana, and to <span class="emphasis"> communicate to the user something was happening.</span> First example of this is the "Hey Convo" feature.
+                </div>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                 In order to avoid the user disrupting their flow and resorting to using other tools, such as as search engine, it was essential to have a feature<span class="emphasis">  allowing impromptu questions.</span> The given animation convays the active listening of ConvoScope, inspired by "Hey Siri."
                 </div>
             </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottomNone}`}>
-                    <Image
-                        src={voiceUiGif}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
+                <video controls autoplay loop muted width="100%" height="auto">
+                    <source src="/video/HeyConvoVid.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div className={`sectionOutterContainer ${styles.marginTop2}`}>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                An simpler, yet purposeful, annimation is used for the start button during a ConvoScope session. The button pulses like a beating heart to help <span class="emphasis">indicate the session is in progress,</span> even if no cards have apeared yet. The speed was carefully chosen to be slow enough to not be distracting, but fast enough to be noticed.
+                </div>
+            </div>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottomNone}`}>
+                <video controls autoplay loop muted width="100%" height="auto">
+                    <source src="/video/pulsingVid.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div className={`sectionOutterContainer ${styles.marginTop2}`}>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                Another animation worth discussion is on the login screen. The main purpose here is to use an animation inspired by heavenly bodies to <span class="emphasis"> set the tone of the application</span> immediately. The same animation is used at the start of every session.
+                </div>
+            </div>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottomNone}`}>
+                <video controls autoplay loop muted width="100%" height="auto">
+                    <source src="/video/LoginAnimation.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
             {boarder}
