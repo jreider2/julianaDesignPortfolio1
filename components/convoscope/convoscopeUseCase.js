@@ -33,6 +33,14 @@ import statsInWords from '../../public/images/statsInWords.png'
 import transcriptBefore from '../../public/images/transcriptBefore.png'
 import agentsBefore from '../../public/images/agentsBefore.png'
 import agentsAFter from '../../public/images/agentsAFter.png'
+import data1 from '../../public/images/data1.png'
+import data2 from '../../public/images/data2.png'
+import data3 from '../../public/images/data3.png'
+import data4 from '../../public/images/data4.png'
+import heyConvo from '../../public/images/heyConvo.png'
+import landingPage from '../../public/images/landingPage.png'
+import speakerView from '../../public/images/speakerView.png'
+import webpage from '../../public/images/webpage.png'
 
 import voiceUiGif from '../../public/gifs/Voice_UI_Animation_1_lowFidelity.gif'
 
@@ -636,7 +644,7 @@ export default function ConvoscopeUseCase(){
             <SectionTopper
                 sectionTitletxt="Final Design"
                 sectionSubtitleTxt="I was proud of what I had created."
-                topParagraphHTML={<div className={`bodyText`}><span className={`emphasis`}>  TODO </span>: Final design should have <span className={`emphasis`}>  5 key screens. discuss the statistics!!!</span> After many iterations and experimentations, here are some of the elements I wish to highlight.</div>}
+                topParagraphHTML={<div className={`bodyText`}><span className={`emphasis`}></span>After many iterations and experimentations, here are some of the elements I wish to highlight.</div>}
             />
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
@@ -646,8 +654,117 @@ export default function ConvoscopeUseCase(){
 
             {/* 5 major screens */}
             <Card
-                p1= {<div><span className={`emphasis`}>TODO– </span> TODO 5 major screens </div> }
+                p1= {<div><span className={`emphasis`}>Landing Page– </span> Start a new session or view archive of past sessions.</div> }
             >
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
+                    <Image
+                        src={landingPage}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
+                    <div><span className={`emphasis`}>Data Visualizations–</span> Make statistics and data display in a more visual format for quicker consumption. </div>
+                </div>
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
+                    <Image
+                        src={data1}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
+                    <Image
+                        src={data2}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
+                    <Image
+                        src={data3}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+                <div className={`${styles.imageWrapper2} `}>
+                    <Image
+                        src={data4}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
+                    <div><span className={`emphasis`}>Hey Convo–</span> Ask convo anything!</div>
+                </div>
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
+                    <Image
+                        src={heyConvo}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
+                    <div><span className={`emphasis`}>See More Info–</span> Click the "More" button for a card to display the source webpage.</div>
+                </div>
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
+                    <Image
+                        src={webpage}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
+                    <div><span className={`emphasis`}>Speaker View–</span> Participants only see info the speaker selects.</div>
+                </div>
+                <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
+                    <Image
+                        src={speakerView}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>                    
+
+
+                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
+                    <div><span className={`emphasis`}>Sign Up–</span> Sign Up Flow and First time Use. </div>
+                </div>
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     {/* <Image
                         src={tempImg}
@@ -660,35 +777,9 @@ export default function ConvoscopeUseCase(){
                         }} /> */}
 
                     <video controls autoplay loop muted width="100%" height="auto">
-                        <source src="/video/FullFlowVideo.mp4" type="video/mp4" />
+                        <source src="/video/SignUpFlow.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                </div>
-
-                <div className={`${styles.imageWrapper2} `}>
-                    <Image
-                        src={statsInWords}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
-                </div>
-                <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom2}`}>
-                    <div><span className={`emphasis`}>Sign Up–</span> Sign Up Flow and First time Use. </div>
-                </div>
-                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
-                    <Image
-                        src={tempImg}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
                 </div>
 
             </Card>
