@@ -847,28 +847,14 @@ export default function CometUseCase(){
                 </div>
             </div>
 
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
-                <div className={styles.sectionSubheading}>
-                    Smart Glasses, Here I Come
-                </div>
-            </div>
             <Card className={`${styles.marginBottomNone}`}
             >
                 <div className={`${styles.cardCallout} ${styles.marginBottom2} ${styles.marginTop}`}>
-                The next iteration will involve creating a <span className={`${styles.whiteTxt}`}>smart glasses</span> interface. <span className={`${styles.whiteTxt}`}>I’m pumped for my next learning journey!</span>
+                But this is just the beginning of my story. <span className={`${styles.whiteTxt}`}>Check out some of my other chapters. :) </span>
                 </div>
             </Card>
-            {/* <div className={`sectionOutterContainer ${styles.marginTopNone}`}>
-                <div className={`bodyText ${styles.marginTop2}`}>
-                Smart glasses require highly focused design work in a constrained environment. Finding ways of <span class="emphasis"> emphasizing hierarchy </span> through spacing, emphasis, and visual interest will be essential.
-                </div>
-            </div> */}
-
-            {/* {boarder} */}
 
             <BackButton />
-
-            {/* <TeaserCard title="Thought Filter" description="First designer for a B2B content marketing SaaS tool." image="/images/macx2.png" link={"/thoughtFilter"}></TeaserCard> */}
 
         </div>
     );
