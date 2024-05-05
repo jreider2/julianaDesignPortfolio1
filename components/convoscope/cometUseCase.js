@@ -283,27 +283,17 @@ export default function CometUseCase(){
             <SectionTopper
                 sectionTitletxt="Ideation"
                 sectionSubtitleTxt="Go slow to go fast."
-                topParagraphHTML={<div className={'bodyText'}>First, I had to clarify which features should make it into the MVP. Leveraging detailed user insights, I identified the most common and essential use case flows. I also documented <span class="emphasis">  sequences in which actions were typically taken</span> so I could create an application that fit into the existing workflow.</div>}
+                topParagraphHTML={<div className={'bodyText'}>First, I had to clarify which features should make it into the MVP. Then I moved onto quick iterations of designs.</div>}
             />
 
+           {/* User Flows */}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
-                    Main Insight
-                </div>
-                <div className={`bodyText ${styles.indent} ${styles.marginTop2}`}>
-                • Tell me how you accomplish source code management today.<br />
-                • What is the hardest thing about your current workflow?<br />
-                • What do you do to solve this problem for yourself today?<br />
-                </div>
-            </div>
-
-
-            {/* Wireframes Title */}
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
-                <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
                     User Flows
                 </div>
-            </div>{/* Wireframes image */}
+                <div className={`bodyText ${styles.marginTop2}`}>Leveraging detailed user insights, I identified the most common and essential use case flows. I also documented <span class="emphasis">  sequences in which actions were typically taken</span> so I could create an application that fit into the existing workflow.
+                </div>
+            </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
                         src={wireframes}
@@ -314,6 +304,53 @@ export default function CometUseCase(){
                             height: "auto",
                             objectFit: "contain"
                         }} />
+            </div>
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                Building out these flows in visual graphs helped me start to conceptualize the possible the information architecture of the application. I wanted to ensure the IA was intuitive and would <span class="emphasis"> minimize flow disruption.</span>
+                </div>
+            </div>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={wireframes}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                Once I understood the flows, I mapped out a spectrum of feature priorities from high to low. This process also clarified which features were vital and which could be deferred.
+                </div>
+            </div>
+
+
+            {/* Minimal Lo-fi Sketches*/}
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
+                Minimal Lo-fi Sketches
+                </div>
+            </div>{/* Wireframes image */}
+            
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={wireframes}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+
+            <div className={`sectionOutterContainer`}>
+                <div className={`bodyText ${styles.marginTop2}`}>
+                With a clear vision of the MVP featureset and typical use cases in mind, I began with rapid, hand-drawn sketches to maintain flexibility before moving on to low-fidelity wireframes in Figma. This approach allowed for quick comparisons and adjustments, optimizing the design process.
+                </div>
             </div>
 
             {/* Wireframes Title */}
@@ -333,7 +370,13 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
+            <div className={`sectionOutterContainer`}>
+                <div className={`bodyText`}>
+                Next steps were wireframes to to play with the design in a more detailed manor.
+                </div>
+            </div>
             
+
             {/* Iterations and deliverables Infographic*/}
             <div className={`sectionOutterContainer ${styles.marginTop5}`}>
                 <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
@@ -353,8 +396,8 @@ export default function CometUseCase(){
                                 objectFit: "contain"
                             }} />
                     </div>
-                    <div className={`emphasis ${styles.modeTitle}`}>Weekly Demos</div>
-                    <div className={`bodyText ${styles.modeBody}`}>Presentations of current designs<br/>and prototypes</div>
+                    <div className={`emphasis ${styles.modeTitle}`}>Design Files</div>
+                    <div className={`bodyText ${styles.modeBody}`}>Utilized Figma and FigJam for<br/>all design artifacts</div>
                 </div>
                 <div className={styles.middleModContainner}>
                     <div className={`${styles.sModsPicContainer} ${styles.modHeightLimit}`}>
@@ -369,24 +412,9 @@ export default function CometUseCase(){
                             }} />
                     </div>
                     <div className={`emphasis ${styles.modeTitle}`}>Iterative Feedback</div>
-                    <div className={`bodyText ${styles.modeBody}`}>Gathered continuous feedback<br/>from users and devs
+                    <div className={`bodyText ${styles.modeBody}`}>Gathered continuous feedback<br/>from users
                     </div> 
                 </div>
-                <div className={styles.middleModContainner}>
-                    <div className={`${styles.sModsPicContainer} ${styles.modHeightLimit}`}>
-                        <Image
-                            src={artifactsIcon}
-                            alt="Use Case Image"
-                            sizes="100vw"
-                            style={{
-                                width: "100%",
-                                height: "auto",
-                                objectFit: "contain"
-                            }} />
-                    </div>
-                    <div className={`emphasis ${styles.modeTitle}`}>Artifacts Delivered</div>
-                    <div className={`bodyText ${styles.modeBody}`}>Figma designs, animations,<br/>and style guides</div>
-                </div>  
             </div>
 
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
@@ -411,8 +439,8 @@ export default function CometUseCase(){
 
             <SectionTopper
                 sectionTitletxt="Initial Directions"
-                sectionSubtitleTxt="The look and feel of the app was undefined as of yet."
-                topParagraphHTML={<div className={'bodyText'}>The main stakeholder had some great ideas for for the look and feel of the app, but we needed to narrow it down. We started with a branding exercise where we <span className={`emphasis`}> defined and refined</span> our general style direction. </div>}
+                sectionSubtitleTxt="From general to specific."
+                topParagraphHTML={<div className={'bodyText'}>I started the brainstorming by jotting down as many varied descriptors as possible, letting it be a stream of consciousness exercise. There was no wrong answer. From that larger list of general adjectives, I grabbed the ones that had potential, and gathered them into themes.  </div>}
             />
 
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
@@ -427,9 +455,21 @@ export default function CometUseCase(){
                         }} />
             </div>
 
+            <div className={`sectionOutterContainer`}>
+                <div className={`bodyText`}>
+                Narrowing down the list still further, I landed on the descriptors of Powerful, Sleek, and Approachable. I then used these words to focus and guide my styling
+                </div>
+            </div>
+
+            <div className={`sectionOutterContainer ${styles.marginTop}`}>
+                <div className={`${styles.sectionSubheading} `}>
+                Color + Theme
+                </div>
+            </div> 
+
             {/* Styles and design language */}
             <Card
-                p1= {<div><span className={`emphasis`}>Design Language– </span> We decided that the app should have an otherworldly feel, but also evoke harmony, while fitting into an academic context. I prepared and presented two styles to our stakeholder, in order to get a sense of which direction fit the product best.</div>}
+                p1= {<div><span className={`emphasis`}>Sleek– </span> I opted for the light theme, over a dark one, to evoke an atmosphere of simplicity and, in turn, create an impression of ease of use.</div>}
                 className={`${styles.marginBottomNone}`}
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
@@ -442,6 +482,10 @@ export default function CometUseCase(){
                             height: "auto",
                             objectFit: "contain"
                         }} />
+                </div>
+
+                <div className={`bodyText ${styles.cardBody2}`}>
+                    <div>The light, bright theme, coupled with the design’s general spaciousness, imparts an air of sleek cleanliness and reflects organization and reliability. The lack of clutter was also an attempt to minimize distraction, given as this app is a means to an end.</div>
                 </div>
 
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
@@ -457,7 +501,10 @@ export default function CometUseCase(){
                 </div>
 
                 <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
-                    <div><span className={`emphasis`}>Initial Directions–</span> At first the stakeholder resquested the green theming. Thus, I continued to iterate on the formatting and other aspects of the application in green. Some iternations shown below. </div>
+                    <div><span className={`emphasis`}>Powerful–</span><br />
+                • Straight lines and overall limited use of rounded corners <br />
+                • A feeling of something serious with structure<br />
+                • Comes across as dynamic and powerful </div>
                 </div>
                 
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
@@ -472,21 +519,10 @@ export default function CometUseCase(){
                         }} />
                 </div>
 
-                
                 <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
-                    <div><span className={`emphasis`}>New Direction–</span> In the end, we went with a combination of the two styles. The softer cleaner visual style fit our branding goals of serious and harmonious and the blue color theme was chosen for better contrast and legibility overall. </div>
-                </div>
-
-                <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
-                    <Image
-                        src={tempImg}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
+                    <div><span className={`emphasis`}>Approachable</span> I chose  pink and purple specifically for approachability, keeping in mind the users that were new to source control in general. 
+                    <br/><br/>
+                    The colors were also chosen for their contrast against the structural elements, aiding in drawing the user’s eyes to things like CTAs and other interactive elements. </div>
                 </div>
             </Card>
 
@@ -494,17 +530,17 @@ export default function CometUseCase(){
 
             <SectionTopper
                 sectionTitletxt="Testing + Improvements"
-                sectionSubtitleTxt="The path of successful design never did run smooth."
-                topParagraphHTML={<div className={`bodyText`}>In order to have the best product possible, eliciting, and prioritizing feedback are paramount. During the course of design iterations,<span className={`emphasis`}>  I updated the design based on feedback in order to have the largest impact. </span> Following are a handful of those improvements.</div>}
+                sectionSubtitleTxt="When you really want great design, you will find it waiting for you—after many revisions."
+                topParagraphHTML={<div className={`bodyText`}>To create the optimal product, it's crucial to actively listen to, and prioritize user feedback.<span className={`emphasis`}> Throughout the design process, I made strategic updates </span>based on this input to maximize the product's impact. Below are some key improvements made during these iterations.</div>}
             />
 
-            {/* Before and After: Incread Legibility */}
+            {/* Before and After: Primary CTA Button */}
             <div className={`sectionOutterContainer ${styles.marginTop5}`}>
                 <div className={`${styles.sectionSubheading}`}>
-                    Increased Legibility
+                    Primary CTA Button
                 </div>
             </div>
-            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> At first Users found the contrast in the initial designs difficult to read.</>} icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> The large saturated commit button, which was the main CTA for the changes screne, was actually drawing too much focus it reached the level of distracting. </>} icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -517,7 +553,7 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>once color and sizing was dialed in, students were able to read the interface clearly from their seats at the back of the lecture hall in MIT media lab.</>} icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>I made the CTA smaller. This allowed for a balance to be struck. The eye was still drawn to the primary CTA without it being overly distracting.</>} icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -531,72 +567,19 @@ export default function CometUseCase(){
                         }} />
             </div>
             
-            {/* Before and After: Clean it up */}
-            <div className={`sectionOutterContainer ${styles.marginTop5}`}>
-                <div className={styles.sectionSubheading}>
-                    Clean it up
-                </div>
-                <div className={`bodyText ${styles.marginTop2}`}>
-                The space was cluttered and I  needed to<span class="emphasis"> make the app more breathable</span>, which would in the end make the app more usable.
-                </div>
-            </div>
-            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span>The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing the listeners that the app was active.</>} icon={thumbsDownIcon}>
-            </Box>
-            {/* {Before: The transcript element was distracting to the people I interviewed and deemed unhelpful beyond cuing to the listeners that the app was processing the conversation. Other elements that were distracting were XYZ.'} */}
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
-                    <Image
-                        src={transcriptBefore}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
-            </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span> Removed distracting elements, such as the transcript and the side panels, while maintaining clarity.</>}  icon={thumbsUpIcon}>
-            </Box>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
-                    <Image
-                        src={tempImg}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
-            </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>We added a button animation, and text which indicated the app was processing before any cards were created.</>} icon={thumbsUpIcon}>
-            </Box>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottom}`}>
-                {/* <Image
-                    src={tempImg}
-                    alt="Use Case Image"
-                    sizes="100vw"
-                    style={{
-                        width: "100%",
-                        height: "auto",
-                        objectFit: "contain"
-                }} /> */}
-                <video controls autoplay loop muted width="100%" height="auto">
-                    <source src="/video/cardFlowStartVid.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            {/* <div className={`sectionOutterContainer ${styles.marginTopNone} ${styles.marginBottom}`}>
-                <div className={`bodyText ${styles.marginTop2}`}>
-                This center animation deliverable took a few iterations due to quality issues encountered with export. Animated PNGs was successful in the end.
-                </div>
-            </div> */}
-
-            {/* Before and After: Emjoi and Icons*/}
+            {/* Before and After: Streamling the tree design*/}
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={`${styles.sectionSubheading}`}>
-                    Hone in Imagery
+                Streamling the tree design
                 </div>
             </div>
-            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> Our icons and use of emojis didn't quite fit the design language and proved to be distracting.</>} icon={thumbsDownIcon}>
+            <div className={`sectionOutterContainer`}>
+                <div className={`bodyText`}>
+                Initially I assumed the users would want to look at a visual representation of the tree of the various versions, which can show exactly when branches were forked off of other branches and when and which branches they were merged back into.
+                </div>
+            </div>
+
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> I included a graphical representation of the tree branches of all the forks for a given repository, available in the commit history screen.</>} icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -609,7 +592,7 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span>The icons created to replace them fit the look and feel much better. They were rounded, breathable, and identifiable at a glance without being too distracting.</>} icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span> Later, I saw that much the info portrayed in the tree went used. Therefore, I represented the remaining relevent data in a more simplified sleek mannor instead.</>} icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -622,6 +605,67 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
+
+
+            {/* Before and After: Clean it up */}
+                        <div className={`sectionOutterContainer ${styles.marginTop5}`}>
+                <div className={styles.sectionSubheading}>
+                color Refinement
+                </div>
+            </div>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span>The colors in light mode were too saturated and distracting.</>} icon={thumbsDownIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={transcriptBefore}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span>  I brightened up the colors which better reflected my themes of sleekness and approachability.</>}  icon={thumbsUpIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={tempImg}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span>the code background was the same color as the commit panel background. But the UI felt muddled overall.</>} icon={thumbsDownIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={transcriptBefore}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span> I landed on a brighter look that made the app feel sharper overall.</>}  icon={thumbsUpIcon}>
+            </Box>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={tempImg}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+
 
             {boarder}
 
