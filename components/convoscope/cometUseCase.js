@@ -50,8 +50,8 @@ import BackButton from '../useCaseGenerics/backButton';
 import styles from "./useCase.module.css";
 
 // data
-import { text } from '../constants/cometConstants.js';
-import { takeaways, overviewTextFull, boarder, boarder2} from '../constants/convoscopeConstants';
+import { text, takeaways } from '../constants/cometConstants.js';
+import { overviewTextFull, boarder, boarder2} from '../constants/convoscopeConstants';
 
 
 export default function CometUseCase(){
@@ -831,8 +831,8 @@ export default function CometUseCase(){
 
             <SectionTopper
                 sectionTitletxt="Reflections"
-                sectionSubtitleTxt="Learn by Doing."
-                topParagraphHTML={<div className={`bodyText`}>During this design project, I grew my skills an incredible amount. From components, to finding the middle ground with stakeholders,<span className={`emphasis`}> my mind is awash with possibilities </span>for the future.</div>}
+                sectionSubtitleTxt="Mirror, Mirror, on the wall."
+                topParagraphHTML={<div className={`bodyText`}>As I reflect on the journey of designing Comet, several key insights stand out that not only shaped the development of this tool but also deepened my appreciation for the intersection of user experience and functional design. Here are my main takeaways from this process, which highlight both the<span className={`emphasis`}> achievements and future opportunities for Comet.</span></div>}
             />
 
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
