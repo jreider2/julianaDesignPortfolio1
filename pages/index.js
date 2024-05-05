@@ -54,9 +54,9 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
         <div className={styles.ghost} ref={workRef}></div>
+        <TeaserCard title="Comet" description="Using design to reimagine source control management." image="/images/macx2.png" link={"/case3"}></TeaserCard>
+        <TeaserCard title="Convoscope" description="Designing an experimental AI interface with MIT Media Lab researchers." image="/images/tempImg.png" link={"/convoScope"}></TeaserCard>
         <TeaserCard title="Thought Filter" description="First designer for a B2B content marketing SaaS tool." image="/images/macx2.png" link={"/thoughtFilter"}></TeaserCard>
-        <TeaserCard title="Convoscope" description="Designing an experimental AI interface for MIT Media Lab researchers." image="/images/tempImg.png" link={"/convoScope"}></TeaserCard>
-        <TeaserCard title="CodeHarbor" description="Leading the design of an innovative collaborative coding platform, blending the power of real-time collaboration with advanced version control for software teams." image="/images/macx2.png" link={"/case3"}></TeaserCard>
 
       </Layout >
     </>
