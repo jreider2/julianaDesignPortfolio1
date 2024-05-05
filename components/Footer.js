@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 import LinkedInIcon from '/public/images/linkedin.png';
 import GitHubIcon from '/public/images/github.png';
@@ -40,7 +41,7 @@ export default function Footer() {
           <Link href="/" className={styles.homeLink}>
             home
           </Link>
-          <a href="YOUR_RESUME_LINK" target="_blank" className={styles.resumeLink}>
+          <a href="images/JulianaResume.pdf" target="_blank" className={styles.resumeLink}>
             resume
           </a>
           <a href="https://www.linkedin.com/in/juliana-reider/" target="_blank">
