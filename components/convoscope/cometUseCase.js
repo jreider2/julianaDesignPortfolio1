@@ -573,11 +573,6 @@ export default function CometUseCase(){
                 Streamling the tree design
                 </div>
             </div>
-            <div className={`sectionOutterContainer`}>
-                <div className={`bodyText`}>
-                Initially I assumed the users would want to look at a visual representation of the tree of the various versions, which can show exactly when branches were forked off of other branches and when and which branches they were merged back into.
-                </div>
-            </div>
 
             <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span> I included a graphical representation of the tree branches of all the forks for a given repository, available in the commit history screen.</>} icon={thumbsDownIcon}>
             </Box>
@@ -592,7 +587,7 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span> Later, I saw that much the info portrayed in the tree went used. Therefore, I represented the remaining relevent data in a more simplified sleek mannor instead.</>} icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After: </span> Based on user feedback, I learned that much the info portrayed in the tree was ignored. Therefore, I represented the remaining relevent data in a more simplified sleek mannor instead.</>} icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -626,7 +621,7 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span>  I brightened up the colors which better reflected my themes of sleekness and approachability.</>}  icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span> I brightened up the colors which better reflected my themes of sleekness and approachability.</>}  icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -639,7 +634,7 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span>the code background was the same color as the commit panel background. But the UI felt muddled overall.</>} icon={thumbsDownIcon}>
+            <Box className={`${styles.marginTop2}`} txt={<><span className={`emphasis`}>Before: </span>The code background was the same color as the commit panel background. But the UI felt muddled overall.</>} icon={thumbsDownIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -652,7 +647,7 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span> I landed on a brighter look that made the app feel sharper overall.</>}  icon={thumbsUpIcon}>
+            <Box className={`${styles.marginTop}`} txt={<><span className={`emphasis`}>After:</span> I landed on a brighter look that made the app feel sharper on the whole.</>}  icon={thumbsUpIcon}>
             </Box>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
@@ -671,8 +666,8 @@ export default function CometUseCase(){
 
             <SectionTopper
                 sectionTitletxt="Final Design"
-                sectionSubtitleTxt="I was proud of what I had created."
-                topParagraphHTML={<div className={`bodyText`}><span className={`emphasis`}></span>After many iterations and experimentations, here are some of the elements I wish to highlight.</div>}
+                sectionSubtitleTxt="Complexity hidden under the hood."
+                topParagraphHTML={<div className={`bodyText`}><span className={`emphasis`}></span>Comet is powerful enough to handle all the necessary git capabilities, but simple enough that people new to git will find it approachable, manageable and easy to learn.</div>}
             />
             <div className={`sectionOutterContainer ${styles.marginTop}`}>
                 <div className={styles.sectionSubheading}>
@@ -682,7 +677,7 @@ export default function CometUseCase(){
 
             {/* 5 major screens */}
             <Card
-                p1= {<div><span className={`emphasis`}>Landing Page– </span> Start a new session or view archive of past sessions.</div> }
+                p1= {<div><span className={`emphasis`}>Something– </span> Something Something Something. Something Something Something. Something Something Something. Something Something Something.</div> }
             >
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     <Image
@@ -697,7 +692,7 @@ export default function CometUseCase(){
                 </div>
 
                 <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
-                    <div><span className={`emphasis`}>Data Visualizations–</span> Make statistics and data display in a more visual format for quicker consumption. </div>
+                    <div><span className={`emphasis`}>Something–</span>  Something Something Something. Something Something Something. Something Something Something. Something Something Something.</div>
                 </div>
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
                     <Image
@@ -745,7 +740,7 @@ export default function CometUseCase(){
                 </div>
 
                 <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
-                    <div><span className={`emphasis`}>Hey Convo–</span> Ask convo anything!</div>
+                    <div><span className={`emphasis`}>Something–</span>  Something Something Something. Something Something Something. Something Something Something. Something Something Something.</div>
                 </div>
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
                     <Image
@@ -760,7 +755,7 @@ export default function CometUseCase(){
                 </div>
 
                 <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
-                    <div><span className={`emphasis`}>See More Info–</span> Click the "More" button for a card to display the source webpage.</div>
+                    <div><span className={`emphasis`}>Something–</span> Something Something Something.</div>
                 </div>
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
                     <Image
@@ -775,7 +770,7 @@ export default function CometUseCase(){
                 </div>
 
                 <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
-                    <div><span className={`emphasis`}>Speaker View–</span> Participants only see info the speaker selects.</div>
+                    <div><span className={`emphasis`}>Something–</span> Something Something Something. Something Something Something.</div>
                 </div>
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom}`}>
                     <Image
@@ -791,7 +786,7 @@ export default function CometUseCase(){
 
 
                 <div className={`bodyText ${styles.cardBody2} ${styles.marginBottom}`}>
-                    <div><span className={`emphasis`}>Sign Up–</span> Sign Up Flow and First time Use. </div>
+                    <div><span className={`emphasis`}>Something–</span> Something Something Something. Something Something. </div>
                 </div>
                 <div className={`${styles.imageWrapper2} ${styles.marginBottom2}`}>
                     {/* <Image
@@ -817,7 +812,7 @@ export default function CometUseCase(){
                     Style guide
                 </div>
                 <div className={`bodyText ${styles.marginTop2}`}>
-                I created a style that evoked academia, while also reflecting a moody otherworldly, biological atmosphere requested by the stakeholder. For example, the puffiness of the icons and rounded corners felt more based in nature than harsh edges would. In additon, the font helped<span class="emphasis">  evoke the science fiction vibes that</span> we desired.
+                something<span class="emphasis"> something</span> Somthing.
                 </div>
             </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
@@ -831,50 +826,7 @@ export default function CometUseCase(){
                             objectFit: "contain"
                         }} />
             </div>
-
-            {/* animations */}
-            <div className={`sectionOutterContainer ${styles.marginTop5}`}>
-                <div className={styles.sectionSubheading}>
-                    Animations
-                </div>
-                <div className={`bodyText ${styles.marginTop2}`}>
-                Annimations were included to both evoke the sense of otherwordliness, and natural phamana, and to <span class="emphasis"> communicate to the user something was happening.</span> First example of this is the "Hey Convo" feature.
-                </div>
-                <div className={`bodyText ${styles.marginTop2}`}>
-                 In order to avoid the user disrupting their flow and resorting to using other tools, such as as search engine, it was essential to have a feature<span class="emphasis">  allowing impromptu questions.</span> The given animation convays the active listening of ConvoScope, inspired by "Hey Siri."
-                </div>
-            </div>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottomNone}`}>
-                <video controls autoplay loop muted width="100%" height="auto">
-                    <source src="/video/HeyConvoVid.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <div className={`sectionOutterContainer ${styles.marginTop2}`}>
-                <div className={`bodyText ${styles.marginTop2}`}>
-                An simpler, yet purposeful, annimation is used for the start button during a ConvoScope session. The button pulses like a beating heart to help <span class="emphasis">indicate the session is in progress,</span> even if no cards have apeared yet. The speed was carefully chosen to be slow enough to not be distracting, but fast enough to be noticed.
-                </div>
-            </div>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottomNone}`}>
-                <video controls autoplay loop muted width="100%" height="auto">
-                    <source src="/video/pulsingVid.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <div className={`sectionOutterContainer ${styles.marginTop2}`}>
-                <div className={`bodyText ${styles.marginTop2}`}>
-                Another animation worth discussion is on the login screen. The main purpose here is to use an animation inspired by heavenly bodies to <span class="emphasis"> set the tone of the application</span> immediately. The same animation is used at the start of every session.
-                </div>
-            </div>
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2} ${styles.marginBottomNone}`}>
-                <video controls autoplay loop muted width="100%" height="auto">
-                    <source src="/video/LoginAnimation.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
+        
             {boarder}
 
             <SectionTopper
