@@ -54,7 +54,7 @@ import { text, takeaways } from '../constants/cometConstants.js';
 import { overviewTextFull, boarder, boarder2} from '../constants/convoscopeConstants';
 
 
-export default function CometUseCase(){
+export default function ThoughtFilterUseCase(){
     const [imageSrc, setImageSrc] = useState(processHorizontal);
 
     useEffect(() => {

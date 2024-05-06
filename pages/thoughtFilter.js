@@ -1,10 +1,10 @@
 import Layout from '../components/layout';
+import ThoughtFilterUseCase from '../components/convoscope/thoughtfilterUseCase';
 
 export default function thoughtFilter() {
     return (
         <Layout>
-            {/* Content for case1 page */}
-            <h1>Thought Filter</h1>
+            <ThoughtFilterUseCase/>
         </Layout>
     );
 }
