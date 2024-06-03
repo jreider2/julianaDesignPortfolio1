@@ -3,10 +3,12 @@ import Image from "next/image";
 
 import eye from '../../public/images/eye.png'
 import speakerIcon from '../../public/images/SpeakerIcon.png'
-import bookOpen from '../../public/images/book-open.png'
+import keyIcon from '../../public/images/keyIcon.png'
 import alertIcon from '../../public/images/alert-triangle.png'
-import eyeOffIcon from '../../public/images/eye-off.png'
-import folderIcon from '../../public/images/folder.png'
+import clockIcon from '../../public/images/clockIcon.png'
+import switchingIcon from '../../public/images/switchingIcon.png'
+import filterIcon from '../../public/images/filterIcon.png'
+import searchIconBig from '../../public/images/searchIconBig.png'
 import processHorizontal from '../../public/images/processHorizontal2.png'
 import processVertical from '../../public/images/processVertial2.png'
 import artifactsIcon from '../../public/images/artifactsIcon.png'
@@ -15,11 +17,9 @@ import thumbsDownIcon from '../../public/images/thumbsDownIcon.png'
 import thumbsUpIcon from '../../public/images/thumbsUpIcon.png'
 import styleTyleMain from '../../public/images/StyleTile.png'
 import tempImg from '../../public/images/mainScrene.png'
-import dataPic1 from '../../public/images/dataViz.png'
 import speakerHighlight from '../../public/images/speakerHighlight.png'
 import participantView from '../../public/images/participantView.png'
 import teaserImage from '../../public/images/TeaserImage.png'
-import convoPersona from '../../public/images/ResearcherPersona.png'
 import wireframes from '../../public/images/wireframes2.png'
 import branding from '../../public/images/brandingConvo.png'
 import itterationsGreen from '../../public/images/itterationsGreen.png'
@@ -30,14 +30,7 @@ import statsInWords from '../../public/images/statsInWords.png'
 import transcriptBefore from '../../public/images/transcriptBefore.png'
 import agentsBefore from '../../public/images/agentsBefore.png'
 import agentsAFter from '../../public/images/agentsAfter.png'
-import data1 from '../../public/images/data1.png'
-import data2 from '../../public/images/data2.png'
-import data3 from '../../public/images/data3.png'
-import data4 from '../../public/images/data4.png'
-import heyConvo from '../../public/images/heyConvo.png'
 import landingPage from '../../public/images/landingPage.png'
-import speakerView from '../../public/images/speakerView.png'
-import webpage from '../../public/images/webpage.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -126,7 +119,7 @@ export default function ThoughtFilterUseCase(){
                 <div className={styles.middleModContainner}>
                     <div className={styles.sModsPicContainer}>
                         <Image
-                            src={speakerIcon}
+                            src={filterIcon}
                             alt="Use Case Image"
                             sizes="100vw"
                             style={{
@@ -141,7 +134,7 @@ export default function ThoughtFilterUseCase(){
                 <div className={styles.middleModContainner}>
                     <div className={styles.sModsPicContainer}>
                         <Image
-                            src={eye}
+                            src={searchIconBig}
                             alt="Use Case Image"
                             sizes="100vw"
                             style={{
@@ -235,39 +228,28 @@ export default function ThoughtFilterUseCase(){
                 <div className={styles.sectionSubheading}>
                     Key Challenges
                 </div>
+            </div>
 
-                {/* <div className={`bodyText ${styles.marginTop2}`}>
-                Morem ipsum dolor sit amet, consectetur adipiscing elit <span class="emphasis"> CHANGE ICONS BELOW.</span>
+            <Box className={styles.marginTop2} txt='Overload: Content marketers, especially freelancers, face immense pressure to deliver a high volume of content (up to 80 pieces per month).' icon={alertIcon}>
+                {/* <div>
+                    <span className={`emphasis`}>Testing</span> Content marketers, especially freelancers, face immense pressure to deliver a high volume of content (up to 80 pieces per month).
                 </div> */}
-            </div>
-
-            <Box className={styles.marginTop2} txt='<span className={overviewStyles.emphasis}>Overload:</span> Content marketers, especially freelancers, face immense pressure to deliver a high volume of content (up to 80 pieces per month).' icon={bookOpen}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>Context Switching:</span> Frequently shifting between different tasks is challenging.' icon={alertIcon}>
+            <Box className={styles.marginTopSlim} txt='Context Switching: Frequently shifting between different tasks is challenging.' icon={switchingIcon}>
+                {/* <div>
+                    <span className={overviewStyles.emphasis}>Context Switching:</span> Frequently shifting between different tasks is challenging.
+                </div> */}
             </Box>
-            <Box className={styles.marginTopSlim} txt="<span className={overviewStyles.emphasis}>SEO and Keyword Optimization:</span> must balance keyword use while avoiding poaching or stuffing, and keeping up with Google's algorithm." icon={eyeOffIcon}>
+            <Box className={styles.marginTopSlim} txt="SEO and Keyword Optimization: must balance keyword use while avoiding poaching or stuffing, and keeping up with Google's algorithm." icon={keyIcon}>
+                {/* <div>
+                    <span className={overviewStyles.emphasis}>SEO and Keyword Optimization:</span> must balance keyword use while avoiding poaching or stuffing, and keeping up with Google's algorithm.
+                </div> */}
             </Box>
-            <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>Time Management:</span> Transforming an idea into polished content or the common task of content reuse is time-consuming.' icon={folderIcon}>
+            <Box className={styles.marginTopSlim} txt='Time Management: Transforming an idea into polished content or the common task of content reuse is time-consuming.' icon={clockIcon }>
+                {/* <div>
+                    <span className={overviewStyles.emphasis}>Time Management:</span> Transforming an idea into polished content or the common task of content reuse is time-consuming.
+                </div> */}
             </Box>
-
-            {/* Persona Title */}
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
-                <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
-                    Persona
-                </div>
-                
-            </div>{/* Persona image */}
-            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
-                    <Image
-                        src={convoPersona}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
-            </div>
 
             {boarder} 
             
@@ -324,7 +306,6 @@ export default function ThoughtFilterUseCase(){
                 Before advancing to intricate design concepts, I began with rapid iterations of hand-drawn sketches and progressed to creating low-fidelity wireframes in Figma.
                 </div>
             </div>
-            
 
             {/* Iterations and deliverables Infographic*/}
             <div className={`sectionOutterContainer ${styles.marginTop5}`}>
@@ -360,7 +341,7 @@ export default function ThoughtFilterUseCase(){
                                 objectFit: "contain"
                             }} />
                     </div>
-                    <div className={`emphasis ${styles.modeTitle}`}>Iterative Feedback</div>
+                    <div className={`emphasis ${styles.modeTitle}`}>Engagement</div>
                     <div className={`bodyText ${styles.modeBody}`}>Gathered continuous feedback<br/>from users
                     </div> 
                 </div>
@@ -377,7 +358,7 @@ export default function ThoughtFilterUseCase(){
                             }} />
                     </div>
                     <div className={`emphasis ${styles.modeTitle}`}>Collaborative Development</div>
-                    <div className={`bodyText ${styles.modeBody}`}>Planned a series of meetings with <br/>developers to ensure quality</div>
+                    <div className={`bodyText ${styles.modeBody}`}>Planned a series of meetings with <br/>the developer to ensure quality</div>
                 </div>  
             </div>
 
