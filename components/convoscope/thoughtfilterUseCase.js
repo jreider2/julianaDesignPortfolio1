@@ -226,26 +226,22 @@ export default function ThoughtFilterUseCase(){
 
             <div className={`sectionOutterContainer ${styles.marginTopNone}`}>
                 <div className={styles.sectionSubheading}>
-                    Key Challenges
+                    Other Key Challenges
                 </div>
             </div>
 
-            <Box className={styles.marginTop2} txt='Overload: Content marketers, especially freelancers, face immense pressure to deliver a high volume of content (up to 80 pieces per month).' icon={alertIcon}>
-                {/* <div>
-                    <span className={`emphasis`}>Testing</span> Content marketers, especially freelancers, face immense pressure to deliver a high volume of content (up to 80 pieces per month).
-                </div> */}
-            </Box>
-            <Box className={styles.marginTopSlim} txt='Context Switching: Frequently shifting between different tasks is challenging.' icon={switchingIcon}>
+            
+            <Box className={styles.marginTop2} txt='Context Switching: Frequently shifting between different tasks.' icon={switchingIcon}>
                 {/* <div>
                     <span className={overviewStyles.emphasis}>Context Switching:</span> Frequently shifting between different tasks is challenging.
                 </div> */}
             </Box>
-            <Box className={styles.marginTopSlim} txt="SEO and Keyword Optimization: must balance keyword use while avoiding poaching or stuffing, and keeping up with Google's algorithm." icon={keyIcon}>
+            <Box className={styles.marginTopSlim} txt="SEO and Keyword Optimization: users must increase keyword utilization while avoiding poaching or stuffing, and keeping up with Google's algorithm." icon={keyIcon}>
                 {/* <div>
                     <span className={overviewStyles.emphasis}>SEO and Keyword Optimization:</span> must balance keyword use while avoiding poaching or stuffing, and keeping up with Google's algorithm.
                 </div> */}
             </Box>
-            <Box className={styles.marginTopSlim} txt='Time Management: Transforming an idea into polished content or the common task of content reuse is time-consuming.' icon={clockIcon }>
+            <Box className={styles.marginTopSlim} txt='Time Management: common tasks such as transforming ideas into polished content and refreshing stale content is time-consuming.' icon={clockIcon }>
                 {/* <div>
                     <span className={overviewStyles.emphasis}>Time Management:</span> Transforming an idea into polished content or the common task of content reuse is time-consuming.
                 </div> */}
