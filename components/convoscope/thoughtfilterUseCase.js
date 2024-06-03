@@ -135,8 +135,8 @@ export default function ThoughtFilterUseCase(){
                                 objectFit: "contain"
                             }} />
                     </div>
-                    <div className={`emphasis ${styles.modeTitle}`}>Forem ipsum</div>
-                    <div className={`bodyText ${styles.modeBody}`}>Forem ipsum dolor<br/>Fsit amet consectetur</div>
+                    <div className={`emphasis ${styles.modeTitle}`}>Filter History</div>
+                    <div className={`bodyText ${styles.modeBody}`}>Quickly locate old files that<br/>need to be reworked</div>
                 </div>
                 <div className={styles.middleModContainner}>
                     <div className={styles.sModsPicContainer}>
@@ -150,8 +150,8 @@ export default function ThoughtFilterUseCase(){
                                 objectFit: "contain"
                             }} />
                     </div>
-                    <div className={`emphasis ${styles.modeTitle}`}>Forem ipsum</div>
-                    <div className={`bodyText ${styles.modeBody}`}>Forem ipsum dolor<br/>Forem ipsum dolor sit
+                    <div className={`emphasis ${styles.modeTitle}`}>Search History</div>
+                    <div className={`bodyText ${styles.modeBody}`}>Search previous content<br/>by keywords and more
                     </div> 
                 </div>
             </div>
@@ -165,6 +165,39 @@ export default function ThoughtFilterUseCase(){
                 // video1="/video/cardFlowStartVid.mp4"
                 bullets={null}
             ></Card>
+
+            <Card
+                p1= {<div><span className={`emphasis`}>Project history page–</span> Easily access old content .</div> }
+            >
+                <div className={styles.imageWrapper2}>
+                    <Image
+                        src={speakerHighlight}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+                <div className={`bodyText ${styles.cardBody2}`}>
+                    <div><span className={`emphasis`}>Filter and search–</span> This feature includes a search and filter function on the project history page, enhancing usability. [Gif?]. It's especially useful for content marketers who frequently need to find and refresh older content.</div>
+                </div>
+
+                <div className={styles.imageWrapper2}>
+                    <Image
+                        src={participantView}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+                </div>
+
+            </Card>
 
             {boarder}
 
@@ -200,7 +233,7 @@ export default function ThoughtFilterUseCase(){
 
             <div className={`sectionOutterContainer ${styles.marginTopNone}`}>
                 <div className={styles.sectionSubheading}>
-                    Additional Insights
+                    Key Challenges
                 </div>
 
                 {/* <div className={`bodyText ${styles.marginTop2}`}>
@@ -208,11 +241,11 @@ export default function ThoughtFilterUseCase(){
                 </div> */}
             </div>
 
-            <Box className={styles.marginTop2} txt='<span className={overviewStyles.emphasis}>Overload:</span> Users had difficulty remembering Git commands and sequences, especially infrequently used commands or when learning git for the first time.' icon={bookOpen}>
+            <Box className={styles.marginTop2} txt='<span className={overviewStyles.emphasis}>Overload:</span> Content marketers, especially freelancers, face immense pressure to deliver a high volume of content (up to 80 pieces per month).' icon={bookOpen}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>Context Switching:</span> with git CLI can be arduous and cause trepidation.' icon={alertIcon}>
+            <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>Context Switching:</span> Frequently shifting between different tasks is challenging.' icon={alertIcon}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>SEO and Keyword Optimization:</span> For example, which files that are staged, or already committed. This style makes it difficult to see line by line code changes in the current WIP or in the user’s history.' icon={eyeOffIcon}>
+            <Box className={styles.marginTopSlim} txt="<span className={overviewStyles.emphasis}>SEO and Keyword Optimization:</span> must balance keyword use while avoiding poaching or stuffing, and keeping up with Google's algorithm." icon={eyeOffIcon}>
             </Box>
             <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>Time Management:</span> Transforming an idea into polished content or the common task of content reuse is time-consuming.' icon={folderIcon}>
             </Box>
