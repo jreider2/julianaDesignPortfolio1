@@ -832,7 +832,7 @@ export default function CometUseCase(){
 
             <SectionTopper
                 sectionTitletxt="Reflections"
-                sectionSubtitleTxt="Mirror, Mirror, on the wall."
+                sectionSubtitleTxt="Mirror, mirror, on the wall."
                 topParagraphHTML={<div className={`bodyText`}>As I reflect on the journey of designing Comet, several key insights stand out that not only shaped the development of this tool but also deepened my appreciation for the intersection of user experience and functional design. Here are my main takeaways from this process, which highlight both the<span className={`emphasis`}> achievements and future opportunities for Comet.</span></div>}
             />
 

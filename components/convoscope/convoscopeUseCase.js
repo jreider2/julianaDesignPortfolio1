@@ -846,7 +846,7 @@ export default function ConvoscopeUseCase(){
 
             <SectionTopper
                 sectionTitletxt="Reflections"
-                sectionSubtitleTxt="Learn by Doing."
+                sectionSubtitleTxt="Learn by doing."
                 topParagraphHTML={<div className={`bodyText`}>During this design project, I grew my skills an incredible amount. From components, to finding the middle ground with stakeholders,<span className={`emphasis`}> my mind is awash with possibilities </span>for the future.</div>}
             />
 
