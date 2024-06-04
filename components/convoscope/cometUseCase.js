@@ -9,13 +9,12 @@ import eyeOffIcon from '../../public/images/eye-off.png'
 import folderIcon from '../../public/images/folder.png'
 import processHorizontal from '../../public/images/processHorizontal2.png'
 import processVertical from '../../public/images/processVertial2.png'
-import artifactsIcon from '../../public/images/artifactsIcon.png'
 import feedbackIcon from '../../public/images/feedbackIcon.png'
+import eyeIcon from '../../public/images/eyeIcon.png'
 import thumbsDownIcon from '../../public/images/thumbsDownIcon.png'
 import thumbsUpIcon from '../../public/images/thumbsUpIcon.png'
 import styleTyleMain from '../../public/images/StyleTile.png'
 import tempImg from '../../public/images/mainScrene.png'
-import dataPic1 from '../../public/images/dataViz.png'
 import speakerHighlight from '../../public/images/speakerHighlight.png'
 import participantView from '../../public/images/participantView.png'
 import teaserImage from '../../public/images/TeaserImage.png'
@@ -245,20 +244,20 @@ export default function CometUseCase(){
                     Additional Insights
                 </div>
 
-                <div className={`bodyText ${styles.marginTop2}`}>
-                Morem ipsum dolor sit amet, consectetur adipiscing elit <span class="emphasis"> CHANGE ICONS BELOW.</span>
-                </div>
+                {/* <div className={`bodyText ${styles.marginTop2}`}>
+                
+                </div> */}
             </div>
 
-            <Box className={styles.marginTop2} txt='<span className={overviewStyles.emphasis}>Git is hard to learn and master.</span> Users had difficulty remembering Git commands and sequences, especially infrequently used commands or when learning git for the first time.' icon={bookOpen}>
+            <Box className={styles.marginTop2} txt='Users had difficulty remembering Git commands and sequences, especially infrequently used commands or when learning git for the first time.' icon={bookOpen}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>Undoing mistakes</span> with git CLI can be arduous and cause trepidation.' icon={alertIcon}>
+            <Box className={styles.marginTopSlim} txt='Undoing mistakes with git CLI can be arduous and cause trepidation.' icon={alertIcon}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>The CLI tucks away info that users want quick access too.</span> For example, which files that are staged, or already committed. This style makes it difficult to see line by line code changes in the current WIP or in the user’s history.' icon={eyeOffIcon}>
+            <Box className={styles.marginTopSlim} txt='The CLI tucks away info that users want quick access too. For example, line by line code changes, and which files are staged or committed.' icon={eyeOffIcon}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='<span className={overviewStyles.emphasis}>Want to be able to manage stashing and stashes easily and quickly.</span> Stashing is annoying but necessary for in many cases.' icon={folderIcon}>
+            <Box className={styles.marginTopSlim} txt='Users want to be able to manage stashes easily and quickly. Stashing is necessary for in many cases.' icon={folderIcon}>
             </Box>
-            <Box className={styles.marginTopSlim} txt='FIX THE STYLING<span className={overviewStyles.emphasis}> Need to see current changes at a glance Something.</span>' icon={folderIcon}>
+            <Box className={styles.marginTopSlim} txt='Those interviewed wanted to see current changes at a glance.' icon={eyeIcon}>
             </Box>
 
             {/* Persona Title */}
