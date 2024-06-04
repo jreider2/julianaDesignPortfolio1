@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 
-import eye from '../../public/images/eye.png'
 import speakerIcon from '../../public/images/SpeakerIcon.png'
 import keyIcon from '../../public/images/keyIcon.png'
-import alertIcon from '../../public/images/alert-triangle.png'
 import clockIcon from '../../public/images/clockIcon.png'
 import switchingIcon from '../../public/images/switchingIcon.png'
 import filterIcon from '../../public/images/filterIcon.png'
 import searchIconBig from '../../public/images/searchIconBig.png'
+import figmaIcon from '../../public/images/figmaIcon.png'
+import peopleIcon from '../../public/images/peopleIcon.png'
 import processHorizontal from '../../public/images/processHorizontal2.png'
 import processVertical from '../../public/images/processVertial2.png'
 import artifactsIcon from '../../public/images/artifactsIcon.png'
@@ -309,11 +309,11 @@ export default function ThoughtFilterUseCase(){
                     Iterations and Deliverables
                 </div>
             </div>
-            <div className={`${styles.speakerModsWrapper} ${styles.marginBottomNone} ${styles.marginTop5} ${styles.marginVpTopSmall}`}>
+            <div className={`${styles.speakerModsWrapper} ${styles.marginBottomNone} ${styles.marginTop5} ${styles.marginVpTopSmall} ${styles.marginBottom2}`}>
                 <div className={styles.middleModContainner}>
                     <div className={`${styles.sModsPicContainer} ${styles.modHeightLimit}`}>
                         <Image
-                            src={speakerIcon}
+                            src={figmaIcon}
                             alt="Use Case Image"
                             sizes="100vw"
                             style={{
@@ -344,7 +344,7 @@ export default function ThoughtFilterUseCase(){
                 <div className={styles.middleModContainner}>
                     <div className={`${styles.sModsPicContainer} ${styles.modHeightLimit}`}>
                         <Image
-                            src={artifactsIcon}
+                            src={peopleIcon}
                             alt="Use Case Image"
                             sizes="100vw"
                             style={{
@@ -356,23 +356,6 @@ export default function ThoughtFilterUseCase(){
                     <div className={`emphasis ${styles.modeTitle}`}>Collaborative Development</div>
                     <div className={`bodyText ${styles.modeBody}`}>Planned a series of meetings with <br/>the developer to ensure quality</div>
                 </div>  
-            </div>
-
-            <div className={`sectionOutterContainer ${styles.marginTop}`}>
-                <div className={`${styles.sectionSubheading} `}> 
-                    Process
-                </div>
-            </div> {/*Process image infographic  */}
-            <div className={`${styles.imageWrapper2} ${styles.marginSides1} ${styles.marginBottomNone} ${styles.processContainer}`}>
-                    <Image
-                        src={imageSrc}
-                        alt="Use Case Image"
-                        sizes="100vw"
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            objectFit: "contain"
-                        }} />
             </div>
 
             {/* {boarder} */}
