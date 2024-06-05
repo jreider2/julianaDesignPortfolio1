@@ -17,7 +17,6 @@ import styleTyleMain from '../../public/images/StyleTile.png'
 import tempImg from '../../public/images/mainScrene.png'
 import speakerHighlight from '../../public/images/speakerHighlight.png'
 import participantView from '../../public/images/participantView.png'
-import teaserImage from '../../public/images/TeaserImage.png'
 import convoPersona from '../../public/images/ResearcherPersona.png'
 import wireframes from '../../public/images/wireframes2.png'
 import branding from '../../public/images/brandingConvo.png'
@@ -37,6 +36,7 @@ import heyConvo from '../../public/images/heyConvo.png'
 import landingPage from '../../public/images/landingPage.png'
 import speakerView from '../../public/images/speakerView.png'
 import webpage from '../../public/images/webpage.png'
+import cometHero from '../../public/images/cometHeroImage3.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -81,7 +81,7 @@ export default function CometUseCase(){
                 heading="Comet" 
                 subheading="Reimagining the source code management experience."
                 // image={testVid}
-                image={teaserImage}
+                image={cometHero}
                 />
             <Overview
                 myRole="Product Designer – "
