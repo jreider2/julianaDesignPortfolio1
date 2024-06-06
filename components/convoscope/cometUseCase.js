@@ -15,8 +15,6 @@ import thumbsDownIcon from '../../public/images/thumbsDownIcon.png'
 import thumbsUpIcon from '../../public/images/thumbsUpIcon.png'
 import styleTyleMain from '../../public/images/StyleTile.png'
 import tempImg from '../../public/images/mainScrene.png'
-import speakerHighlight from '../../public/images/speakerHighlight.png'
-import participantView from '../../public/images/participantView.png'
 import convoPersona from '../../public/images/ResearcherPersona.png'
 import wireframes from '../../public/images/wireframes2.png'
 import branding from '../../public/images/brandingConvo.png'
@@ -37,6 +35,13 @@ import landingPage from '../../public/images/landingPage.png'
 import speakerView from '../../public/images/speakerView.png'
 import webpage from '../../public/images/webpage.png'
 import cometHero from '../../public/images/cometHeroImage3.png'
+import branchDropdown from '../../public/images/branchDropdown.png'
+import contextMenuHover from '../../public/images/contextMenuHover.png'
+import undoHover from '../../public/images/undoHover.png'
+import empathyMap from '../../public/images/empathyMapComet.png'
+import commonFlow from '../../public/images/commonFlowComet.png'
+import otherCommonFlows from '../../public/images/otherCommonFlowsComet.png'
+import featurePrioritiesComet from '../../public/images/featurePrioritiesComet.png'
 
 import Header from '../useCaseGenerics/header';
 import Overview from '../useCaseGenerics/overview';
@@ -115,7 +120,7 @@ export default function CometUseCase(){
                 p1= {<div><span className={`emphasis`}>Branch Management Dropdown -</span> In Comet it’s simple to find all the actions related to branch management in one place.</div> }
                 // bullet1="AI listens to conversation"
                 // bullet2="Surfaces relevant information"
-                image1={tempImg}
+                image1={branchDropdown}
                 //image2={dataPic1}
                 // video1="/video/cardFlowStartVid.mp4"
                 bullets={null}
@@ -165,7 +170,7 @@ export default function CometUseCase(){
             >
                 <div className={styles.imageWrapper2}>
                     <Image
-                        src={speakerHighlight}
+                        src={undoHover}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -181,7 +186,7 @@ export default function CometUseCase(){
 
                 <div className={styles.imageWrapper2}>
                     <Image
-                        src={participantView}
+                        src={contextMenuHover}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -265,11 +270,10 @@ export default function CometUseCase(){
                 <div className={`${styles.sectionSubheading} ${styles.marginBottom}`}>
                     Research Collation
                 </div>
-                
-            </div>{/* Persona image */}
+            </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={convoPersona}
+                        src={empathyMap}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -297,7 +301,18 @@ export default function CometUseCase(){
             </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={wireframes}
+                        src={commonFlow}
+                        alt="Use Case Image"
+                        sizes="100vw"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "contain"
+                        }} />
+            </div>
+            <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
+                    <Image
+                        src={otherCommonFlows}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
@@ -313,7 +328,7 @@ export default function CometUseCase(){
             </div>
             <div className={`${styles.imageWrapper3} ${styles.marginTop2}`}>
                     <Image
-                        src={wireframes}
+                        src={featurePrioritiesComet}
                         alt="Use Case Image"
                         sizes="100vw"
                         style={{
